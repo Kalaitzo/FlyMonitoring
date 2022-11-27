@@ -10,5 +10,9 @@ import manifest from "./fresh.gen.ts";
 import twindPlugin from "$fresh/plugins/twind.ts";
 import twindConfig from "./twind.config.ts";
 
+import mongoose from "npm:mongoose@^6.7";
+
+await mongoose.connect("mongodb://localhost:27017/test");
+
 // await start(manifest, { plugins: [twindPlugin(twindConfig)] });
 await start(manifest, { plugins: [twindPlugin(twindConfig)] });
