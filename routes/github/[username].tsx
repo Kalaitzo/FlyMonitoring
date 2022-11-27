@@ -27,7 +27,7 @@ export default function GithubPage({ data }: PageProps<User | null>) {
 
     return (
         <div>
-            <img src={ data.avatar_url } width={ 128 } height={ 128 }/>
+            <img src={ data.avatar_url } width={ 128 } height={ 128 } alt={"Couldn't load Image"}/>
             <h1>{ data.name }</h1>
             <p>{ data.login }</p>
         </div>
