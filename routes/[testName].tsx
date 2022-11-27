@@ -1,16 +1,12 @@
 import { PageProps, Handlers } from "$fresh/server.ts";
 import Test from "../model/testDB.ts"
 
-interface TestItem {
-    name: string;
-}
-
-export const handler: Handlers<TestItem | null> = {
+export const handler: Handlers<Test | null> = {
     async GET(_, ctx) {
         const { testName } = ctx.params;
-        const newTest: TestItem = {name:  testName}
+        // const newTest: Test = {name:  testName}
 
-        const testForDB = new Test({
+        const newTest = new Test({
             name: testName.toString(),
             description: 'A random description for now!'
         })
@@ -18,7 +14,7 @@ export const handler: Handlers<TestItem | null> = {
         const testFromMongoDb = await Test.findOne({name: testName});
 
         if (!testFromMongoDb){
-            await testForDB.save();
+            await newTest.save();
         }
         else{
             newTest.name = 'There is a test with that name in the collection'
@@ -29,7 +25,7 @@ export const handler: Handlers<TestItem | null> = {
     }
 };
 
-export default function NewTest({ data }: PageProps<TestItem | null>) {
+export default function NewTest({ data }: PageProps<Test | null>) {
     if (!data){
         return <div>Didn't insert new test</div>
     }
