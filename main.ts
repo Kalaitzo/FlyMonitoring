@@ -36,6 +36,4 @@ const db = client.database("myFirstDatabase");
 const users = db.collection<TemperatureSensors>("users");
 
 
-
-
 await start(manifest, { plugins: [twindPlugin(twindConfig)] });
