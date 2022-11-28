@@ -14,6 +14,8 @@ const client = new MongoClient();
 // Connecting to a Local Database
 // await client.connect("mongodb://127.0.0.1:27017");
 
+await start(manifest, { plugins: [twindPlugin(twindConfig)] });
+
 // Connecting to a Mongo Atlas Database
 await client.connect({
     db: "myFirstDatabase",
@@ -34,6 +36,3 @@ await client.connect({
 
 const db = client.database("myFirstDatabase");
 const users = db.collection<TemperatureSensors>("users");
-
-
-await start(manifest, { plugins: [twindPlugin(twindConfig)] });
