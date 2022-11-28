@@ -2,6 +2,7 @@ import { start } from "$fresh/server.ts";
 import manifest from "./fresh.gen.ts";
 import twindPlugin from "$fresh/plugins/twind.ts";
 import twindConfig from "./twind.config.ts";
+
 import TemperatureSensors from "./model/testDB.ts";
 
 import {
@@ -15,7 +16,7 @@ const client = new MongoClient();
 // await client.connect("mongodb://127.0.0.1:27017");
 
 // Connecting to a Mongo Atlas Database
-client.connect({
+await client.connect({
     db: "myFirstDatabase",
     tls: true,
     servers: [
@@ -34,7 +35,6 @@ client.connect({
 
 const db = client.database("myFirstDatabase");
 const users = db.collection<TemperatureSensors>("users");
-
 
 await start(manifest, { plugins: [twindPlugin(twindConfig)] });
 
