@@ -35,10 +35,7 @@ await client.connect({
 const db = client.database("myFirstDatabase");
 const users = db.collection<TemperatureSensors>("users");
 
-const insertId = await users.insertOne({
-    username: "user1",
-    password: "pass1",
-});
+
 
 
 await start(manifest, { plugins: [twindPlugin(twindConfig)] });
