@@ -12,10 +12,10 @@ import {
 const client = new MongoClient();
 
 // Connecting to a Local Database
-// client.connect("mongodb://127.0.0.1:27017");
+// await client.connect("mongodb://127.0.0.1:27017");
 
 // Connecting to a Mongo Atlas Database
-await client.connect({
+client.connect({
     db: "myFirstDatabase",
     tls: true,
     servers: [
@@ -35,10 +35,6 @@ await client.connect({
 const db = client.database("myFirstDatabase");
 const users = db.collection<TemperatureSensors>("users");
 
-const insertId = await users.insertOne({
-    username: "user2",
-    password: "pass2",
-});
 
 await start(manifest, { plugins: [twindPlugin(twindConfig)] });
 
