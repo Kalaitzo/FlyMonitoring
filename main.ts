@@ -1,18 +1,8 @@
-/// <reference no-default-lib="true" />
-/// <reference lib="dom" />
-/// <reference lib="dom.iterable" />
-/// <reference lib="dom.asynciterable" />
-/// <reference lib="deno.ns" />
-
 import { start } from "$fresh/server.ts";
 import manifest from "./fresh.gen.ts";
-
 import twindPlugin from "$fresh/plugins/twind.ts";
 import twindConfig from "./twind.config.ts";
-
-const APP_ID='data-kettk';
-
-const BASE_URI = `https://data.mongodb-api.com/app/${APP_ID}/endpoint/data/v1/`;
+import TemperatureSensors from "./model/testDB.ts";
 
 import {
     Bson,
@@ -22,17 +12,33 @@ import {
 const client = new MongoClient();
 
 // Connecting to a Local Database
-await client.connect("mongodb://127.0.0.1:27017");
+// await client.connect("mongodb://127.0.0.1:27017");
 
-// Defining schema interface
-interface TemperatureSensors{
-    _id: ObjectId;
-    username: string;
-    password: string;
-}
+// Connecting to a Mongo Atlas Database
+await client.connect({
+    db: "myFirstDatabase",
+    tls: true,
+    servers: [
+        {
+            host: "ac-ie3oda4-shard-00-01.fawqedw.mongodb.net",
+            port: 27017,
+        },
+    ],
+    credential: {
+        username: "Kalaitzo",
+        password: "basilisg4",
+        db: "myFirstDatabase",
+        mechanism: "SCRAM-SHA-1",
+    },
+});
 
-const db = client.database("newUsers");
+const db = client.database("myFirstDatabase");
 const users = db.collection<TemperatureSensors>("users");
+
+const insertId = await users.insertOne({
+    username: "user1",
+    password: "pass1",
+});
 
 
 await start(manifest, { plugins: [twindPlugin(twindConfig)] });
