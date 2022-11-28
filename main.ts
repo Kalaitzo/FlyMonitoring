@@ -36,3 +36,8 @@ await client.connect({
 
 const db = client.database("myFirstDatabase");
 const users = db.collection<TemperatureSensors>("users");
+
+const insertId = await users.insertOne({
+    username: "user2",
+    password: "pass2",
+});
