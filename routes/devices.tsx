@@ -6,6 +6,11 @@ export const handler: Handlers = {
         const resp = await ctx.render();
         resp.headers.set("X-Custom-Header", "Hello");
         return resp;
+    },
+    async POST(req, ctx){
+        const resp = await ctx.render();
+        resp.headers.set('My-Custom-Header',"It added this.")
+        return resp;
     }
 };
 
