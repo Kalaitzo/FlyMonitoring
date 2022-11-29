@@ -8,7 +8,7 @@ export const handler: Handlers = {
         return resp;
     },
     async POST(_req, ctx) {
-        console.log('A post request was made');
+        return(console.log('A post request was made'))
       }
 };
 
