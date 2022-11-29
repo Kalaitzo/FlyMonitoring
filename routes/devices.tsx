@@ -7,7 +7,7 @@ export const handler: Handlers = {
         resp.headers.set("X-Custom-Header", "Hello");
         return resp;
     },
-    async POST(_req, ctx) {
+    async POST(req, ctx) {
         return(console.log('A post request was made'))
       }
 };
