@@ -15,6 +15,7 @@ import * as $8 from "./routes/search.tsx";
 import * as $9 from "./routes/test-header.tsx";
 import * as $$0 from "./islands/Countdown.tsx";
 import * as $$1 from "./islands/Counter.tsx";
+import * as $$2 from "./routes/devices.tsx";
 
 const manifest = {
   routes: {
@@ -28,6 +29,7 @@ const manifest = {
     "./routes/index.tsx": $7,
     "./routes/search.tsx": $8,
     "./routes/test-header.tsx": $9,
+    "./routes/devices.tsx": $$2
   },
   islands: {
     "./islands/Countdown.tsx": $$0,
