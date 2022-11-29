@@ -7,11 +7,9 @@ export const handler: Handlers = {
         resp.headers.set("X-Custom-Header", "Hello");
         return resp;
     },
-    async POST(req, ctx){
-        const resp = await ctx.render();
-        resp.headers.set('My-Custom-Header',"It added this.")
-        return resp;
-    }
+    async POST(_req, ctx) {
+        console.log('A post request was made');
+      }
 };
 
 export default function AboutPage(){
