@@ -12,7 +12,7 @@ export const handler: Handlers = {
     async POST(req, ctx) {
         const users = db.collection<TemperatureSensors>("users");
 
-        const all_users = await users.find({ username: { $ne: 'null' } }).toArray();
+        const all_users = await users.find({ username: { $ne: 'null' } });
         return ctx.render(all_users);
       }
 };
