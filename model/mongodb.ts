@@ -1,5 +1,5 @@
 // import { Bson, MongoClient } from "https://deno.land/x/mongo@v0.31.1/mod.ts";
-import { Bson, MongoClient } from "https://deno.land/x/atlas_sdk@v1.0.3/mod.ts";
+import { MongoClient } from "https://deno.land/x/atlas_sdk@v1.0.3/mod.ts";
 import { config } from "https://deno.land/std/dotenv/mod.ts";
 
 const configData = await config();
