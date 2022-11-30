@@ -5,6 +5,7 @@ import { Handlers } from "$fresh/server.ts";
 export const handler: Handlers = {
     GET(req){
         const payload = req.body
+        console.log(payload)
         return new Response(payload)
     }
 };
