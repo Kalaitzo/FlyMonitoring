@@ -22,7 +22,7 @@ export default function DevicesPage({ data }: PageProps<TemperatureSensors[] | n
         <main>
             <h1>Devices</h1>
             <ul>
-                {data? (data.map((d) => <li>Username: {d.username} and Password: {d.password}</li>)): ('No users')}
+                {data? (data.map((d) => <li>Username: {d.username} and Password: {d.password}</li>)): (<div>'No users'</div>)}
             </ul>
             <form method={'post'}>
                 <div>
