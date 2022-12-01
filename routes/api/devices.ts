@@ -5,15 +5,7 @@ import TestInterface from "../../model/testDB.ts";
 
 export const handler: Handlers = {
     async POST(req){
-        // const payload = req.body
-        const payload =  {
-            id: "device-9845A",
-            type: "Device",
-            controlledProperty: [
-                "fillingLevel",
-                "temperature"
-            ]
-        }
+        const payload = JSON.parse(req.body)
 
         const testSensors = db.collection<TestInterface>('testSensors')
 
