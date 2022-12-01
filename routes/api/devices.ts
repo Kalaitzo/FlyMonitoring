@@ -11,6 +11,6 @@ export const handler: Handlers = {
 
         const insertId = await users.insertOne(payload);
 
-        return new Response()
+        return new Response(payload)
     }
 };
