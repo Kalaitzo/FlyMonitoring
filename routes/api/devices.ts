@@ -5,11 +5,19 @@ import TestInterface from "../../model/testDB.ts";
 
 export const handler: Handlers = {
     async POST(req){
-        const payload = req.body
+        // const payload = req.body
+        const payload =  {
+            id: "device-9845A",
+            type: "Device",
+            controlledProperty: [
+                "fillingLevel",
+                "temperature"
+            ]
+        }
 
-        const users = db.collection<TestInterface>('testSensors')
+        const testSensors = db.collection<TestInterface>('testSensors')
 
-        const insertId = await users.insertOne(payload);
+        const insertId = await testSensors.insertOne(payload);
 
         return new Response(payload)
     }
