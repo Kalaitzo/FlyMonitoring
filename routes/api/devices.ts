@@ -6,6 +6,6 @@ export const handler: Handlers = {
     POST(req){
         const payload = req.body
         console.log(payload)
-        return new Response(payload)
+        return new Response('New response')
     }
 };
