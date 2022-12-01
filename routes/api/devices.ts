@@ -5,7 +5,7 @@ import TestInterface from "../../model/testDB.ts";
 
 export const handler: Handlers = {
     async POST(req){
-        const payload = JSON.parse(req.body)
+        const payload = req.body
 
         const testSensors = db.collection<TestInterface>('testSensors')
 
