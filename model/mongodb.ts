@@ -1,6 +1,7 @@
 // import { Bson, MongoClient } from "https://deno.land/x/mongo@v0.31.1/mod.ts";
 import { MongoClient } from "https://deno.land/x/atlas_sdk@v1.0.3/mod.ts";
-
+// import { config } from "https://deno.land/std@0.167.0/dotenv/mod.ts";
+//
 // const configData = await config();
 // const password = configData["ATLAS_PASS"]
 // const user = configData["ATLAS_USER"]
