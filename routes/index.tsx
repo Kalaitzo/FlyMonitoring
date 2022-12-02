@@ -1,3 +1,4 @@
+// routes/index.tsx
 import { Head } from "$fresh/runtime.ts";
 import Counter from "../islands/Counter.tsx";
 

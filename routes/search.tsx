@@ -1,5 +1,4 @@
 // routes/search.tsx
-
 import { Handlers, PageProps } from "$fresh/server.ts";
 
 const NAMES = ["Kurt", "Jimmy", "Amy", "Jim", "Janis", "Brian"];

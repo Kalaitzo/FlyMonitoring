@@ -1,5 +1,4 @@
 // routs/countdown.tsx
-
 import Countdown from "../islands/Countdown.tsx";
 
 export default function CountdownPage() {
