@@ -3,8 +3,6 @@ import manifest from "./fresh.gen.ts";
 import twindPlugin from "$fresh/plugins/twind.ts";
 import twindConfig from "./twind.config.ts";
 
-// import TemperatureSensors from "./model/TemperatureSensors.ts";
-
 // import {
 //     Bson,
 //     MongoClient,
@@ -32,9 +30,6 @@ import twindConfig from "./twind.config.ts";
 //         mechanism: "SCRAM-SHA-1",
 //     },
 // });
-
-// const db = client.database("myFirstDatabase");
-// const users = db.collection<TemperatureSensors>("users");
 
 await start(manifest, { plugins: [twindPlugin(twindConfig)] });
 
