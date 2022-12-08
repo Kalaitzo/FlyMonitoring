@@ -2,7 +2,7 @@
 
 import { Handlers } from "$fresh/server.ts";
 import db from "../../../model/mongodb.ts";
-import SmokeSensor from "../../../model/SmokeSensor.ts";
+import SmokeSensor from "../../../model/schemas/SmokeSensor.ts";
 
 export const handler: Handlers = {
     async POST(req: Request){

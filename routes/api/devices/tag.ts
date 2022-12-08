@@ -2,7 +2,7 @@
 
 import { Handlers } from '$fresh/server.ts';
 import db from "../../../model/mongodb.ts";
-import TagSensor from "../../../model/TagSensor.ts";
+import TagSensor from "../../../model/schemas/TagSensor.ts";
 
 export const handler: Handlers = {
     async POST(req: Request){

@@ -1,6 +1,6 @@
 // routes/devices.tsx
 import { Handlers, PageProps } from "$fresh/server.ts";
-import TemperatureSensor from "../model/TemperatureSensor.ts";
+import TemperatureSensor from "../model/schemas/TemperatureSensor.ts";
 import db from "../model/mongodb.ts";
 
 export const handler: Handlers = {

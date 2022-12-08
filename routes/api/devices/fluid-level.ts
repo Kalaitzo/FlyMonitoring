@@ -2,7 +2,7 @@
 
 import { Handlers } from '$fresh/server.ts';
 import db from "../../../model/mongodb.ts";
-import FluidLevelSensor from "../../../model/FluidLevelSensor.ts";
+import FluidLevelSensor from "../../../model/schemas/FluidLevelSensor.ts";
 
 export const handler: Handlers = {
     async POST(req: Request){

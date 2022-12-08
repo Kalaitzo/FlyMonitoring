@@ -2,7 +2,7 @@
 
 import { Handlers } from "$fresh/server.ts";
 import db from '../../../model/mongodb.ts'
-import RackTemperatureSensors from "../../../model/RackTemperatureSensors.ts";
+import RackTemperatureSensors from "../../../model/schemas/RackTemperatureSensors.ts";
 
 export const handler: Handlers = {
     async POST(req: Request){
