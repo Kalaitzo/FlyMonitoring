@@ -20,7 +20,7 @@ export const handler: Handlers = {
             // Decode the bytes into a string and then parse it as a JSON
             const data: RackTemperatureSensors = JSON.parse(decoder.decode(chunk))
 
-            // Open the collection to store the data that the  temperature sensor sent
+            // Open the collection to store the data that the rack temperature sensor sent
             const rackTemperaturesSensors = db.collection<RackTemperatureSensors>("RackTemperatureSensors")
 
             // Store the data

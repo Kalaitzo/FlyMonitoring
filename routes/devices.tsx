@@ -1,6 +1,6 @@
 // routes/devices.tsx
 import { Handlers, PageProps } from "$fresh/server.ts";
-import TemperatureSensors from "../model/TemperatureSensors.ts";
+import TemperatureSensor from "../model/TemperatureSensor.ts";
 import db from "../model/mongodb.ts";
 
 export const handler: Handlers = {
@@ -10,14 +10,14 @@ export const handler: Handlers = {
         return resp;
     },
     async POST(req, ctx) {
-        const users = db.collection<TemperatureSensors>("users");
+        const users = db.collection<TemperatureSensor>("users");
 
         const all_users = await users.find({ username: { $ne: 'null' } });
         return ctx.render(all_users);
       }
 };
 
-export default function DevicesPage({ data }: PageProps<TemperatureSensors[] | null>){
+export default function DevicesPage({ data }: PageProps<TemperatureSensor[] | null>){
     return(
         <main>
             <h1>Devices</h1>

@@ -2,7 +2,7 @@
 
 import { Handlers } from "$fresh/server.ts";
 import db from '../../../model/mongodb.ts'
-import TemperatureSensors from "../../../model/TemperatureSensors.ts";
+import TemperatureSensor from "../../../model/TemperatureSensor.ts";
 
 export const handler: Handlers = {
     async POST(req: Request){
@@ -18,10 +18,10 @@ export const handler: Handlers = {
 
         for await (const chunk of payload) {
             // Decode the bytes into a string and then parse it as a JSON
-            const data: TemperatureSensors = JSON.parse(decoder.decode(chunk))
+            const data: TemperatureSensor = JSON.parse(decoder.decode(chunk))
 
-            // Open the collection to store the data that the  temperature sensor sent
-            const temperatureSensors = db.collection<TemperatureSensors>("TemperatureSensors");
+            // Open the collection to store the data that the temperature sensor sent
+            const temperatureSensors = db.collection<TemperatureSensor>("TemperatureSensor");
 
             // Store the data
             const insertId = await temperatureSensors.insertOne(data);
