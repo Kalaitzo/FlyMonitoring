@@ -29,6 +29,6 @@ export const handler: Handlers = {
             console.log('Inserted data with id: ' + insertId)
         }
 
-        return new Response('Got the data from the smoke sensor!')
+        return new Response('Got the data from the fluid-level sensor!')
     }
 };
