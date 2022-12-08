@@ -1,6 +1,6 @@
 // routes/[testName.tsx]
 import { PageProps, Handlers } from "$fresh/server.ts";
-// import Test from "../model/testDB.ts"
+// import Test from "../model/TemperatureSensors.ts"
 
 export const handler: Handlers<Test | null> = {
     async GET(_, ctx) {

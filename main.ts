@@ -3,7 +3,7 @@ import manifest from "./fresh.gen.ts";
 import twindPlugin from "$fresh/plugins/twind.ts";
 import twindConfig from "./twind.config.ts";
 
-// import TemperatureSensors from "./model/testDB.ts";
+// import TemperatureSensors from "./model/TemperatureSensors.ts";
 
 // import {
 //     Bson,
