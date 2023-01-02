@@ -23,27 +23,26 @@ export default function Footer() {
     ];
 
     return (
-        <div class="fixed inset-x-0 bottom-0 bg-white flex flex-col md:flex-row w-full w-full gap-8 md:gap-16 px-8 py-8 text-sm">
+        <div class="fixed bottom-0 bg-[#28374F] flex flex-col md:flex-row w-full w-full gap-2 md:gap-16 px-8 py-4 text-sm">
             <div class="flex-1">
                 <div class="flex items-center gap-1">
-                    <div class="font-bold text-2xl">
+                    <div class="font-bold text-2xl text-gray-50">
                         FlyMonitoring
                     </div>
                 </div>
-                <div class="text-gray-500">
+                <div class="text-gray-100">
                     Application for high security room monitoring
                 </div>
             </div>
 
             {menus.map((item) => (
                 <div class="mb-4" key={item.title}>
-                    <div class="font-bold">{item.title}</div>
+                    <div class="font-bold text-gray-50">{item.title}</div>
                     <ul class="mt-2">
-                        {item.title !== 'Information'? 'No no no' : 'Info'}
                         {item.children.map((child) => (
                             <li class="mt-2" key={child.name}>
                                 <a
-                                    class="text-gray-500 hover:text-gray-700"
+                                    class="text-gray-200 hover:text-blue-200"
                                     href={child.href}
                                 >
                                     {child.name}
@@ -54,7 +53,7 @@ export default function Footer() {
                 </div>
             ))}
 
-            <div class="text-gray-500 space-y-2">
+            <div class="text-gray-100 space-y-2">
                 <div class="text-xs">
                     Copyright © 2020 FlyMonitoring<br />
                     All right reserved.
@@ -62,7 +61,7 @@ export default function Footer() {
 
                 <a
                     href="https://github.com/Kalaitzo/FlyMonitoring"
-                    class="inline-block hover:text-black"
+                    class="inline-block hover:text-blue-200"
                 >
                     <BrandGithub />
                 </a>

@@ -1,26 +1,20 @@
 // routes/index.tsx
-import Counter from "../islands/Counter.tsx";
 import {Header} from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
+import SignIn from "../islands/SignIn.tsx";
 
 export default function Home() {
   return (
-    <>
-        <Header active={"/"} flag={false}/>
-        <div class="p-4 mx-auto max-w-screen-md">
-            <img
-                src="/logo.svg"
-                class="w-32 h-32"
-                alt="the fresh logo: a sliced lemon dripping with juice"
-            />
-            <p class="my-6">
-                Welcome to `fresh`. Try updating this message in the ./routes/index.tsx
-                file, and refresh.
-            </p>
-            <Counter start={3} />
-        </div>
-        <Footer/>
-    </>
+      <div class='bg-[#5C7EB5] h-screen'>
+          <Header active={"/"} flag={false}/>
+          <div className="flex py-32 px-20 gap-52 justify-center items-center">
+              <SignIn/>
+              <img src={"https://cdn-icons-png.flaticon.com/512/2974/2974498.png"}
+                   alt={"Couldn't load image..."}
+                   className={"w-1/4 h-1/4"}/>
+          </div>
+          <Footer/>
+      </div>
   );
 }
 
