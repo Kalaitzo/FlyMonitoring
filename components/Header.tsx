@@ -15,9 +15,9 @@ export function Header({ active, flag }: Props, ) {
         <div class="bg-blue-900 w-full py-6 px-8 flex flex-col md:flex-row gap-4 mx-0">
             <div class="flex items-center flex-1">
                 <div className="ml-1 text-2xl text-gray-50 font-bold">
-                    <a href={"/test-header"}>FlyMonitoring</a>
+                    <a href={"/"}>FlyMonitoring</a>
                 </div>
-                <a href={"/test-header"}>
+                <a href={"/"}>
                 <img src={"https://pngimage.net/wp-content/uploads/2018/06/heisenberg-logo-png-2.png"}
                      alt={"Couldn't load image..."}
                      class={"w-12 h-12"}/>
