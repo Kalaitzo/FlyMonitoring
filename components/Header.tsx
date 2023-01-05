@@ -1,9 +1,12 @@
+import Hamburger from "../islands/Humburger.tsx";
+
 type Props = {
     active: string;
     flag: boolean;
 };
 
 export function Header({ active, flag }: Props, ) {
+
     const menus = [
         { name: "Home", href: "/" },
         { name: "Rack Temperatures", href: "/rack-temperatures" },
@@ -11,12 +14,11 @@ export function Header({ active, flag }: Props, ) {
         { name: "Water Level", href: "/temperature-humidity"},
         { name: "Smoke", href: "/smoke"},
         { name: "Entrees", href: "/entrees" },
-
     ];
 
     return (
-        <div class="bg-[#28374F] w-full py-5 px-8 flex flex-col md:flex-row gap-4 mx-0">
-            <div class="flex items-center flex-1">
+        <div class="flex bg-[#28374F] items-center py-5 px-8 flex-col sm:flex-row gap-4 mx-0">
+            <div class="flex flex-1 items-center gap-2">
                 <div className="ml-1 text-2xl text-gray-50 font-bold">
                     <a href={"/"}>FlyMonitoring</a>
                 </div>
@@ -26,7 +28,8 @@ export function Header({ active, flag }: Props, ) {
                      class={"w-12 h-12"}/>
                 </a>
             </div>
-            <ul class="flex items-center gap-6">
+            <Hamburger active={'/'}/>
+            <ul class="flex ml-14 flex-wrap items-center gap-6 hidden lg:flex">
                 {menus.map((menu) => (
                     <li>
                         <a

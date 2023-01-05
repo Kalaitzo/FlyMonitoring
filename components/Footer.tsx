@@ -1,6 +1,5 @@
 import BrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/brand-github.tsx";
 
-
 export default function Footer() {
     const menus = [
         {
@@ -62,7 +61,6 @@ export default function Footer() {
                                 ))}
                         </ul>
                     }
-
                 </div>
             ))}
 
@@ -71,7 +69,6 @@ export default function Footer() {
                     Copyright © 2020 FlyMonitoring<br />
                     All right reserved.
                 </div>
-
                 <a
                     href="https://github.com/Kalaitzo/FlyMonitoring"
                     class="inline-block hover:text-blue-200"

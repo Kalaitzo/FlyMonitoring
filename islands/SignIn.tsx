@@ -1,8 +1,7 @@
 export default function SignIn() {
     return (
         <div class="flex">
-            {/*adsfasd*/}
-            <div class="h-3/4 bg-[#76A1E8] shadow-md rounded-xl px-8 pt-6 pb-8">
+            <div class="bg-[#76A1E8] shadow-md rounded-xl px-8 pt-6 pb-8">
                 <h2 class="text-2xl font-bold mb-2 text-gray-800 text-center">Sign In</h2>
                 <form>
                     <div class="mb-4">
@@ -22,7 +21,7 @@ export default function SignIn() {
                             Sign In
                         </button>
                         <a className="font-bold text-sm text-[#5C7EB5] hover:text-[#425A82]"
-                           href="#">
+                           href="/forgot">
                             Forgot Password?
                         </a>
                     </div>
