@@ -6,9 +6,12 @@ type Props = {
 export function Header({ active, flag }: Props, ) {
     const menus = [
         { name: "Home", href: "/" },
-        { name: "Rack Temperatures", href: "/test-header" },
-        { name: "Entrees", href: "/docs" },
-        { name: "Temperature Humidity", href: "/dummy"}
+        { name: "Rack Temperatures", href: "/rack-temperatures" },
+        { name: "Temperature Humidity", href: '/temperature-humidity'},
+        { name: "Water Level", href: "/temperature-humidity"},
+        { name: "Smoke", href: "/smoke"},
+        { name: "Entrees", href: "/entrees" },
+
     ];
 
     return (

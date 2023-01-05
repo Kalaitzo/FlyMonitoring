@@ -1,5 +1,6 @@
 import BrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/brand-github.tsx";
 
+
 export default function Footer() {
     const menus = [
         {
@@ -15,9 +16,9 @@ export default function Footer() {
         {
             title: "Information",
             children: [
-                { name: "Email", href: "#" },
-                { name: "Phone", href: "#" },
-                { name: "Discord", href: "#" }
+                { name: "Email", value: "name123@gmail.com" },
+                { name: "Phone", value: "6969696969" },
+                { name: "Discord", value: "Discord Server" }
             ],
         },
     ];
@@ -38,18 +39,30 @@ export default function Footer() {
             {menus.map((item) => (
                 <div class="mb-4" key={item.title}>
                     <div class="font-bold text-gray-50">{item.title}</div>
-                    <ul class="mt-2">
+                    {item.title !== "Information"
+                        ? <ul className="mt-2">
                         {item.children.map((child) => (
-                            <li class="mt-2" key={child.name}>
+                            <li className="mt-2" key={child.name}>
                                 <a
-                                    class="text-gray-200 hover:text-blue-200"
+                                    className="text-gray-200 hover:text-blue-200"
                                     href={child.href}
                                 >
                                     {child.name}
                                 </a>
                             </li>
                         ))}
-                    </ul>
+                        </ul>
+                        : <ul className={"mt-2"}>
+                            {item.children.map((child) => (
+                                <li className={"mt-2"} key={child.name}>
+                                    <div className={"text-gray-200"}>
+                                        {child.name}: {child.value}
+                                    </div>
+                                </li>
+                                ))}
+                        </ul>
+                    }
+
                 </div>
             ))}
 
