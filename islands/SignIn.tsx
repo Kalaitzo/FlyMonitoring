@@ -2,7 +2,7 @@ export default function SignIn() {
     return (
         <div class="flex">
             {/*adsfasd*/}
-            <div class="bg-[#76A1E8] shadow-md rounded-xl px-8 pt-6 pb-8">
+            <div class="h-3/4 bg-[#76A1E8] shadow-md rounded-xl px-8 pt-6 pb-8">
                 <h2 class="text-2xl font-bold mb-2 text-gray-800 text-center">Sign In</h2>
                 <form>
                     <div class="mb-4">

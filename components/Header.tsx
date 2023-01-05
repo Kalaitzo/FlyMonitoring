@@ -12,7 +12,7 @@ export function Header({ active, flag }: Props, ) {
     ];
 
     return (
-        <div class="sticky top-0 bg-[#28374F] w-full py-5 px-8 flex flex-col md:flex-row gap-4 mx-0">
+        <div class="bg-[#28374F] w-full py-5 px-8 flex flex-col md:flex-row gap-4 mx-0">
             <div class="flex items-center flex-1">
                 <div className="ml-1 text-2xl text-gray-50 font-bold">
                     <a href={"/"}>FlyMonitoring</a>

@@ -23,7 +23,7 @@ export default function Footer() {
     ];
 
     return (
-        <div class="sticky bottom-0 bg-[#28374F] flex flex-col md:flex-row w-full w-full gap-2 md:gap-16 px-8 py-4 text-sm">
+        <div class="bg-[#28374F] w-full flex flex-col md:flex-row w-full gap-2 md:gap-16 px-8 py-4 text-sm">
             <div class="flex-1">
                 <div class="flex items-center gap-1">
                     <div class="font-bold text-2xl text-gray-50">
