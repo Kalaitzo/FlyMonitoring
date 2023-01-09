@@ -11,10 +11,12 @@ import * as $4 from "./routes/api/devices/tag.ts";
 import * as $5 from "./routes/api/devices/temperature.ts";
 import * as $6 from "./routes/api/login.ts";
 import * as $7 from "./routes/api/logout.ts";
-import * as $8 from "./routes/index.tsx";
-import * as $9 from "./routes/rack-temperatures.tsx";
-import * as $10 from "./routes/temperature-humidity.tsx";
-import * as $11 from "./routes/water-level.tsx";
+import * as $8 from "./routes/entries.tsx";
+import * as $9 from "./routes/index.tsx";
+import * as $10 from "./routes/rack-temperatures.tsx";
+import * as $11 from "./routes/smoke.tsx";
+import * as $12 from "./routes/temperature-humidity.tsx";
+import * as $13 from "./routes/water-level.tsx";
 import * as $$0 from "./islands/Countdown.tsx";
 import * as $$1 from "./islands/Counter.tsx";
 import * as $$2 from "./islands/Humburger.tsx";
@@ -29,10 +31,12 @@ const manifest = {
     "./routes/api/devices/temperature.ts": $5,
     "./routes/api/login.ts": $6,
     "./routes/api/logout.ts": $7,
-    "./routes/index.tsx": $8,
-    "./routes/rack-temperatures.tsx": $9,
-    "./routes/temperature-humidity.tsx": $10,
-    "./routes/water-level.tsx": $11,
+    "./routes/entries.tsx": $8,
+    "./routes/index.tsx": $9,
+    "./routes/rack-temperatures.tsx": $10,
+    "./routes/smoke.tsx": $11,
+    "./routes/temperature-humidity.tsx": $12,
+    "./routes/water-level.tsx": $13,
   },
   islands: {
     "./islands/Countdown.tsx": $$0,
