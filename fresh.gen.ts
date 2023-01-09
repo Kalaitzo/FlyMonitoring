@@ -13,6 +13,7 @@ import * as $6 from "./routes/api/login.ts";
 import * as $7 from "./routes/api/logout.ts";
 import * as $8 from "./routes/index.tsx";
 import * as $9 from "./routes/rack-temperatures.tsx";
+import * as $10 from "./routes/temperature-humidity.tsx";
 import * as $$0 from "./islands/Countdown.tsx";
 import * as $$1 from "./islands/Counter.tsx";
 import * as $$2 from "./islands/Humburger.tsx";
@@ -29,6 +30,7 @@ const manifest = {
     "./routes/api/logout.ts": $7,
     "./routes/index.tsx": $8,
     "./routes/rack-temperatures.tsx": $9,
+    "./routes/temperature-humidity.tsx": $10,
   },
   islands: {
     "./islands/Countdown.tsx": $$0,

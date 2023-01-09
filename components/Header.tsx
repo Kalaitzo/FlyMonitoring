@@ -11,7 +11,7 @@ export function Header({ active, flag }: Props, ) {
         { name: "Home", href: "/" },
         { name: "Rack Temperatures", href: "/rack-temperatures" },
         { name: "Temperature Humidity", href: '/temperature-humidity'},
-        { name: "Water Level", href: "/temperature-humidity"},
+        { name: "Water Level", href: "/water-level"},
         { name: "Smoke", href: "/smoke"},
         { name: "Entrees", href: "/entrees" },
     ];

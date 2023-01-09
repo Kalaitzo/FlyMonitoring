@@ -21,12 +21,19 @@ export default function Home({ data }: PageProps<Data>) {
   return (
       <div className={'flex h-screen flex-col bg-[#5C7EB5]'}>
           <Header active={"/"} flag={!!data.isAllowed}/>
-          <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 sm:flex-row justify-around items-center"}>
-              <SignIn/>
-              <img src={"https://cdn-icons-png.flaticon.com/512/2974/2974498.png"}
-                   alt={"Couldn't load image..."}
-                   className={"w-1/4"}/>
-          </div>
+          {!data.isAllowed
+              ? <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 sm:flex-row justify-around items-center"}>
+                     <SignIn/>
+                     <img src={"https://cdn-icons-png.flaticon.com/512/2974/2974498.png"}
+                          alt={"Couldn't load image..."}
+                          className={"w-1/4"}/>
+                </div>
+              : <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 sm:flex-row justify-around items-center"}>
+                  <img src={"https://cdn-icons-png.flaticon.com/512/2974/2974498.png"}
+                       alt={"Couldn't load image..."}
+                       className={"w-1/4"}/>
+                  <SignIn/>
+              </div>}
           <Footer/>
       </div>
   );
