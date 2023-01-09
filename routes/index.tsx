@@ -1,12 +1,26 @@
 // routes/index.tsx
 import {Header} from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
-import SignIn from "../islands/SignIn.tsx";
+import SignIn from "../components/SignIn.tsx";
 
-export default function Home() {
+import { Handlers, PageProps } from "$fresh/server.ts"
+import { getCookies } from "std/http/cookie.ts"
+
+interface Data {
+    isAllowed: boolean;
+}
+
+export const handler: Handlers = {
+    GET(req, ctx){
+        const cookies = getCookies(req.headers);
+        return ctx.render!({ isAllowed: cookies.auth === 'bar'})
+    }
+}
+
+export default function Home({ data }: PageProps<Data>) {
   return (
       <div className={'flex h-screen flex-col bg-[#5C7EB5]'}>
-          <Header active={"/"} flag={false}/>
+          <Header active={"/"} flag={!!data.isAllowed}/>
           <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 sm:flex-row justify-around items-center"}>
               <SignIn/>
               <img src={"https://cdn-icons-png.flaticon.com/512/2974/2974498.png"}
@@ -17,5 +31,3 @@ export default function Home() {
       </div>
   );
 }
-
-

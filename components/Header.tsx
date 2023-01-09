@@ -44,9 +44,11 @@ export function Header({ active, flag }: Props, ) {
             </ul>
             <div>
                 {flag
-                    ? <button type={'submit'}
-                              className={"bg-blue-600 hover:bg-blue-700 text-white rounded px-6 py-2.5"}>
-                        Log Out</button>
+                    ? <a href={'/api/logout'}>
+                        <button className={"bg-[#76A1E8] hover:bg-[#5C7EB5] text-white rounded px-6 py-2.5"}>
+                            Log Out
+                        </button>
+                      </a>
                     : ""}
             </div>
         </div>
