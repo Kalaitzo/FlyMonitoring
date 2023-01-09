@@ -1,5 +1,5 @@
-// routes/rack-temperatures.tsx
-import type { Handlers, PageProps } from "$fresh/server.ts";
+// routes/water-level.tsx
+import type { Handlers, PageProps} from "$fresh/server.ts";
 import { getCookies } from "std/http/cookie.ts";
 import { Header } from "../components/Header.tsx";
 
@@ -20,9 +20,9 @@ export const handler: Handlers = {
             return Response.redirect(url);
         }
     }
-};
+}
 
-export default function RackTemperaturesPage({ data }: PageProps<Data>) {
+export default function WaterLevelPage({ data }: PageProps<Data>) {
     const {path, isAllowed} = data;
     return (
         <div>
