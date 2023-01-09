@@ -13,7 +13,7 @@ export function Header({ active, flag }: Props, ) {
         { name: "Temperature Humidity", href: '/temperature-humidity'},
         { name: "Water Level", href: "/water-level"},
         { name: "Smoke", href: "/smoke"},
-        { name: "Entrees", href: "/entrees" },
+        { name: "Entries", href: "/entries" },
     ];
 
     return (
@@ -28,7 +28,7 @@ export function Header({ active, flag }: Props, ) {
                      class={"w-12 h-12"}/>
                 </a>
             </div>
-            <Hamburger active={'/'}/>
+            <Hamburger active={active}/>
             <ul class="flex ml-14 flex-wrap items-center gap-6 hidden lg:flex">
                 {menus.map((menu) => (
                     <li>

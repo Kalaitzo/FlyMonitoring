@@ -5,11 +5,11 @@ export default function Footer() {
         {
             title: "Device Control",
             children: [
-                { name: "Rack Temperature", href: "/rack-temperature" },
+                { name: "Rack Temperatures", href: "/rack-temperatures" },
                 { name: "Temperature Humidity", href: "/temperature-humidity" },
                 { name: "Water Level", href: "/water-level" },
                 { name: "Smoke", href: "/smoke" },
-                { name: "Entrees", href: "/entrees" },
+                { name: "Entries", href: "/entries" },
             ],
         },
         {
