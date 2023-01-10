@@ -9,6 +9,7 @@ export default function Footer() {
                 { name: "Temperature Humidity", href: "/temperature-humidity" },
                 { name: "Water Level", href: "/water-level" },
                 { name: "Smoke", href: "/smoke" },
+                { name: "Tags", href: "/tags"},
                 { name: "Entries", href: "/entries" },
             ],
         },
@@ -27,7 +28,7 @@ export default function Footer() {
             <div class="flex-1">
                 <div class="flex items-center gap-1">
                     <div class="font-bold text-2xl text-gray-50">
-                        FlyMonitoring
+                        <a href={"/"}>FlyMonitoring</a>
                     </div>
                 </div>
                 <div class="text-gray-100">

@@ -15,8 +15,9 @@ import * as $8 from "./routes/entries.tsx";
 import * as $9 from "./routes/index.tsx";
 import * as $10 from "./routes/rack-temperatures.tsx";
 import * as $11 from "./routes/smoke.tsx";
-import * as $12 from "./routes/temperature-humidity.tsx";
-import * as $13 from "./routes/water-level.tsx";
+import * as $12 from "./routes/tags.tsx";
+import * as $13 from "./routes/temperature-humidity.tsx";
+import * as $14 from "./routes/water-level.tsx";
 import * as $$0 from "./islands/Countdown.tsx";
 import * as $$1 from "./islands/Counter.tsx";
 import * as $$2 from "./islands/Humburger.tsx";
@@ -35,8 +36,9 @@ const manifest = {
     "./routes/index.tsx": $9,
     "./routes/rack-temperatures.tsx": $10,
     "./routes/smoke.tsx": $11,
-    "./routes/temperature-humidity.tsx": $12,
-    "./routes/water-level.tsx": $13,
+    "./routes/tags.tsx": $12,
+    "./routes/temperature-humidity.tsx": $13,
+    "./routes/water-level.tsx": $14,
   },
   islands: {
     "./islands/Countdown.tsx": $$0,
