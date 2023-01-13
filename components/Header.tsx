@@ -1,4 +1,4 @@
-import Hamburger from "../islands/Humburger.tsx";
+import Hamburger from "../islands/Hamburger.tsx";
 
 type Props = {
     active: string;

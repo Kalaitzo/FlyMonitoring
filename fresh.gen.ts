@@ -20,7 +20,7 @@ import * as $13 from "./routes/temperature-humidity.tsx";
 import * as $14 from "./routes/water-level.tsx";
 import * as $$0 from "./islands/Countdown.tsx";
 import * as $$1 from "./islands/Counter.tsx";
-import * as $$2 from "./islands/Humburger.tsx";
+import * as $$2 from "./islands/Hamburger.tsx";
 
 const manifest = {
   routes: {
@@ -43,7 +43,7 @@ const manifest = {
   islands: {
     "./islands/Countdown.tsx": $$0,
     "./islands/Counter.tsx": $$1,
-    "./islands/Humburger.tsx": $$2,
+    "./islands/Hamburger.tsx": $$2,
   },
   baseUrl: import.meta.url,
   config,
