@@ -1,3 +1,4 @@
+import { asset } from "$fresh/runtime.ts";
 import Hamburger from "../islands/Hamburger.tsx";
 
 type Props = {
@@ -24,9 +25,12 @@ export function Header({ active, flag }: Props, ) {
                     <a href={"/"}>FlyMonitoring</a>
                 </div>
                 <a href={"/"}>
-                <img src={"https://pngimage.net/wp-content/uploads/2018/06/heisenberg-logo-png-2.png"}
-                     alt={"Couldn't load image..."}
-                     class={"w-12 h-12"}/>
+                {/*<img src={"https://pngimage.net/wp-content/uploads/2018/06/heisenberg-logo-png-2.png"}*/}
+                {/*     alt={"Couldn't load image..."}*/}
+                {/*     class={"w-12 h-12"}/>*/}
+                    <img src={asset('/FlyMonitoringLogo.png')}
+                         class={'w-12 h-12'}
+                         alt={'FlyMonitoring Logo'}/>
                 </a>
             </div>
             <Hamburger active={active}/>
