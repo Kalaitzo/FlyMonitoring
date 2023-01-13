@@ -2,12 +2,21 @@
 import {Header} from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
 import SignIn from "../components/SignIn.tsx";
+import IndexPanel from "../components/IndexPanel.tsx";
 
 import { Handlers, PageProps } from "$fresh/server.ts"
 import { getCookies } from "std/http/cookie.ts"
 
 interface Data {
     isAllowed: boolean;
+}
+
+const values = {
+    temperature: 22,
+    humidity: 20,
+    dust: 5,
+    smoke: 0,
+    water: 0
 }
 
 export const handler: Handlers = {
@@ -31,10 +40,14 @@ export default function Home({ data }: PageProps<Data>) {
                 </div>
               // In case the user is logged in!
               : <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 sm:flex-row justify-around items-center"}>
+                  <IndexPanel dust={values.dust.toString()}
+                              humidity={values.humidity.toString()}
+                              temperature={values.temperature.toString()}
+                              water={values.water.toString()}
+                              smoke={values.smoke.toString()}/>
                   <img src={"https://cdn-icons-png.flaticon.com/512/2974/2974498.png"}
                        alt={"Couldn't load image..."}
                        className={"w-1/4"}/>
-                  <SignIn/>
               </div>}
           <Footer/>
       </div>

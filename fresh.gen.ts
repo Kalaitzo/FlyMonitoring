@@ -11,16 +11,16 @@ import * as $4 from "./routes/api/devices/tag.ts";
 import * as $5 from "./routes/api/devices/temperature.ts";
 import * as $6 from "./routes/api/login.ts";
 import * as $7 from "./routes/api/logout.ts";
-import * as $8 from "./routes/entries.tsx";
-import * as $9 from "./routes/index.tsx";
-import * as $10 from "./routes/rack-temperatures.tsx";
-import * as $11 from "./routes/smoke.tsx";
-import * as $12 from "./routes/tags.tsx";
-import * as $13 from "./routes/temperature-humidity.tsx";
-import * as $14 from "./routes/water-level.tsx";
-import * as $$0 from "./islands/Countdown.tsx";
-import * as $$1 from "./islands/Counter.tsx";
-import * as $$2 from "./islands/Hamburger.tsx";
+import * as $8 from "./routes/dust.tsx";
+import * as $9 from "./routes/entries.tsx";
+import * as $10 from "./routes/index.tsx";
+import * as $11 from "./routes/rack-temperatures.tsx";
+import * as $12 from "./routes/smoke.tsx";
+import * as $13 from "./routes/tags.tsx";
+import * as $14 from "./routes/temperature-humidity.tsx";
+import * as $15 from "./routes/test-components.tsx";
+import * as $16 from "./routes/water-level.tsx";
+import * as $$0 from "./islands/Hamburger.tsx";
 
 const manifest = {
   routes: {
@@ -32,18 +32,18 @@ const manifest = {
     "./routes/api/devices/temperature.ts": $5,
     "./routes/api/login.ts": $6,
     "./routes/api/logout.ts": $7,
-    "./routes/entries.tsx": $8,
-    "./routes/index.tsx": $9,
-    "./routes/rack-temperatures.tsx": $10,
-    "./routes/smoke.tsx": $11,
-    "./routes/tags.tsx": $12,
-    "./routes/temperature-humidity.tsx": $13,
-    "./routes/water-level.tsx": $14,
+    "./routes/dust.tsx": $8,
+    "./routes/entries.tsx": $9,
+    "./routes/index.tsx": $10,
+    "./routes/rack-temperatures.tsx": $11,
+    "./routes/smoke.tsx": $12,
+    "./routes/tags.tsx": $13,
+    "./routes/temperature-humidity.tsx": $14,
+    "./routes/test-components.tsx": $15,
+    "./routes/water-level.tsx": $16,
   },
   islands: {
-    "./islands/Countdown.tsx": $$0,
-    "./islands/Counter.tsx": $$1,
-    "./islands/Hamburger.tsx": $$2,
+    "./islands/Hamburger.tsx": $$0,
   },
   baseUrl: import.meta.url,
   config,

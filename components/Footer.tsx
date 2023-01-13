@@ -9,6 +9,7 @@ export default function Footer() {
                 { name: "Temperature Humidity", href: "/temperature-humidity" },
                 { name: "Water Level", href: "/water-level" },
                 { name: "Smoke", href: "/smoke" },
+                { name: "Dust", href: "/dust" },
                 { name: "Tags", href: "/tags"},
                 { name: "Entries", href: "/entries" },
             ],
