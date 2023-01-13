@@ -68,7 +68,7 @@ export default function Footer() {
 
             <div class="text-gray-100 space-y-2">
                 <div class="text-xs">
-                    Copyright © 2020 FlyMonitoring<br />
+                    Copyright © 2023 FlyMonitoring<br />
                     All right reserved.
                 </div>
                 <a
