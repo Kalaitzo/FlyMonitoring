@@ -12,11 +12,11 @@ interface Data {
 }
 
 const values = {
-    temperature: 27,
+    temperature: 22,
     humidity: 20,
     dust: 5,
-    smoke: 1,
-    water: 1
+    smoke: 0,
+    water: 0
 }
 
 export const handler: Handlers = {
