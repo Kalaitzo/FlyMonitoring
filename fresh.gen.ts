@@ -7,20 +7,21 @@ import * as $0 from "./routes/api/devices/door.ts";
 import * as $1 from "./routes/api/devices/dust.ts";
 import * as $2 from "./routes/api/devices/fluid-level.ts";
 import * as $3 from "./routes/api/devices/rack-temperature.ts";
-import * as $4 from "./routes/api/devices/smoke.ts";
-import * as $5 from "./routes/api/devices/tag.ts";
-import * as $6 from "./routes/api/devices/temperature.ts";
-import * as $7 from "./routes/api/login.ts";
-import * as $8 from "./routes/api/logout.ts";
-import * as $9 from "./routes/dust.tsx";
-import * as $10 from "./routes/entries.tsx";
-import * as $11 from "./routes/index.tsx";
-import * as $12 from "./routes/rack-temperatures.tsx";
-import * as $13 from "./routes/smoke.tsx";
-import * as $14 from "./routes/tags.tsx";
-import * as $15 from "./routes/temperature-humidity.tsx";
-import * as $16 from "./routes/test-components.tsx";
-import * as $17 from "./routes/water-level.tsx";
+import * as $4 from "./routes/api/devices/real-sensors.ts";
+import * as $5 from "./routes/api/devices/smoke.ts";
+import * as $6 from "./routes/api/devices/tag.ts";
+import * as $7 from "./routes/api/devices/temperature.ts";
+import * as $8 from "./routes/api/login.ts";
+import * as $9 from "./routes/api/logout.ts";
+import * as $10 from "./routes/dust.tsx";
+import * as $11 from "./routes/entries.tsx";
+import * as $12 from "./routes/index.tsx";
+import * as $13 from "./routes/rack-temperatures.tsx";
+import * as $14 from "./routes/smoke.tsx";
+import * as $15 from "./routes/tags.tsx";
+import * as $16 from "./routes/temperature-humidity.tsx";
+import * as $17 from "./routes/test-components.tsx";
+import * as $18 from "./routes/water-level.tsx";
 import * as $$0 from "./islands/Hamburger.tsx";
 
 const manifest = {
@@ -29,20 +30,21 @@ const manifest = {
     "./routes/api/devices/dust.ts": $1,
     "./routes/api/devices/fluid-level.ts": $2,
     "./routes/api/devices/rack-temperature.ts": $3,
-    "./routes/api/devices/smoke.ts": $4,
-    "./routes/api/devices/tag.ts": $5,
-    "./routes/api/devices/temperature.ts": $6,
-    "./routes/api/login.ts": $7,
-    "./routes/api/logout.ts": $8,
-    "./routes/dust.tsx": $9,
-    "./routes/entries.tsx": $10,
-    "./routes/index.tsx": $11,
-    "./routes/rack-temperatures.tsx": $12,
-    "./routes/smoke.tsx": $13,
-    "./routes/tags.tsx": $14,
-    "./routes/temperature-humidity.tsx": $15,
-    "./routes/test-components.tsx": $16,
-    "./routes/water-level.tsx": $17,
+    "./routes/api/devices/real-sensors.ts": $4,
+    "./routes/api/devices/smoke.ts": $5,
+    "./routes/api/devices/tag.ts": $6,
+    "./routes/api/devices/temperature.ts": $7,
+    "./routes/api/login.ts": $8,
+    "./routes/api/logout.ts": $9,
+    "./routes/dust.tsx": $10,
+    "./routes/entries.tsx": $11,
+    "./routes/index.tsx": $12,
+    "./routes/rack-temperatures.tsx": $13,
+    "./routes/smoke.tsx": $14,
+    "./routes/tags.tsx": $15,
+    "./routes/temperature-humidity.tsx": $16,
+    "./routes/test-components.tsx": $17,
+    "./routes/water-level.tsx": $18,
   },
   islands: {
     "./islands/Hamburger.tsx": $$0,
