@@ -3,45 +3,49 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import config from "./deno.json" assert { type: "json" };
-import * as $0 from "./routes/[testName].tsx";
-import * as $1 from "./routes/about.tsx";
-import * as $2 from "./routes/api/devices/door.ts";
-import * as $3 from "./routes/api/devices/fluid-level.ts";
-import * as $4 from "./routes/api/devices/rack-temperature.ts";
-import * as $5 from "./routes/api/devices/smoke.ts";
-import * as $6 from "./routes/api/devices/tag.ts";
-import * as $7 from "./routes/api/devices/temperature.ts";
-import * as $8 from "./routes/countdown.tsx";
-import * as $9 from "./routes/devices.tsx";
-import * as $10 from "./routes/github/[username].tsx";
-import * as $11 from "./routes/greet/[name].tsx";
-import * as $12 from "./routes/index.tsx";
-import * as $13 from "./routes/search.tsx";
-import * as $14 from "./routes/test-header.tsx";
-import * as $$0 from "./islands/Countdown.tsx";
-import * as $$1 from "./islands/Counter.tsx";
+import * as $0 from "./routes/api/devices/door.ts";
+import * as $1 from "./routes/api/devices/dust.ts";
+import * as $2 from "./routes/api/devices/fluid-level.ts";
+import * as $3 from "./routes/api/devices/rack-temperature.ts";
+import * as $4 from "./routes/api/devices/smoke.ts";
+import * as $5 from "./routes/api/devices/tag.ts";
+import * as $6 from "./routes/api/devices/temperature.ts";
+import * as $7 from "./routes/api/login.ts";
+import * as $8 from "./routes/api/logout.ts";
+import * as $9 from "./routes/dust.tsx";
+import * as $10 from "./routes/entries.tsx";
+import * as $11 from "./routes/index.tsx";
+import * as $12 from "./routes/rack-temperatures.tsx";
+import * as $13 from "./routes/smoke.tsx";
+import * as $14 from "./routes/tags.tsx";
+import * as $15 from "./routes/temperature-humidity.tsx";
+import * as $16 from "./routes/test-components.tsx";
+import * as $17 from "./routes/water-level.tsx";
+import * as $$0 from "./islands/Hamburger.tsx";
 
 const manifest = {
   routes: {
-    "./routes/[testName].tsx": $0,
-    "./routes/about.tsx": $1,
-    "./routes/api/devices/door.ts": $2,
-    "./routes/api/devices/fluid-level.ts": $3,
-    "./routes/api/devices/rack-temperature.ts": $4,
-    "./routes/api/devices/smoke.ts": $5,
-    "./routes/api/devices/tag.ts": $6,
-    "./routes/api/devices/temperature.ts": $7,
-    "./routes/countdown.tsx": $8,
-    "./routes/devices.tsx": $9,
-    "./routes/github/[username].tsx": $10,
-    "./routes/greet/[name].tsx": $11,
-    "./routes/index.tsx": $12,
-    "./routes/search.tsx": $13,
-    "./routes/test-header.tsx": $14,
+    "./routes/api/devices/door.ts": $0,
+    "./routes/api/devices/dust.ts": $1,
+    "./routes/api/devices/fluid-level.ts": $2,
+    "./routes/api/devices/rack-temperature.ts": $3,
+    "./routes/api/devices/smoke.ts": $4,
+    "./routes/api/devices/tag.ts": $5,
+    "./routes/api/devices/temperature.ts": $6,
+    "./routes/api/login.ts": $7,
+    "./routes/api/logout.ts": $8,
+    "./routes/dust.tsx": $9,
+    "./routes/entries.tsx": $10,
+    "./routes/index.tsx": $11,
+    "./routes/rack-temperatures.tsx": $12,
+    "./routes/smoke.tsx": $13,
+    "./routes/tags.tsx": $14,
+    "./routes/temperature-humidity.tsx": $15,
+    "./routes/test-components.tsx": $16,
+    "./routes/water-level.tsx": $17,
   },
   islands: {
-    "./islands/Countdown.tsx": $$0,
-    "./islands/Counter.tsx": $$1,
+    "./islands/Hamburger.tsx": $$0,
   },
   baseUrl: import.meta.url,
   config,
