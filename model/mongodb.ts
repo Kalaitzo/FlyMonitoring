@@ -1,19 +1,15 @@
-// import { MongoClient } from "https://deno.land/x/mongo@v0.31.1/mod.ts";
 import { MongoClient } from "https://deno.land/x/atlas_sdk@v1.0.3/mod.ts";
-import { config } from "https://deno.land/std@0.167.0/dotenv/mod.ts";
+// import { config } from "https://deno.land/std@0.167.0/dotenv/mod.ts";
 
-const configData = await config();
-// const password = configData["ATLAS_PASS"]
-// const user = configData["ATLAS_USER"]
-// const host = configData["HOST"]
-const database = configData["DB"]
-const apiKey = configData["API_KEY"]
-const endpoint = configData["ENDPOINT"]
-const dataSource = configData["DATA_SOURCE"]
-// const database = Deno.env.get("DB")
-// const apiKey = Deno.env.get("API_KEY")
-// const endpoint = Deno.env.get("ENDPOINT")
-// const dataSource = Deno.env.get("DATA_SOURCE")
+// const configData = await config();
+// const database = configData["DB"]
+// const apiKey = configData["API_KEY"]
+// const endpoint = configData["ENDPOINT"]
+// const dataSource = configData["DATA_SOURCE"]
+const database = Deno.env.get("DB")
+const apiKey = Deno.env.get("API_KEY")
+const endpoint = Deno.env.get("ENDPOINT")
+const dataSource = Deno.env.get("DATA_SOURCE")
 
 // Connecting to a Mongo Atlas Database
 // const client = new MongoClient();
