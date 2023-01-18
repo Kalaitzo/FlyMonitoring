@@ -1,6 +1,7 @@
 // routes/api/login.ts
 
 import { Handlers } from "$fresh/server.ts"
+import { setCookie } from "std/http/cookie.ts";
 
 const USER = {
     username: 'admin',
