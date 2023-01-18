@@ -9,6 +9,7 @@ import { getCookies } from "std/http/cookie.ts"
 
 interface Data {
     isAllowed: boolean;
+    visible: boolean;
 }
 
 const values = {
@@ -22,18 +23,21 @@ const values = {
 export const handler: Handlers = {
     GET(req, ctx){
         const cookies = getCookies(req.headers);
-        return ctx.render!({ isAllowed: cookies.auth === 'bar'})
+        const mistake  = (cookies.mistake)
+            ? cookies.mistake === 'mistake'
+            : false
+        return ctx.render!({ isAllowed: cookies.auth === 'bar', visible: mistake})
     }
 }
 
 export default function Home({ data }: PageProps<Data>) {
-  return (
+    return (
       <div className={'flex h-screen flex-col bg-[#5C7EB5]'}>
           <Header active={"/"} flag={!!data.isAllowed}/>
           {!data.isAllowed
               // In case the user is NOT logged in!
               ? <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 sm:flex-row justify-around items-center"}>
-                  <SignIn/>
+                  <SignIn visible={data.visible}/>
                   <img src={"https://cdn-icons-png.flaticon.com/512/2974/2974498.png"}
                        alt={"Couldn't load image..."}
                        className={"w-1/4"}/>
@@ -51,5 +55,5 @@ export default function Home({ data }: PageProps<Data>) {
               </div>}
           <Footer/>
       </div>
-  );
+    );
 }

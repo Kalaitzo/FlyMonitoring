@@ -1,7 +1,6 @@
 // routes/api/login.ts
 
 import { Handlers } from "$fresh/server.ts"
-import { setCookie } from "std/http/cookie.ts"
 
 const USER = {
     username: 'admin',
@@ -35,6 +34,15 @@ export const handler: Handlers = {
         }
         else {
             const headers = new Headers();
+            setCookie(headers, {
+                name: 'mistake',
+                value: 'mistake',
+                maxAge: 1,
+                sameSite: "Lax",
+                domain: url.hostname.toString(),
+                path: "/",
+                secure: true
+            })
             headers.set("location", "/")
             return new Response(null, {
                 status: 303,

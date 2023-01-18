@@ -1,7 +1,14 @@
-export default function SignIn() {
+import Alert from "./Alert.tsx";
+
+type Props = {
+    visible: boolean
+};
+
+export default function SignIn({ visible }: Props ) {
     return (
         <div class="flex">
             <div class="bg-[#76A1E8] shadow-md rounded-xl px-8 pt-6 pb-8">
+                <Alert visible={visible}/>
                 <h2 class="text-2xl font-bold mb-2 text-gray-800 text-center">Sign In</h2>
                 <form action='/api/login' method='post'>
                     <div class="mb-4">
