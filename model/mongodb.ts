@@ -1,7 +1,7 @@
-// import { Bson, MongoClient } from "https://deno.land/x/mongo@v0.31.1/mod.ts";
+// import { MongoClient } from "https://deno.land/x/mongo@v0.31.1/mod.ts";
 import { MongoClient } from "https://deno.land/x/atlas_sdk@v1.0.3/mod.ts";
 // import { config } from "https://deno.land/std@0.167.0/dotenv/mod.ts";
-//
+
 // const configData = await config();
 // const password = configData["ATLAS_PASS"]
 // const user = configData["ATLAS_USER"]
@@ -14,6 +14,10 @@ const database = Deno.env.get("DB")
 const apiKey = Deno.env.get("API_KEY")
 const endpoint = Deno.env.get("ENDPOINT")
 const dataSource = Deno.env.get("DATA_SOURCE")
+console.log(database)
+console.log(apiKey)
+console.log(endpoint)
+console.log(dataSource)
 
 // Connecting to a Mongo Atlas Database
 // const client = new MongoClient();
