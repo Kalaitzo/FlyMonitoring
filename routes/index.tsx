@@ -6,6 +6,7 @@ import IndexPanel from "../components/IndexPanel.tsx";
 
 import { Handlers, PageProps } from "$fresh/server.ts"
 import { getCookies } from "std/http/cookie.ts"
+import { asset } from "$fresh/runtime.ts";
 
 interface Data {
     isAllowed: boolean;
@@ -38,7 +39,7 @@ export default function Home({ data }: PageProps<Data>) {
               // In case the user is NOT logged in!
               ? <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 sm:flex-row justify-around items-center"}>
                   <SignIn visible={data.visible}/>
-                  <img src={"https://cdn-icons-png.flaticon.com/512/2974/2974498.png"}
+                  <img src={asset('/securityLogo.png')}
                        alt={"Couldn't load image..."}
                        className={"w-1/4"}/>
                 </div>
@@ -49,7 +50,7 @@ export default function Home({ data }: PageProps<Data>) {
                               temperature={values.temperature.toString()}
                               water={values.water.toString()}
                               smoke={values.smoke.toString()}/>
-                  <img src={"https://cdn-icons-png.flaticon.com/512/2974/2974498.png"}
+                  <img src={asset('/securityLogo.png')}
                        alt={"Couldn't load image..."}
                        className={"w-1/4"}/>
               </div>}
