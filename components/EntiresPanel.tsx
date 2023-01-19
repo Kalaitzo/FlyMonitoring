@@ -13,7 +13,7 @@ export default function EntriesPanel({ entries }: data){
                          alt={ 'Entrance Icon' }
                          className={ 'w-12 h-12 '}/>
                     <div className = { 'self-center pl-3 text-lg' }>
-                        {item.value.slice(2)}
+                        {item.dateLastValueReported}
                     </div>
                 </div>
             ))}

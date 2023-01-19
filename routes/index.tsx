@@ -79,7 +79,6 @@ export const handler: Handlers = {
 }
 
 export default function Home({ data }: PageProps<Data>) {
-    console.log(data.readings)
     return (
       <div className={'flex h-screen flex-col bg-[#5C7EB5]'}>
           <Header active={"/"} flag={!!data.isAllowed}/>

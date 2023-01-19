@@ -3,10 +3,10 @@ import type { Handlers, PageProps } from "$fresh/server.ts";
 import { getCookies } from "std/http/cookie.ts";
 
 import { Header } from "../components/Header.tsx";
+import { asset } from "$fresh/src/runtime/utils.ts";
 import db from "../model/mongodb.ts";
 import DoorSensor from "../model/schemas/DoorSensor.ts";
 import EntriesPanel from "../components/EntiresPanel.tsx";
-import {asset} from "$fresh/src/runtime/utils.ts";
 import Footer from "../components/Footer.tsx";
 
 interface Data {
@@ -21,10 +21,10 @@ export const handler: Handlers = {
         if (cookies.auth === "bar") {
             // Get the last 15 possible entries then render the ones that occurred if the user is authenticated
             const entries = db.collection<DoorSensor>("DoorSensor")
-            const lastTenEntries = await entries.aggregate([{ $sort: { _id: -1 } }, { $limit: 15 }])
+            const lastFifteenEntries = await entries.aggregate([{ $sort: { _id: -1 } }, { $limit: 15 }])
             // Redirect the user to the requested page if he is authenticated
             const url = new URL(req.url);
-            return ctx.render!({path: url.pathname, isAllowed: true, entries: lastTenEntries});
+            return ctx.render!({path: url.pathname, isAllowed: true, entries: lastFifteenEntries});
         } else {
             // In case the user isn't authenticated redirect him to the index page
             const url = new URL(req.url);
@@ -36,7 +36,7 @@ export const handler: Handlers = {
 
 export default function EntriesPage({ data }: PageProps<Data>) {
     const {path, isAllowed, entries} = data;
-    const panelEntries = entries.filter( entrance => entrance.value !== "0" )
+    const panelEntries = entries.filter( entrance => entrance.value === "1" )
     return (
         <div className={ 'flex h-screen flex-col bg-[#5C7EB5]' }>
             <Header active={path} flag={isAllowed}/>
