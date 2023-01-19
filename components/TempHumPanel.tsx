@@ -8,6 +8,7 @@ export default function TempHumPanel({temperatures}: data){
     const modIndex = temperatures[0].value.indexOf('%')
     const temperature = temperatures[0].value.slice(1,modIndex)
     const humidity = (temperatures[0].value.slice(modIndex+2)*100).toString()
+    const date = temperatures[0].dateLastValueReported.toString()
 
     const temperatureValue: number = +temperature;
     const temperatureSource = temperatureValue>=25? '/high-temperature.png': '/thermometer.png';
@@ -18,14 +19,16 @@ export default function TempHumPanel({temperatures}: data){
             value: temperature,
             src: temperatureSource,
             alt: 'Temperature icon',
-            unit: ' C ',
+            unit: ' C',
+            date:date
         },
         {
             title: 'Humidity: ',
             value: humidity,
             src: '/humidity.png',
             alt: 'Humidity icon',
-            unit: ' %',
+            unit: '%',
+            date:date
         }
     ]
 
@@ -37,7 +40,7 @@ export default function TempHumPanel({temperatures}: data){
                          alt={ item.alt }
                          className={ 'w-12 h-12 ' }/>
                     <div className={ 'self-center pl-3 text-lg' }>
-                        {item.title + item.value + item.unit}
+                        {item.title + item.value + item.unit + ' ' + item.date}
                     </div>
                 </div>
             ))}

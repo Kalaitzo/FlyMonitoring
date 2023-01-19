@@ -32,7 +32,7 @@ export const handler: Handlers = {
             setCookie(headers, {
                 name: "auth",
                 value: "bar",
-                maxAge: 120,
+                maxAge: 300,
                 sameSite: "Lax",
                 domain: url.hostname.toString(),
                 path: "/",

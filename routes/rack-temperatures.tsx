@@ -6,27 +6,26 @@ import Footer from "../components/Footer.tsx";
 import type { Handlers, PageProps } from "$fresh/server.ts";
 import { getCookies } from "std/http/cookie.ts";
 import { asset } from "$fresh/runtime.ts";
+import db from "../model/mongodb.ts";
+import RackTemperatureSensors from "../model/schemas/RackTemperatureSensors.ts";
 
 interface Data {
     path: string;
     isAllowed: boolean;
-    temps:Record<string, number>
+    temps: Array<Record<any, any>>
 }
 
 export const handler: Handlers = {
-    GET(req, ctx) {
+    async GET(req, ctx) {
         const cookies = getCookies(req.headers);
         if (cookies.auth === "bar") {
+            // Get the last 5 temperature for each side of the rack then render them if the user is authenticated
+            const temperatures = db.collection<RackTemperatureSensors>("RackTemperatureSensors")
+            const lastFiveTemperatures = await temperatures.aggregate([{ $sort: { _id: -1 } }, { $limit: 5 }])
+
+            // Redirect the user to the requested page if he is authenticated
             const url = new URL(req.url);
-            const temps = {
-                temp1: 18,
-                temp2: 39,
-                temp3: 4,
-                temp4: 21,
-                temp5: 22,
-                temp6: 13
-            }
-            return ctx.render!({path: url.pathname, isAllowed: true, temps: temps});
+            return ctx.render!({path: url.pathname, isAllowed: true, temps: lastFiveTemperatures});
         } else {
             const url = new URL(req.url);
             url.pathname = "/";
@@ -41,12 +40,7 @@ export default function RackTemperaturesPage({ data }: PageProps<Data>) {
         <div className={'flex h-screen flex-col bg-[#5C7EB5]'}>
             <Header active={path} flag={isAllowed}/>
             <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 sm:flex-row justify-around items-center"}>
-                <RackTempPanel temp1={temps.temp1}
-                               temp2={temps.temp2}
-                               temp3={temps.temp3}
-                               temp4={temps.temp4}
-                               temp5={temps.temp5}
-                               temp6={temps.temp6}/>
+                <RackTempPanel temps={temps}/>
                 <img src={asset('/securityLogo.png')}
                      alt={"Couldn't load image..."}
                      className={"w-1/4"}/>

@@ -1,71 +1,62 @@
 import {asset} from "$fresh/runtime.ts";
 
 type data = {
-    temp1: number;
-    temp2: number;
-    temp3: number;
-    temp4: number;
-    temp5: number;
-    temp6: number;
+    temps: Record<any, any>
 }
 
-export default function RackTempPanel({temp1, temp2, temp3, temp4, temp5, temp6}: data) {
-    const temp1Value: number = +temp1
-    const temp2Value: number = +temp2
-    const temp3Value: number = +temp3
-    const temp4Value: number = +temp4
-    const temp5Value: number = +temp5
-    const temp6Value: number = +temp6
-
-    const temperatureSource1 = temp1Value>=25? '/high-temperature.png': '/thermometer.png';
-    const temperatureSource2 = temp2Value>=25? '/high-temperature.png': '/thermometer.png';
-    const temperatureSource3 = temp3Value>=25? '/high-temperature.png': '/thermometer.png';
-    const temperatureSource4 = temp4Value>=25? '/high-temperature.png': '/thermometer.png';
-    const temperatureSource5 = temp5Value>=25? '/high-temperature.png': '/thermometer.png';
-    const temperatureSource6 = temp6Value>=25? '/high-temperature.png': '/thermometer.png';
+export default function RackTempPanel({temps}: data) {
+    const sideTemps = temps[0].value.split('%')
+    const values = sideTemps.map((item: string) => (item.slice(3)))
+    const date = temps[0].dateLastValueReported
 
     const menus = [
         {
             title: 'Rack Temperature 1: ',
-            value: temp1,
-            src: temperatureSource1,
+            value: values[0],
+            src: values[0]<60? '/thermometer.png': '/high-temperature.png',
             alt: 'Temperature icon',
-            unit: ' C '
+            unit: ' C',
+            date: date
         },
         {
             title: 'Rack Temperature 2: ',
-            value: temp2,
-            src: temperatureSource2,
+            value: values[1],
+            src: values[1]<60? '/thermometer.png': '/high-temperature.png',
             alt: 'Temperature icon',
-            unit: ' C '
+            unit: ' C',
+            date: date
         },
         {
             title: 'Rack Temperature 3: ',
-            value: temp3,
-            src: temperatureSource3,
+            value: values[2],
+            src: values[2]<60? '/thermometer.png': '/high-temperature.png',
             alt: 'Temperature icon',
-            unit: ' C '
+            unit: ' C',
+            date: date
         },
         {
             title: 'Rack Temperature 4: ',
-            value: temp4,
-            src: temperatureSource4,
+            value: values[3],
+            src: values[3]<60? '/thermometer.png': '/high-temperature.png',
             alt: 'Temperature icon',
-            unit: ' C '
+            unit: ' C',
+            date: date
         },
         {
             title: 'Rack Temperature 5: ',
-            value: temp5,
-            src: temperatureSource5,
+            value: values[4],
+            src: values[4]<60? '/thermometer.png': '/high-temperature.png',
             alt: 'Temperature icon',
-            unit: ' C '
+            unit: ' C',
+            date: date
         },
         {
             title: 'Rack Temperature 6: ',
-            value: temp6,
-            src: temperatureSource6,
+            value: values[5],
+            src: values[5]<60? '/thermometer.png': '/high-temperature.png',
             alt: 'Temperature icon',
-            unit: ' C '
+            unit: ' C ',
+            date: date
         },
     ]
 
@@ -77,7 +68,7 @@ export default function RackTempPanel({temp1, temp2, temp3, temp4, temp5, temp6}
                          alt={ item.alt }
                          className={ 'w-12 h-12 '}/>
                     <div className={ 'self-center pl-3 text-lg '}>
-                        {item.title+item.value+item.unit}
+                        {item.title + item.value + item.unit + item.date}
                     </div>
                 </div>
             ))}

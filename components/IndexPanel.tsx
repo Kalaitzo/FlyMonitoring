@@ -34,7 +34,7 @@ export default function IndexPanel({ temperature, humidity, dust, smoke, water }
             value: humidity,
             src: humiditySource,
             alt: 'Humidity icon',
-            unit: ' %',
+            unit: '%',
             href: '/temperature-humidity'
         },
         {
@@ -42,7 +42,7 @@ export default function IndexPanel({ temperature, humidity, dust, smoke, water }
             value: dust,
             src: dustSource,
             alt: 'Dust icon',
-            unit: ' %',
+            unit: '%',
             href: '/dust'
         },
         {

@@ -90,6 +90,7 @@
     "https://deno.land/std@0.171.0/_util/asserts.ts": "178dfc49a464aee693a7e285567b3d0b555dc805ff490505a8aae34f9cfb1462",
     "https://deno.land/std@0.171.0/datetime/to_imf.ts": "851d072a1c86c7ec34c753e61b1951ceda50c9da805b170a0ecaea3b024dd266",
     "https://deno.land/std@0.171.0/http/cookie.ts": "4afa70654aee951b1b5a82b8939566843bf6eea605a961c7abc8e9705afd0a20",
+    "https://deno.land/std@0.171.0/node/_crypto/crypto_browserify/asn1.js/constants/der.js": "57181db0519bb3864a6cdf4e7eb9bfeb1bf5f80605187fbe80e27083b473e367",
     "https://deno.land/x/atlas_sdk@v1.0.3/auth_types.d.ts": "aab7332e7919c9732797b3298237d3c88fba06d93374299a4ada95f75b23e890",
     "https://deno.land/x/atlas_sdk@v1.0.3/client.ts": "f60e13e3efc0ded373b91c477810ac7a084b02a0ad6c70c24eeb1dfe178c0d4b",
     "https://deno.land/x/atlas_sdk@v1.0.3/deps.ts": "4857d7e773c9280ad1f0d7545dfe649d4ec70d9bfc753332ab3d7fb19e612424",

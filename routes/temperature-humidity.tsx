@@ -22,6 +22,7 @@ export const handler: Handlers = {
             // Get the last 15 temperature readings then render them if the user is authenticated
             const temperatures = db.collection<TemperatureSensor>('TemperatureSensor')
             const lastFifteenTemperatures = await temperatures.aggregate([{ $sort: { _id: -1 } }, { $limit: 15 }])
+
             // Redirect the user to the requested page if he is authenticated
             const url = new URL(req.url);
             return ctx.render!({path: url.pathname, isAllowed: true, temperatures: lastFifteenTemperatures})
