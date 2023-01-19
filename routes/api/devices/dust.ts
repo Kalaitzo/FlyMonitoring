@@ -1,4 +1,4 @@
-// routes/api/devices/fluid-level.ts
+// routes/api/devices/dust.ts
 
 import { Handlers } from '$fresh/server.ts';
 import db from "../../../model/mongodb.ts";

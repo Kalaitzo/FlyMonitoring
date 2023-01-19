@@ -1,4 +1,4 @@
-// routes/rack-temperatures.tsx
+// routes/dust.tsx
 import type { Handlers, PageProps } from "$fresh/server.ts";
 import { getCookies } from "std/http/cookie.ts";
 import { Header } from "../components/Header.tsx";

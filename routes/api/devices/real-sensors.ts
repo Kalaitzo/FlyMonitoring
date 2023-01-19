@@ -1,4 +1,4 @@
-// routes/api/devices/rack-temperature.ts
+// routes/api/devices/real-sensors.ts
 
 import { Handlers } from "$fresh/server.ts";
 // import db from '../../../model/mongodb.ts'

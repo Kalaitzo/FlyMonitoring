@@ -5,7 +5,6 @@ type data = {
 }
 
 export default function EntriesPanel({ entries }: data){
-    console.log(entries)
     return(
         <div className={ 'flex flex-col w-max h-max bg-[#28374F] p-10 rounded-lg text-gray-50 justify-center gap-6' }>
             {entries.map((item) => (

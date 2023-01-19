@@ -1,3 +1,4 @@
+// routes/api/logout.ts
 import { Handlers } from "$fresh/server.ts";
 import { deleteCookie } from "std/http/cookie.ts";
 
