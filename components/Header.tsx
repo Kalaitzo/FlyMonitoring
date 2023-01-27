@@ -51,7 +51,7 @@ export function Header({ active, flag }: Props, ) {
             <div>
                 {flag
                     ? <a href={'/api/logout'}>
-                        <button className={"bg-[#76A1E8] hover:bg-[#5C7EB5] text-white rounded px-6 py-2.5"}>
+                        <button className={"bg-[#76A1E8] hover:bg-[#5C7EB5] text-gray-50 rounded px-6 py-2.5"}>
                             Log Out
                         </button>
                       </a>

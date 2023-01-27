@@ -64,7 +64,7 @@ export default function IndexPanel({ temperature, humidity, dust, smoke, water }
     ];
 
     return(
-        <div className={ 'flex flex-col w-max h-max bg-[#28374F] p-7 rounded-lg text-gray-50 justify-center gap-6' }>
+        <div className={ 'flex flex-col w-max h-max bg-[#28374F] p-5 rounded-lg text-gray-50 justify-center gap-6' }>
             {menus.map((item) => (
                 <div className={ 'flex flex-row' }>
                     <a href={item.href}>

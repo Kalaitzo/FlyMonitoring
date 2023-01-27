@@ -49,7 +49,7 @@ export const handler: Handlers = {
             // Take only the values to present them
             const modIndex = tempHumData[0].value.indexOf('%')
             temp = tempHumData[0].value.slice(1,modIndex)
-            hum = tempHumData[0].value.slice(modIndex+2)*100
+            hum = (tempHumData[0].value.slice(modIndex+2)*100).toFixed(2)
 
             // Dust Sensor
             const dustData = await getDataFromSensor('DustSensor')

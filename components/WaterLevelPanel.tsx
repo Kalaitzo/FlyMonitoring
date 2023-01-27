@@ -6,7 +6,7 @@ type data = {
 
 export default function WaterLevelPanel({ waters }: data){
     return(
-        <div className={ 'flex flex-col w-max h-max bg-[#28374F] p-7 rounded-lg text-gray-50 justify-center gap-6' }>
+        <div className={ 'flex flex-col w-max h-max bg-[#28374F] p-5 rounded-lg text-gray-50 justify-center gap-6' }>
             {waters.map((item:Record<any, any>) => (
                 <div className={ 'flex flex-row' }>
                     <img src={ (item.value==="1")? asset("/water.png"): asset("/no-water.png")  }

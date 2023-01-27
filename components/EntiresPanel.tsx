@@ -9,7 +9,7 @@ export default function EntriesPanel({ entries }: data){
     return(
         <>
             {entries.length > 0
-                ? <div className={ 'flex flex-col w-max h-max bg-[#28374F] p-7 rounded-lg text-gray-50 justify-center gap-6' }>
+                ? <div className={ 'flex flex-col w-max h-max bg-[#28374F] p-5 rounded-lg text-gray-50 justify-center gap-6' }>
                     {entries.map((item) => (
                         <div className = { 'flex flex-row' }>
                             <img src={ asset('/entrance.png') }

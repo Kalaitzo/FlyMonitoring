@@ -13,15 +13,16 @@ import * as $6 from "./routes/api/devices/tag.ts";
 import * as $7 from "./routes/api/devices/temperature.ts";
 import * as $8 from "./routes/api/login.ts";
 import * as $9 from "./routes/api/logout.ts";
-import * as $10 from "./routes/dust.tsx";
-import * as $11 from "./routes/entries.tsx";
-import * as $12 from "./routes/index.tsx";
-import * as $13 from "./routes/rack-temperatures.tsx";
-import * as $14 from "./routes/smoke.tsx";
-import * as $15 from "./routes/tags.tsx";
-import * as $16 from "./routes/temperature-humidity.tsx";
-import * as $17 from "./routes/test-components.tsx";
-import * as $18 from "./routes/water-level.tsx";
+import * as $10 from "./routes/api/temperature-actuator.ts";
+import * as $11 from "./routes/dust.tsx";
+import * as $12 from "./routes/entries.tsx";
+import * as $13 from "./routes/index.tsx";
+import * as $14 from "./routes/rack-temperatures.tsx";
+import * as $15 from "./routes/smoke.tsx";
+import * as $16 from "./routes/tags.tsx";
+import * as $17 from "./routes/temperature-humidity.tsx";
+import * as $18 from "./routes/test-components.tsx";
+import * as $19 from "./routes/water-level.tsx";
 import * as $$0 from "./islands/Hamburger.tsx";
 
 const manifest = {
@@ -36,15 +37,16 @@ const manifest = {
     "./routes/api/devices/temperature.ts": $7,
     "./routes/api/login.ts": $8,
     "./routes/api/logout.ts": $9,
-    "./routes/dust.tsx": $10,
-    "./routes/entries.tsx": $11,
-    "./routes/index.tsx": $12,
-    "./routes/rack-temperatures.tsx": $13,
-    "./routes/smoke.tsx": $14,
-    "./routes/tags.tsx": $15,
-    "./routes/temperature-humidity.tsx": $16,
-    "./routes/test-components.tsx": $17,
-    "./routes/water-level.tsx": $18,
+    "./routes/api/temperature-actuator.ts": $10,
+    "./routes/dust.tsx": $11,
+    "./routes/entries.tsx": $12,
+    "./routes/index.tsx": $13,
+    "./routes/rack-temperatures.tsx": $14,
+    "./routes/smoke.tsx": $15,
+    "./routes/tags.tsx": $16,
+    "./routes/temperature-humidity.tsx": $17,
+    "./routes/test-components.tsx": $18,
+    "./routes/water-level.tsx": $19,
   },
   islands: {
     "./islands/Hamburger.tsx": $$0,
