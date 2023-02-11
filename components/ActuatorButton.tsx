@@ -4,7 +4,6 @@ export default function ActuatorButton(){
             <button class="bg-[#76A1E8]
                            hover:bg-[#5C7EB5]
                            text-gray-50
-                           font-bold
                            py-2
                            px-4
                            rounded
