@@ -4,7 +4,7 @@ interface RealSensorsSmart {
     deviceCategory: Array<string>
     controlledProperty: Array<string>
     value: string
-    dateLastValueRecorded: string
+    dateLastValueReported: string
     batteryLevel: number;
 }
 

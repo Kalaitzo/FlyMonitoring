@@ -35,7 +35,7 @@ export const handler: Handlers = {
                     controlledProperty: ['temperature', 'humidity'],
                     batteryLevel: data.batteryLevel,
                     value: value,
-                    dateLastValueRecorded: data.time
+                    dateLastValueReported: data.time.toString()
                 };
 
                 const insertId = await realSensors.insertOne(smartData);
