@@ -25,7 +25,7 @@ export const handler: Handlers = {
             // Open the collection to store the data that the rack temperature sensor sent
             const realSensors = db.collection<RealSensorsSmart>("RealSensors")
             // Change the data to follow the smart data models structure
-            const value = 'T' + data.object.ambient_temperature + '%H' + data.object.ambient_temperature;
+            const value = 'T' + data.object.ambient_temperature + '%H' + data.object.relative_humidity;
 
             const smartData:RealSensorsSmart = {
                 id: data.deviceInfo.tags.deviceId,
@@ -37,32 +37,9 @@ export const handler: Handlers = {
                 dateLastValueRecorded: data.time
             };
 
-            // if (data.batteryLevel) {
-            //     smartData = {
-            //         id: data.deviceInfo.tags.deviceId,
-            //         type: "Device",
-            //         deviceCategory: ['sensor'],
-            //         controlledProperty: ['temperature', 'humidity'],
-            //         batteryLevel: data.batteryLevel,
-            //         value: value,
-            //         dateLastValueRecorded: data.time
-            //     };
-            // }
-            // else {
-            //     smartData = {
-            //         id: data.deviceInfo.tags.deviceId,
-            //         type: "Device",
-            //         deviceCategory: ['sensor'],
-            //         controlledProperty: ['temperature', 'humidity'],
-            //         value: value,
-            //         dateLastValueRecorded: data.time
-            //     };
-            // }
-            // Store the data
             const insertId = await realSensors.insertOne(smartData);
 
-            console.log('Smart Data: ' + smartData) // Insert This after we check that it is good
-            console.log('Data: ' + data);
+            console.log('Smart Data: ' + sensorPayload) // Insert This after we check that it is good
         }
         return new Response('I got the post request from the real sensors')
     }
