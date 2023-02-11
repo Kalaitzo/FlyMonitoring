@@ -11,25 +11,7 @@ const apiKey = Deno.env.get("API_KEY")
 const endpoint = Deno.env.get("ENDPOINT")
 const dataSource = Deno.env.get("DATA_SOURCE")
 
-// Connecting to a Mongo Atlas Database
-// const client = new MongoClient();
 
-// await client.connect({
-//     db: database,
-//     tls: true,
-//     servers: [
-//         {
-//             host: host,
-//             port: 27017,
-//         },
-//     ],
-//     credential: {
-//         username: user,
-//         password: password,
-//         db: database,
-//         mechanism: "SCRAM-SHA-1",
-//     }
-// });
 
 const client = new MongoClient({
     endpoint: endpoint,

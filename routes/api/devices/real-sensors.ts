@@ -27,19 +27,21 @@ export const handler: Handlers = {
             // Change the data to follow the smart data models structure
             const value = 'T' + data.object.ambient_temperature + '%H' + data.object.relative_humidity;
 
-            const smartData:RealSensorsSmart = {
-                id: data.deviceInfo.tags.deviceId,
-                type: "Device",
-                deviceCategory: ['sensor'],
-                controlledProperty: ['temperature', 'humidity'],
-                batteryLevel: data.batteryLevel,
-                value: value,
-                dateLastValueRecorded: data.time
-            };
+            if (data.object){
+                const smartData:RealSensorsSmart = {
+                    id: data.deviceInfo.tags.deviceId,
+                    type: "Device",
+                    deviceCategory: ['sensor'],
+                    controlledProperty: ['temperature', 'humidity'],
+                    batteryLevel: data.batteryLevel,
+                    value: value,
+                    dateLastValueRecorded: data.time
+                };
 
-            const insertId = await realSensors.insertOne(smartData);
+                const insertId = await realSensors.insertOne(smartData);
+            }
 
-            console.log('Smart Data: ' + sensorPayload) // Insert This after we check that it is good
+            console.log('Sensor Payload: ' + sensorPayload) // Insert This after we check that it is good
         }
         return new Response('I got the post request from the real sensors')
     }

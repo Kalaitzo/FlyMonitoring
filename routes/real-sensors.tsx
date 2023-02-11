@@ -20,7 +20,7 @@ export const handler: Handlers = {
         if (cookies.auth === 'bar'){
             // Get the last data from the real sensors
             const realSensors =  db.collection<RealSensors>("RealSensors")
-            const realSensorsData = await realSensors.aggregate([{ $sort: { _id:-1 }}, { $limit:2 } ])
+            const realSensorsData = await realSensors.aggregate([{ $sort: { _id:-1 }}, { $limit:1 } ])
             // Redirect the user to the requested page if he is authenticated
             const url = new URL(req.url);
             return ctx.render!({path: url.pathname, isAllowed:true, readings:realSensorsData})
