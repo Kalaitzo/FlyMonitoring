@@ -1,7 +1,6 @@
 // routes/entries.tsx
 import type { Handlers, PageProps } from "$fresh/server.ts";
 import { getCookies } from "std/http/cookie.ts";
-
 import { Header } from "../components/Header.tsx";
 import { asset } from "$fresh/src/runtime/utils.ts";
 import db from "../model/mongodb.ts";

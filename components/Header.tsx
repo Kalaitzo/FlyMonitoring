@@ -17,6 +17,7 @@ export function Header({ active, flag }: Props, ) {
         { name: "Smoke", href: "/smoke"},
         { name: "Tags", href: "/tags"},
         { name: "Entries", href: "/entries" },
+        { name: 'Real Sensors', href: '/real-sensors'}
     ];
 
     return (

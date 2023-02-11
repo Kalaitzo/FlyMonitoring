@@ -12,6 +12,7 @@ export default function Footer() {
                 { name: "Smoke", href: "/smoke" },
                 { name: "Tags", href: "/tags"},
                 { name: "Entries", href: "/entries" },
+                { name: "Real Sensors", href: 'real-sensors'}
             ],
         },
         {

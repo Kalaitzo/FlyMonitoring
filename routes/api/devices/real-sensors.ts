@@ -23,11 +23,36 @@ export const handler: Handlers = {
             const data: RealSensors = JSON.parse(sensorPayload)
             // Open the collection to store the data that the rack temperature sensor sent
             const realSensors = db.collection<RealSensors>("RealSensors")
+            // Change the data to follow the smart data models structure
+            let smartData;
+            const value = 'T' + data.object.ambient_temperature + '%H' + data.object.ambient_temperature;
+
+            if (data.batteryLevel) {
+                smartData = {
+                    id: data.deviceInfo.tags.deviceId,
+                    type: "Device",
+                    deviceCategory: ['sensor'],
+                    controlledProperty: ['temperature', 'humidity'],
+                    batteryLevel: data.batteryLevel,
+                    value: value,
+                    dateLastValueRecorded: data.time
+                };
+            }
+            else {
+                smartData = {
+                    id: data.deviceInfo.tags.deviceId,
+                    type: "Device",
+                    deviceCategory: ['sensor'],
+                    controlledProperty: ['temperature', 'humidity'],
+                    value: value,
+                    dateLastValueRecorded: data.time
+                };
+            }
             // Store the data
             const insertId = await realSensors.insertOne(data);
 
-            console.log('Data: ' + sensorPayload);
-            console.log(insertId);
+            console.log('Smart Data: ' + smartData) // Insert This after we check that it is good
+            console.log('Data: ' + data);
         }
         return new Response('I got the post request from the real sensors')
     }
