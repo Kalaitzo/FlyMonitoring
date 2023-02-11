@@ -1,8 +1,8 @@
 // routes/api/devices/real-sensors.ts
 
 import { Handlers } from "$fresh/server.ts";
-// import db from '../../../model/mongodb.ts'
-// import RackTemperatureSensors from "../../../model/schemas/RackTemperatureSensors.ts";
+import db from '../../../model/mongodb.ts'
+import RealSensors from "../../../model/schemas/RealSensors.ts";
 
 export const handler: Handlers = {
      async POST(req: Request){
@@ -19,16 +19,15 @@ export const handler: Handlers = {
         for await (const chunk of payload) {
 
             const sensorPayload = decoder.decode((chunk))
-            // // Decode the bytes into a string and then parse it as a JSON
-            // const data: RackTemperatureSensors = JSON.parse(decoder.decode(chunk))
-            //
-            // // Open the collection to store the data that the rack temperature sensor sent
-            // const rackTemperaturesSensors = db.collection<RackTemperatureSensors>("RackTemperatureSensors")
-            //
-            // // Store the data
-            // const insertId = await rackTemperaturesSensors.insertOne(data);
+            // Decode the bytes into a string and then parse it as a JSON
+            const data: RealSensors = JSON.parse(sensorPayload)
+            // Open the collection to store the data that the rack temperature sensor sent
+            const realSensors = db.collection<RealSensors>("RealSensors")
+            // Store the data
+            const insertId = await realSensors.insertOne(data);
 
-            console.log('Data' + sensorPayload);
+            console.log('Data: ' + sensorPayload);
+            console.log(insertId);
         }
         return new Response('I got the post request from the real sensors')
     }
