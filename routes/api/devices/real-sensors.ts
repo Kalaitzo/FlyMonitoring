@@ -18,9 +18,9 @@ export const handler: Handlers = {
         const decoder =  new TextDecoder()
 
         for await (const chunk of payload) {
-
+            // Decode the bytes
             const sensorPayload = decoder.decode((chunk))
-            // Decode the bytes into a string and then parse it as a JSON
+            // Parse it as a JSON
             const data: RealSensors = JSON.parse(sensorPayload)
             // Open the collection to store the data that the rack temperature sensor sent
             const realSensors = db.collection<RealSensorsSmart>("RealSensors")
@@ -39,9 +39,10 @@ export const handler: Handlers = {
                 };
 
                 const insertId = await realSensors.insertOne(smartData);
+                console.log('Insert Id:' + insertId)
             }
 
-            console.log('Sensor Payload: ' + sensorPayload) // Insert This after we check that it is good
+            console.log('Sensor Payload: ' + sensorPayload)
         }
         return new Response('I got the post request from the real sensors')
     }
