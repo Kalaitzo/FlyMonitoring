@@ -35,7 +35,6 @@ export const handler: Handlers = {
 
 export default function RealSensorsPage({ data }: PageProps<Data>){
     const {path, isAllowed, readings} = data
-    console.log(readings)
     return(
         <div className={ 'flex h-screen flex-col bg-[#5C7EB5' }>
             <Header active={path} flag={isAllowed}/>
