@@ -7,6 +7,7 @@ import FluidLevelSensor from "../model/schemas/FluidLevelSensor.ts";
 import WaterLevelPanel from "../components/WaterLevelPanel.tsx";
 import {asset} from "$fresh/src/runtime/utils.ts";
 import Footer from "../components/Footer.tsx";
+import DeviceControlPanel from "../components/DeviceControlPanel.tsx";
 
 interface Data {
     path: string;
@@ -35,14 +36,16 @@ export const handler: Handlers = {
 
 export default function WaterLevelPage({ data }: PageProps<Data>) {
     const {path, isAllowed, waterLevels} = data;
+    console.log(waterLevels)
     return (
         <div className={ 'flex h-screen flex-col bg-[#5C7EB5]' }>
             <Header active={path} flag={isAllowed}/>
             <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 sm:flex-row justify-around items-center"}>
                 <WaterLevelPanel waters={waterLevels}/>
+                <DeviceControlPanel lastPayload={waterLevels[0]}/>
                 <img src={asset('/securityLogo.png')}
                      alt={"Couldn't load image..."}
-                     className={"w-1/4"}/>
+                     className={"w-2/4 md:w-1/4"}/>
             </div>
             <Footer/>
         </div>

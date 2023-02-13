@@ -7,6 +7,7 @@ import db from "../model/mongodb.ts";
 import DoorSensor from "../model/schemas/DoorSensor.ts";
 import EntriesPanel from "../components/EntiresPanel.tsx";
 import Footer from "../components/Footer.tsx";
+import DeviceControlPanel from "../components/DeviceControlPanel.tsx";
 
 interface Data {
     path: string;
@@ -41,9 +42,10 @@ export default function EntriesPage({ data }: PageProps<Data>) {
             <Header active={path} flag={isAllowed}/>
             <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 sm:flex-row justify-around items-center"}>
                 <EntriesPanel entries={panelEntries}/>
+                <DeviceControlPanel lastPayload={panelEntries[0]}/>
                 <img src={asset('/securityLogo.png')}
                      alt={"Couldn't load image..."}
-                     className={"w-1/4"}/>
+                     className={"w-2/4 md:w-1/4"}/>
             </div>
             <Footer/>
         </div>

@@ -8,6 +8,7 @@ import { getCookies } from "std/http/cookie.ts";
 import { asset } from "$fresh/runtime.ts";
 import db from "../model/mongodb.ts";
 import RackTemperatureSensors from "../model/schemas/RackTemperatureSensors.ts";
+import DeviceControlPanel from "../components/DeviceControlPanel.tsx";
 
 interface Data {
     path: string;
@@ -41,9 +42,10 @@ export default function RackTemperaturesPage({ data }: PageProps<Data>) {
             <Header active={path} flag={isAllowed}/>
             <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 sm:flex-row justify-around items-center"}>
                 <RackTempPanel temps={temps}/>
+                <DeviceControlPanel lastPayload={temps[0]}/>
                 <img src={asset('/securityLogo.png')}
                      alt={"Couldn't load image..."}
-                     className={"w-1/4"}/>
+                     className={"w-2/4 md:w-1/4"}/>
             </div>
             <Footer/>
         </div>

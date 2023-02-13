@@ -14,9 +14,9 @@ export default function DeviceControlPanel({ lastPayload }:data) {
     if(cntProp.length>1){
         let text = '';
         for (const value of cntProp){
-            text = text + value.toString() + ' '
+            text = text + value.toString() + ', '
         }
-        lastPayload.controlledProperty = text
+        lastPayload.controlledProperty = text.slice(0,-2)
     }
 
     const arr = []
@@ -45,7 +45,7 @@ export default function DeviceControlPanel({ lastPayload }:data) {
                 <div className={"text-xl self-center"}>Device Control</div>
                 <div className={"w-3/4 h-0.5 bg-gray-50 self-center"}></div>
             </div>
-            <div className={ 'flex flex-col px-5 pt-5 text-gray-50 self-center gap-2 text-lg' }>
+            <div className={ 'flex flex-col px-5 pt-5 text-gray-50 self-center gap-3 text-lg' }>
                 {arr}
             </div>
         </div>

@@ -7,6 +7,7 @@ import SmokeSensor from "../model/schemas/SmokeSensor.ts";
 import SmokePanel from "../components/SmokePanel.tsx";
 import Footer from "../components/Footer.tsx";
 import {asset} from "$fresh/src/runtime/utils.ts";
+import DeviceControlPanel from "../components/DeviceControlPanel.tsx";
 
 interface Data {
     path: string;
@@ -40,9 +41,10 @@ export default function SmokePage({ data }: PageProps<Data>) {
             <Header active={path} flag={isAllowed}/>
             <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 sm:flex-row justify-around items-center"}>
                 <SmokePanel smokeDetections={smokeDetections}/>
+                <DeviceControlPanel lastPayload={smokeDetections[0]}/>
                 <img src={asset('/securityLogo.png')}
                      alt={"Couldn't load image..."}
-                     className={"w-1/4"}/>
+                     className={"w-2/4 md:w-1/4"}/>
             </div>
             <Footer/>
         </div>

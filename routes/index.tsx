@@ -88,7 +88,7 @@ export default function Home({ data }: PageProps<Data>) {
                   <SignIn visible={data.visible}/>
                   <img src={asset('/securityLogo.png')}
                        alt={"Couldn't load image..."}
-                       className={"w-1/4"}/>
+                       className={"w-2/4 md:w-1/4"}/>
                 </div>
               // In case the user is logged in!
               : <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 sm:flex-row justify-around items-center"}>
@@ -99,7 +99,7 @@ export default function Home({ data }: PageProps<Data>) {
                               smoke={data.readings.smoke.toString()}/>
                   <img src={asset('/securityLogo.png')}
                        alt={"Couldn't load image..."}
-                       className={"w-1/4"}/>
+                       className={"w-2/4 md:w-1/4"}/>
               </div>}
           <Footer/>
       </div>
