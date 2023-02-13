@@ -25,15 +25,31 @@ export const handler: Handlers = {
             // Open the collection to store the data that the rack temperature sensor sent
             const realSensors = db.collection<RealSensorsSmart>("RealSensors")
             // Change the data to follow the smart data models structure
-            const value = 'T' + data.object.ambient_temperature + '%H' + data.object.relative_humidity;
+            if (data.object.relative_humidity && data.object.ambient_temperature){
 
-            if (data.object){
+                const value = 'T' + data.object.ambient_temperature + '%H' + data.object.relative_humidity;
+
                 const smartData:RealSensorsSmart = {
                     id: data.deviceInfo.tags.deviceId,
                     type: "Device",
                     deviceCategory: ['sensor'],
-                    controlledProperty: ['temperature', 'humidity'],
-                    batteryLevel: data.batteryLevel,
+                    controlledProperty: ['temperature', 'humidity', 'movementActivity'],
+                    value: value,
+                    dateLastValueReported: data.time.toString()
+                };
+
+                const insertId = await realSensors.insertOne(smartData);
+                console.log('Insert Id:' + insertId)
+            }
+            // Change the data to follow the smart data models structure
+            if (data.object.motion_event_state){
+                const value = data.object.motion_event_state==="Detected"? "1": "0"
+
+                const smartData:RealSensorsSmart = {
+                    id: data.deviceInfo.tags.deviceId,
+                    type: "Device",
+                    deviceCategory: ['sensor'],
+                    controlledProperty: ['temperature', 'humidity', 'movementActivity'],
                     value: value,
                     dateLastValueReported: data.time.toString()
                 };

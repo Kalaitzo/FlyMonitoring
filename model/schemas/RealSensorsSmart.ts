@@ -5,7 +5,6 @@ interface RealSensorsSmart {
     controlledProperty: Array<string>
     value: string
     dateLastValueReported: string
-    batteryLevel: number;
 }
 
 export default RealSensorsSmart

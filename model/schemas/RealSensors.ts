@@ -5,7 +5,7 @@ interface RealSensors {
     _id: ObjectId;
     batteryLevel: number;
     deviceInfo: Record<"tags", Record<"deviceId", string>>;
-    object: Record<"relative_humidity" | "ambient_temperature", string>;
+    object: Record<"relative_humidity" | "ambient_temperature"| "motion_event_state", string>;
     time: string
 }
 

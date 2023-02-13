@@ -22,8 +22,7 @@ import * as $15 from "./routes/real-sensors.tsx";
 import * as $16 from "./routes/smoke.tsx";
 import * as $17 from "./routes/tags.tsx";
 import * as $18 from "./routes/temperature-humidity.tsx";
-import * as $19 from "./routes/test-components.tsx";
-import * as $20 from "./routes/water-level.tsx";
+import * as $19 from "./routes/water-level.tsx";
 import * as $$0 from "./islands/Hamburger.tsx";
 
 const manifest = {
@@ -47,8 +46,7 @@ const manifest = {
     "./routes/smoke.tsx": $16,
     "./routes/tags.tsx": $17,
     "./routes/temperature-humidity.tsx": $18,
-    "./routes/test-components.tsx": $19,
-    "./routes/water-level.tsx": $20,
+    "./routes/water-level.tsx": $19,
   },
   islands: {
     "./islands/Hamburger.tsx": $$0,
