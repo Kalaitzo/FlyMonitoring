@@ -1,7 +1,7 @@
 // routes/api/alert-email.ts
 import { Handlers } from "$fresh/server.ts";
 import { SMTPClient } from "https://deno.land/x/denomailer@1.6.0/mod.ts";
-// import { config } from "https://deno.land/std@0.167.0/dotenv/mod.ts";
+import { config } from "https://deno.land/std@0.167.0/dotenv/mod.ts";
 import db from "../../model/mongodb.ts"
 
 async function getDataFromSensor(collectionName: string) {
@@ -12,18 +12,18 @@ async function getDataFromSensor(collectionName: string) {
 }
 
 export const handler: Handlers = {
-    async POST(){
+    async GET(){
         // const tempHum = getDataFromSensor('TemperatureSensor')
         // const fluid = getDataFromSensor('FluidLevelSensor')
         // const smoke = getDataFromSensor('SmokeSensor')
         // const configData = await config();
         // const sendingEmail = configData["EMAIL"]
         // const recvEmail = configData["RECV_EMAIL"]
-        // const password = configData['PASS']
+        // const password = configData['PWD']
 
         const sendingEmail = Deno.env.get("EMAIL")
         const recvEmail = Deno.env.get("RECV_EMAIL")
-        const password = Deno.env.get('PASS')
+        const password = Deno.env.get('PWD')
 
         const client = new SMTPClient({
             connection: {

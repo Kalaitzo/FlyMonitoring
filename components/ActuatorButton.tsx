@@ -1,6 +1,6 @@
 export default function ActuatorButton(){
     return(
-        <form action="/api/temperature-actuator" method={'post'}>
+        <form action="/api/alert-email" method={'post'}>
             <button class="bg-[#76A1E8]
                            hover:bg-[#5C7EB5]
                            text-gray-50
