@@ -3,50 +3,52 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import config from "./deno.json" assert { type: "json" };
-import * as $0 from "./routes/api/devices/door.ts";
-import * as $1 from "./routes/api/devices/dust.ts";
-import * as $2 from "./routes/api/devices/fluid-level.ts";
-import * as $3 from "./routes/api/devices/rack-temperature.ts";
-import * as $4 from "./routes/api/devices/real-sensors.ts";
-import * as $5 from "./routes/api/devices/smoke.ts";
-import * as $6 from "./routes/api/devices/tag.ts";
-import * as $7 from "./routes/api/devices/temperature.ts";
-import * as $8 from "./routes/api/login.ts";
-import * as $9 from "./routes/api/logout.ts";
-import * as $10 from "./routes/api/temperature-actuator.ts";
-import * as $11 from "./routes/dust.tsx";
-import * as $12 from "./routes/entries.tsx";
-import * as $13 from "./routes/index.tsx";
-import * as $14 from "./routes/rack-temperatures.tsx";
-import * as $15 from "./routes/real-sensors.tsx";
-import * as $16 from "./routes/smoke.tsx";
-import * as $17 from "./routes/tags.tsx";
-import * as $18 from "./routes/temperature-humidity.tsx";
-import * as $19 from "./routes/water-level.tsx";
+import * as $0 from "./routes/api/alert-email.ts";
+import * as $1 from "./routes/api/devices/door.ts";
+import * as $2 from "./routes/api/devices/dust.ts";
+import * as $3 from "./routes/api/devices/fluid-level.ts";
+import * as $4 from "./routes/api/devices/rack-temperature.ts";
+import * as $5 from "./routes/api/devices/real-sensors.ts";
+import * as $6 from "./routes/api/devices/smoke.ts";
+import * as $7 from "./routes/api/devices/tag.ts";
+import * as $8 from "./routes/api/devices/temperature.ts";
+import * as $9 from "./routes/api/login.ts";
+import * as $10 from "./routes/api/logout.ts";
+import * as $11 from "./routes/api/temperature-actuator.ts";
+import * as $12 from "./routes/dust.tsx";
+import * as $13 from "./routes/entries.tsx";
+import * as $14 from "./routes/index.tsx";
+import * as $15 from "./routes/rack-temperatures.tsx";
+import * as $16 from "./routes/real-sensors.tsx";
+import * as $17 from "./routes/smoke.tsx";
+import * as $18 from "./routes/tags.tsx";
+import * as $19 from "./routes/temperature-humidity.tsx";
+import * as $20 from "./routes/water-level.tsx";
 import * as $$0 from "./islands/Hamburger.tsx";
 
 const manifest = {
   routes: {
-    "./routes/api/devices/door.ts": $0,
-    "./routes/api/devices/dust.ts": $1,
-    "./routes/api/devices/fluid-level.ts": $2,
-    "./routes/api/devices/rack-temperature.ts": $3,
-    "./routes/api/devices/real-sensors.ts": $4,
-    "./routes/api/devices/smoke.ts": $5,
-    "./routes/api/devices/tag.ts": $6,
-    "./routes/api/devices/temperature.ts": $7,
-    "./routes/api/login.ts": $8,
-    "./routes/api/logout.ts": $9,
-    "./routes/api/temperature-actuator.ts": $10,
-    "./routes/dust.tsx": $11,
-    "./routes/entries.tsx": $12,
-    "./routes/index.tsx": $13,
-    "./routes/rack-temperatures.tsx": $14,
-    "./routes/real-sensors.tsx": $15,
-    "./routes/smoke.tsx": $16,
-    "./routes/tags.tsx": $17,
-    "./routes/temperature-humidity.tsx": $18,
-    "./routes/water-level.tsx": $19,
+    "./routes/api/alert-email.ts": $0,
+    "./routes/api/devices/door.ts": $1,
+    "./routes/api/devices/dust.ts": $2,
+    "./routes/api/devices/fluid-level.ts": $3,
+    "./routes/api/devices/rack-temperature.ts": $4,
+    "./routes/api/devices/real-sensors.ts": $5,
+    "./routes/api/devices/smoke.ts": $6,
+    "./routes/api/devices/tag.ts": $7,
+    "./routes/api/devices/temperature.ts": $8,
+    "./routes/api/login.ts": $9,
+    "./routes/api/logout.ts": $10,
+    "./routes/api/temperature-actuator.ts": $11,
+    "./routes/dust.tsx": $12,
+    "./routes/entries.tsx": $13,
+    "./routes/index.tsx": $14,
+    "./routes/rack-temperatures.tsx": $15,
+    "./routes/real-sensors.tsx": $16,
+    "./routes/smoke.tsx": $17,
+    "./routes/tags.tsx": $18,
+    "./routes/temperature-humidity.tsx": $19,
+    "./routes/water-level.tsx": $20,
   },
   islands: {
     "./islands/Hamburger.tsx": $$0,

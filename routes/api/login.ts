@@ -4,10 +4,6 @@ import { setCookie } from "std/http/cookie.ts";
 import db from "../../model/mongodb.ts";
 import Users from "../../model/schemas/Users.ts";
 
-// const USER = {
-//     username: 'admin',
-//     password: 'pass'
-// }
 
 export const handler: Handlers = {
     async POST(req){

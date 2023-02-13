@@ -15,13 +15,6 @@ interface Data {
     readings:Record<string, string>
 }
 
-// const values = {
-//     temperature: 32,
-//     humidity: 25,
-//     dust: 15,
-//     smoke: 1,
-//     water: 1
-// }
 
  async function getDataFromSensor(collectionName: string) {
     // Open the collection that contains te requested data
