@@ -20,11 +20,11 @@ export const handler: Handlers = {
         for await (const chunk of payload) {
             // Decode the bytes
             const sensorPayload = decoder.decode((chunk))
+            console.log('Sensor Payload: ' + sensorPayload)
             // Parse it as a JSON
             const data: RealSensors = JSON.parse(sensorPayload)
             // Change the data to follow the smart data models structure
             if (data.object.relative_humidity && data.object.ambient_temperature){
-
                 const value = 'T' + data.object.ambient_temperature + '%H' + data.object.relative_humidity;
 
                 const smartData:RealSensorsSmart = {
@@ -39,7 +39,7 @@ export const handler: Handlers = {
                 const realSensors = db.collection<RealSensorsSmart>("RealTempHum")
 
                 const insertId = await realSensors.insertOne(smartData);
-                console.log('Insert Id:' + insertId)
+                console.log('Insert Id (TempHum):' + insertId)
             }
             // Change the data to follow the smart data models structure
             if (data.object.motion_event_state){
@@ -57,10 +57,8 @@ export const handler: Handlers = {
                 const realSensors = db.collection<RealSensorsSmart>("RealMove")
 
                 const insertId = await realSensors.insertOne(smartData);
-                console.log('Insert Id:' + insertId)
+                console.log('Insert Id (RealMove):' + insertId)
             }
-
-            console.log('Sensor Payload: ' + sensorPayload)
         }
         return new Response('I got the post request from the real sensors')
     }
