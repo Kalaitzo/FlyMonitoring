@@ -22,8 +22,6 @@ export const handler: Handlers = {
             const sensorPayload = decoder.decode((chunk))
             // Parse it as a JSON
             const data: RealSensors = JSON.parse(sensorPayload)
-            // Open the collection to store the data that the rack temperature sensor sent
-            const realSensors = db.collection<RealSensorsSmart>("RealSensors")
             // Change the data to follow the smart data models structure
             if (data.object.relative_humidity && data.object.ambient_temperature){
 
@@ -37,6 +35,8 @@ export const handler: Handlers = {
                     value: value,
                     dateLastValueReported: data.time.toString()
                 };
+                // Open the collection to store the data that the rack temperature sensor sent
+                const realSensors = db.collection<RealSensorsSmart>("RealTempHum")
 
                 const insertId = await realSensors.insertOne(smartData);
                 console.log('Insert Id:' + insertId)
@@ -53,6 +53,8 @@ export const handler: Handlers = {
                     value: value,
                     dateLastValueReported: data.time.toString()
                 };
+                // Open the collection to store the data that the rack temperature sensor sent
+                const realSensors = db.collection<RealSensorsSmart>("RealMove")
 
                 const insertId = await realSensors.insertOne(smartData);
                 console.log('Insert Id:' + insertId)
