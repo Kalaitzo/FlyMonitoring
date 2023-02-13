@@ -12,7 +12,7 @@ async function getDataFromSensor(collectionName: string) {
 }
 
 export const handler: Handlers = {
-    async GET(){
+    async POST(){
         // const tempHum = getDataFromSensor('TemperatureSensor')
         // const fluid = getDataFromSensor('FluidLevelSensor')
         // const smoke = getDataFromSensor('SmokeSensor')
@@ -25,12 +25,10 @@ export const handler: Handlers = {
         const recvEmail = Deno.env.get("RECV_EMAIL")
         const password = Deno.env.get('PASS')
 
-
         const client = new SMTPClient({
             connection: {
                 hostname: "smtp.gmail.com",
                 port: 465,
-                tls: true,
                 auth:{
                     username: sendingEmail,
                     password: password
@@ -44,6 +42,8 @@ export const handler: Handlers = {
             subject: "TestMail",
             content: "This is the content",
         })
+
+        await client.close()
 
         return new Response('Ta kataferame!')
     }
