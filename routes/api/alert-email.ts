@@ -30,6 +30,7 @@ export const handler: Handlers = {
             connection: {
                 hostname: "smtp.gmail.com",
                 port: 465,
+                tls: true,
                 auth:{
                     username: sendingEmail,
                     password: password
