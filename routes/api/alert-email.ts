@@ -12,7 +12,7 @@ async function getDataFromSensor(collectionName: string) {
 }
 
 export const handler: Handlers = {
-    async GET(){
+    async POST(){
         // const tempHum = getDataFromSensor('TemperatureSensor')
         // const fluid = getDataFromSensor('FluidLevelSensor')
         // const smoke = getDataFromSensor('SmokeSensor')
