@@ -38,8 +38,9 @@ export default function DustPage({ data }: PageProps<Data>) {
     const {path, isAllowed, dust} = data;
     return (
         <div className={ 'flex h-screen flex-col bg-[#5C7EB5]' }>
+            <title>Dust | FlyMonitoring</title>
             <Header active={path} flag={isAllowed}/>
-            <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 sm:flex-row justify-around items-center"}>
+            <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 lg:flex-row justify-around items-center"}>
                 <DustPanel dust={dust}/>
                 <DeviceControlPanel lastPayload={dust[0]}/>
                 <img src={asset('/securityLogo.png')}

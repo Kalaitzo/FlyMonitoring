@@ -74,6 +74,7 @@ export const handler: Handlers = {
 export default function Home({ data }: PageProps<Data>) {
     return (
       <div className={'flex h-screen flex-col bg-[#5C7EB5]'}>
+          <title>FlyMonitoring</title>
           <Header active={"/"} flag={!!data.isAllowed}/>
           {!data.isAllowed
               // In case the user is NOT logged in!
@@ -84,7 +85,7 @@ export default function Home({ data }: PageProps<Data>) {
                        className={"w-2/4 md:w-1/4"}/>
                 </div>
               // In case the user is logged in!
-              : <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 sm:flex-row justify-around items-center"}>
+              : <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 md:flex-row justify-around items-center"}>
                   <IndexPanel dust={data.readings.dust.toString()}
                               humidity={data.readings.humidity.toString()}
                               temperature={data.readings.temperature.toString()}

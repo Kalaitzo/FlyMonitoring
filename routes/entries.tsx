@@ -39,8 +39,9 @@ export default function EntriesPage({ data }: PageProps<Data>) {
     const panelEntries = entries.filter( entrance => entrance.value === "1" )
     return (
         <div className={ 'flex h-screen flex-col bg-[#5C7EB5]' }>
+            <title>Entries | FlyMonitoring</title>
             <Header active={path} flag={isAllowed}/>
-            <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 sm:flex-row justify-around items-center"}>
+            <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 lg:flex-row justify-around items-center"}>
                 <EntriesPanel entries={panelEntries}/>
                 <DeviceControlPanel lastPayload={panelEntries[0]}/>
                 <img src={asset('/securityLogo.png')}

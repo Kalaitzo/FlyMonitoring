@@ -15,15 +15,16 @@ import * as $8 from "./routes/api/devices/temperature.ts";
 import * as $9 from "./routes/api/login.ts";
 import * as $10 from "./routes/api/logout.ts";
 import * as $11 from "./routes/api/temperature-actuator.ts";
-import * as $12 from "./routes/dust.tsx";
-import * as $13 from "./routes/entries.tsx";
-import * as $14 from "./routes/index.tsx";
-import * as $15 from "./routes/rack-temperatures.tsx";
-import * as $16 from "./routes/real-sensors.tsx";
-import * as $17 from "./routes/smoke.tsx";
-import * as $18 from "./routes/tags.tsx";
-import * as $19 from "./routes/temperature-humidity.tsx";
-import * as $20 from "./routes/water-level.tsx";
+import * as $12 from "./routes/chart.ts";
+import * as $13 from "./routes/dust.tsx";
+import * as $14 from "./routes/entries.tsx";
+import * as $15 from "./routes/index.tsx";
+import * as $16 from "./routes/rack-temperatures.tsx";
+import * as $17 from "./routes/real-sensors.tsx";
+import * as $18 from "./routes/smoke.tsx";
+import * as $19 from "./routes/tags.tsx";
+import * as $20 from "./routes/temperature-humidity.tsx";
+import * as $21 from "./routes/water-level.tsx";
 import * as $$0 from "./islands/Hamburger.tsx";
 
 const manifest = {
@@ -40,15 +41,16 @@ const manifest = {
     "./routes/api/login.ts": $9,
     "./routes/api/logout.ts": $10,
     "./routes/api/temperature-actuator.ts": $11,
-    "./routes/dust.tsx": $12,
-    "./routes/entries.tsx": $13,
-    "./routes/index.tsx": $14,
-    "./routes/rack-temperatures.tsx": $15,
-    "./routes/real-sensors.tsx": $16,
-    "./routes/smoke.tsx": $17,
-    "./routes/tags.tsx": $18,
-    "./routes/temperature-humidity.tsx": $19,
-    "./routes/water-level.tsx": $20,
+    "./routes/chart.ts": $12,
+    "./routes/dust.tsx": $13,
+    "./routes/entries.tsx": $14,
+    "./routes/index.tsx": $15,
+    "./routes/rack-temperatures.tsx": $16,
+    "./routes/real-sensors.tsx": $17,
+    "./routes/smoke.tsx": $18,
+    "./routes/tags.tsx": $19,
+    "./routes/temperature-humidity.tsx": $20,
+    "./routes/water-level.tsx": $21,
   },
   islands: {
     "./islands/Hamburger.tsx": $$0,

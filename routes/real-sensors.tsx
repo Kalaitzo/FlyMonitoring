@@ -41,8 +41,9 @@ export default function RealSensorsPage({ data }: PageProps<Data>){
     const {path, isAllowed, readings} = data
     return(
         <div className={ 'flex h-screen flex-col bg-[#5C7EB5' }>
+            <title>Real Sensors | FlyMonitoring</title>
             <Header active={path} flag={isAllowed}/>
-            <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 sm:flex-row justify-around items-center"}>
+            <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 lg:flex-row justify-around items-center"}>
                 <RealSensorsPanel readingsTempHum={readings[0][0]}/>
                 <RealMovePanel readingsMove={readings[1][0]}/>
                 <DeviceControlPanelReal lastPayload={readings[0][0]}/>
