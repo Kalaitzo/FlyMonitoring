@@ -43,7 +43,7 @@ export default function TemperatureHumidityPage({ data }: PageProps<Data>){
             <div className={"flex bg-[#5C7EB5] flex-1 flex-col py-5 w-full gap-12 lg:flex-row justify-around items-center"}>
                 <TempHumPanel temperatures={temperatures}/>
                 <DeviceControlPanel lastPayload={temperatures[0]}/>
-                <div className={'bg-[#28374F] rounded colour-gray-50 p-4'}>
+                <div className={'bg-[#28374F] mr-3 rounded colour-gray-50 p-4'}>
                     <img
                         src="/chart"
                         className=""
