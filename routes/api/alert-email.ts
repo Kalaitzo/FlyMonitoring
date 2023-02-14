@@ -21,9 +21,14 @@ export const handler: Handlers = {
         const apiKey = Deno.env.get("API_KEY_MAILGUN")
         const emailSend = Deno.env.get("EMAIL")
         const emailRecv = Deno.env.get('RECV_EMAIL')
-        const domain = Deno.env.get('DOMAIN_MAILGUN')
+        const domain = Deno.env.get('MAILGUN_DOMAIN')
 
-        //
+        // const configInfo = await config()
+        // const apiKey = configInfo['API_KEY_MAILGUN']
+        // const emailSend = configInfo['EMAIL']
+        // const emailRecv = configInfo['RECV_EMAIL']
+        // const domain = configInfo['MAILGUN_DOMAIN']
+
         // const client = new SmtpClient();
         //
         // await client.connectTLS({
