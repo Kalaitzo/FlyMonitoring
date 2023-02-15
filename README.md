@@ -25,7 +25,9 @@ running the code locally
 <h2>Deploy Node-RED</h2>
 After Node-RED has been installed you can run it locally by typing the following command on a terminal:
 <br>
+
 ```node-red```
+
 <br>
 
 Access the Node-RED editor by pointing your browser at <a>http://localhost:1880</a> 
