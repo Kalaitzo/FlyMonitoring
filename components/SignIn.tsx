@@ -65,10 +65,6 @@ export default function SignIn({ visible }: Props ) {
                                 type="submit">
                             Sign In
                         </button>
-                        <a className="font-bold text-sm text-[#5C7EB5] hover:text-[#425A82]"
-                           href="/forgot">
-                            Forgot Password?
-                        </a>
                     </div>
 
                 </form>
