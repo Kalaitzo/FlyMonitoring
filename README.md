@@ -3,7 +3,7 @@
 <h2>Requirements</h2>
 
 You can either use this application by installing Node-RED 
-and accessing the website at the link presented below or by also installing Deno, cloning this repository and
+and accessing the website at the link presented below or by also installing Deno, downloading the source code and
 running the code locally
 
 <ul>
@@ -40,8 +40,8 @@ Then import the flows found at this repository (flows.json) by following the ste
     </li>
     <li>Click the "Import" button</li>
 </ol>
-Finally click the red "Deploy" button at the top right
-
+Finally click the red "Deploy" button at the top right to deploy the flows
+<br>
 The flows used for the application are:
 <ul>
     <li>Temperature-Humidity Sensor Flow</li>
@@ -54,7 +54,7 @@ The flows used for the application are:
     <li>Alert-Check</li>
 </ul>
 
-<h2>Access the application online</h2>
+<h2>Access the application online (Recommended)</h2>
 After Node-RED has been deployed you can use the application as stated above by visiting the 
 online deployed version at <a href=https://fly-monitoring.deno.dev/>fly-monitoring.deno.dev</a>
 <br>
@@ -65,10 +65,10 @@ To log in to the app you can use the following credentials:
 </ul>
 
 <h2>Run the web application locally</h2>
-In order to run the code locally access to some environmental variables are needed. In case those variables are provided
+In order to run the code locally access to some environmental variables is needed. In case those variables are provided
 to you by us follow the steps bellow
 <h3>Install the source code</h3>
-You can install the source code with one of the following ways
+Some options to install the source code are:
 <ul>
     <li>
         Clone the repository by following the instructions on the 
@@ -92,13 +92,14 @@ You can install the source code with one of the following ways
 For this part a code editor is needed (e.g. Visual Studio Code)
 <h4>Install Visual Studio Code</h4>
 <ul>
-    <li>To install Visual Studio Code by choosing the correct version for your system specifications on the 
-    <a>visual studio code download</a> page</li>
+    <li>To install Visual Studio Code choose the correct version for your system specifications on the 
+    <a href=https://code.visualstudio.com/Download>Visual Studio Code Download</a> page</li>
 </ul>
 
 After you have Visual Studio Code installed some changes must be done to the source code in order to access the 
 environmental variables mentioned above found in the .env file provided by us
 
+<h4>Modify the source code</h4>
 <ol>
     <li>Open the "mongodb.ts" file found at the directory: model/</li>
     <li>Uncomment the commented lines of code (line 2 to line 8) by removing the '//' added at their beginning</li>
@@ -106,7 +107,7 @@ environmental variables mentioned above found in the .env file provided by us
 </ol>
 
 Finally after those changes have been completed you can run the source code by typing the following command to a 
-terminal 
+terminal:
 <br>
 ```deno task start```
 <br>
