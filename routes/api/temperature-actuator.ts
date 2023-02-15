@@ -1,23 +1,11 @@
 // routes/api/temperature-actuator.ts
 import { Handlers } from "$fresh/server.ts"
-import { setCookie } from "std/http/cookie.ts";
 import { Client } from 'https://deno.land/x/mqtt/deno/mod.ts'; // Deno (ESM)
 
 
 export const handler: Handlers = {
-    async POST(req){
-        const url = new URL(req.url);
+    async POST(){
         const headers = new Headers();
-
-        setCookie(headers, {
-            name: "tempActuator",
-            value: "true",
-            maxAge: 130,
-            sameSite: "Lax",
-            domain: url.hostname.toString(),
-            path: "/",
-            secure: true
-        })
 
         const client = new Client({ url: 'mqtt://test.mosquitto.org' }); // Deno and Node.js
 
