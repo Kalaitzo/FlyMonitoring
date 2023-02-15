@@ -1,7 +1,5 @@
 // routes/api/alert-email.ts
 import { Handlers } from "$fresh/server.ts";
-// import { SmtpClient } from "https://deno.land/x/smtp/mod.ts";
-// import { config } from "https://deno.land/std@0.167.0/dotenv/mod.ts";
 import Mailgun from "https://deno.land/x/mailgun@v1.1.0/index.ts";
 import db from "../../model/mongodb.ts"
 import TemperatureSensor from "../../model/schemas/TemperatureSensor.ts";
@@ -34,7 +32,7 @@ export const handler: Handlers = {
 
         // Add alert about the temperature if needed
         if (temperature>=25){
-            text = text + 'high room temperature'
+            text = text + 'high room temperature (' + temperature.toString() + ')'
             cnt++;
         }
         // Add alert about the water level if needed
