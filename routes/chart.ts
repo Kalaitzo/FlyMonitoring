@@ -6,13 +6,12 @@ import TemperatureSensor from "../model/schemas/TemperatureSensor.ts";
 
 export const handler: Handlers = {
     async GET() {
-        // Get the last 15 temperature readings then render them if the user is authenticated
+        // Get the last 10 temperature readings then render them if the user is authenticated
         const temperatures = db.collection<TemperatureSensor>('TemperatureSensor')
-        const lastFiveTemperatures = await temperatures.aggregate([{ $sort: { _id: -1 } }, { $limit: 10 }])
+        const lastTenTemperatures = await temperatures.aggregate([{ $sort: { _id: -1 } }, { $limit: 10 }])
 
-        console.log(lastFiveTemperatures)
         const arr: Array<number> = [];
-        lastFiveTemperatures.map((item)=>{
+        lastTenTemperatures.map((item)=>{
             // console.log(item.value.split('%')[0].slice(1,))
             arr.push(+item.value.split('%')[0].slice(1,))
         })
