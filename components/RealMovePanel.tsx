@@ -38,7 +38,7 @@ export default function RealMovePanel({readingsMove}: data){
         const minutes = timeInfo[1]
         const seconds = timeInfo[2]
 
-        readingsMove[i].dateLastValueReported = `${month} ${day} ${year} ${year} ${hour}:${minutes}:${seconds}`
+        readingsMove[i].dateLastValueReported = `${month} ${day} ${year} ${hour}:${minutes}:${seconds}`
     }
 
     return(

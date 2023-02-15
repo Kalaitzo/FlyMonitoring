@@ -2,6 +2,24 @@ type data = {
     lastPayload: Record<any, any>
 }
 
+function getMonthFromNumber(monthNumber: number): string{
+    const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ];
+    return months[monthNumber-1] || "Invalid Month Number"
+}
+
 export default function DeviceControlPanelReal({lastPayload}: data){
     // Delete the value and the _id because we don't need it for this panel
     delete lastPayload.value
@@ -16,6 +34,19 @@ export default function DeviceControlPanelReal({lastPayload}: data){
         }
         lastPayload.controlledProperty = text.slice(0,-2)
     }
+
+    // Reconstruct the date last value reported
+    const lastDate: string = lastPayload.dateLastValueReported
+    const dateInfo: Array<string> = lastDate.split('T')[0].split('-')
+    const month = getMonthFromNumber(+dateInfo[1])
+
+    const dotIndex: number = lastDate.split('T')[1].indexOf('.')
+    const time: string = lastDate.split('T')[1].slice(1,dotIndex)
+    const timeInfo = time.split(':')
+    const hour = +timeInfo[0]+2
+
+    lastPayload.dateLastValueReported = `${month} ${dateInfo[2]} ${dateInfo[0]} ${hour}:${timeInfo[1]}:${timeInfo[2]}`
+
     const arr = [];
     const readKeys = ['Device Id', "Type", "Device Category", "Controlled Property", "Date last value reported",]
     let cnt = 0;
