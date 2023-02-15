@@ -34,7 +34,7 @@ export default function TempHumPanel({temperatures}: data){
     ]
 
     return(
-        <div className={ 'flex flex-col w-max h-max bg-[#28374F] ml-5 p-5 rounded-lg text-gray-50 justify-center gap-6' }>
+        <div className={ 'flex flex-col w-max h-max bg-[#28374F] md:ml-3 p-5 rounded-lg text-gray-50 justify-center gap-6' }>
             {menus.map((item) => (
                 <div className={ 'flex flex-row' }>
                     <img src={ asset(item.src) }
