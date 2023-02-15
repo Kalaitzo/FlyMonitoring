@@ -27,7 +27,6 @@ After Node-RED has been installed you can run it locally by typing the following
 <br>
 
 ```node-red```
-
 <br>
 
 Access the Node-RED editor by pointing your browser at <a>http://localhost:1880</a> 
