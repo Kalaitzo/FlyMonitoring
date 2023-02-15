@@ -32,7 +32,7 @@ export const handler: Handlers = {
 
         // Add alert about the temperature if needed
         if (temperature>=25){
-            text = text + 'high room temperature (' + temperature.toString() + ')'
+            text = text + 'high room temperature (' + temperature.toString() + ' C )'
             cnt++;
         }
         // Add alert about the water level if needed
