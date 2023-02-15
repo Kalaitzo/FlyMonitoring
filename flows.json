@@ -1,0 +1,3626 @@
+[
+    {
+        "id": "f6f2187d.f17ca8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b4be357e76808034",
+        "type": "tab",
+        "label": "Hello, World!",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "665342a0467113db",
+        "type": "tab",
+        "label": "Temperature-Humidity Sensor Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6a2892f3a5238df2",
+        "type": "tab",
+        "label": "Device Simulator",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "35913bd898ddc0ce",
+        "type": "tab",
+        "label": "Device Location",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "916bf8561076a8c1",
+        "type": "tab",
+        "label": "Flow 5",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "87e36d744d2df454",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d17b48b8d20fecf2",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "dbc0e3c0b6ccb30e",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "486feade1bcbfe3b",
+        "type": "tab",
+        "label": "Flow 6",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a62c8f8ab0b2d5d4",
+        "type": "tab",
+        "label": "Flow 8",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cfa03e4eb65ff21c",
+        "type": "tab",
+        "label": "Tag Sensor Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "25d9bc93ea696645",
+        "type": "tab",
+        "label": "Water Sensor Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "facba21687aa94e4",
+        "type": "tab",
+        "label": "Smoke Sensor Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "aeee98e7c306a533",
+        "type": "tab",
+        "label": "Dust Sensor Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e607d33a7688c759",
+        "type": "tab",
+        "label": "Rack Temperature Sensors Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8e7998afd46d10da",
+        "type": "tab",
+        "label": "Door Sensor Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5ddd33ad734898a1",
+        "type": "tab",
+        "label": "Alert-Check",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "09408669a777879b",
+        "type": "tab",
+        "label": "Flow 7",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2a87f48fd74769f9",
+        "type": "mongodb",
+        "z": "f6f2187d.f17ca8",
+        "hostname": "ac-ie3oda4-shard-00-01.fawqedw.mongodb.net",
+        "topology": "direct",
+        "port": "27017",
+        "db": "myFirstDatabase",
+        "name": ""
+    },
+    {
+        "id": "63725a9c843a509a",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mosquitto",
+        "port": "1883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "5",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6ab2f74b753c99bb",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "04171cf5dabf8df4",
+        "type": "comment",
+        "z": "b4be357e76808034",
+        "name": "Publish",
+        "info": "",
+        "x": 130,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "19493b427d8482de",
+        "type": "inject",
+        "z": "b4be357e76808034",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello, World!",
+        "payloadType": "str",
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "dad12ce4d44a7fac"
+            ]
+        ]
+    },
+    {
+        "id": "dad12ce4d44a7fac",
+        "type": "mqtt out",
+        "z": "b4be357e76808034",
+        "name": "",
+        "topic": "upatras-ece-iot",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "63725a9c843a509a",
+        "x": 360,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "102310d233c13562",
+        "type": "comment",
+        "z": "b4be357e76808034",
+        "name": "Subscribe",
+        "info": "",
+        "x": 140,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a3c909fde62db20d",
+        "type": "mqtt in",
+        "z": "b4be357e76808034",
+        "name": "",
+        "topic": "upatras-ece-iot",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "63725a9c843a509a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 340,
+        "wires": [
+            [
+                "474ef264b37a4b6d"
+            ]
+        ]
+    },
+    {
+        "id": "474ef264b37a4b6d",
+        "type": "debug",
+        "z": "b4be357e76808034",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "d19d6188731884f3",
+        "type": "change",
+        "z": "665342a0467113db",
+        "name": "Initialize Data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "temperature",
+                "pt": "flow",
+                "to": "22",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "count",
+                "pt": "flow",
+                "to": "10",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "flag",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "humidity",
+                "pt": "flow",
+                "to": "0.2",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "hum-flag",
+                "pt": "flow",
+                "to": "$random()",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "hum-count",
+                "pt": "flow",
+                "to": "10",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "actuatorFlag",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "actCount",
+                "pt": "flow",
+                "to": "10",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "922dbcc7e9633503",
+        "type": "inject",
+        "z": "665342a0467113db",
+        "name": "Inject once at first",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 150,
+        "y": 60,
+        "wires": [
+            [
+                "d19d6188731884f3"
+            ]
+        ]
+    },
+    {
+        "id": "3cac03e31e1987a1",
+        "type": "inject",
+        "z": "665342a0467113db",
+        "name": "Inject Every 10 Second",
+        "props": [],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 170,
+        "y": 300,
+        "wires": [
+            [
+                "57848830a827018e"
+            ]
+        ]
+    },
+    {
+        "id": "57848830a827018e",
+        "type": "function",
+        "z": "665342a0467113db",
+        "name": "Temperature Function",
+        "func": "function getRandomValue(max, min) {\n    // Generate a random value between max and min\n    return Math.random() * (max - min) + min;\n}\n\nvar temperature = flow.get('temperature'); // Get the data from the flow\nvar count = flow.get('count'); // Get the count from the flow\nvar flag = flow.get('flag');\nvar actuatorFlag = flow.get('actuatorFlag')\nvar actCount = flow.get('actCount'); // Get the count from the flow\n\nflag = (flag>0.95) ? true : false; // Set a flag with a chance of being true at 15%\n\nif(actuatorFlag){\n    flow.set('flag', false);\n    flow.set('temperature', temperature-1)\n    actCount===1\n        ? flow.set('actuatorFlag', false)\n        : flow.set('actCount', actCount-1)\n    msg.payload = {\n        actCount: actCount,\n        actuatorFlag: actuatorFlag\n    }\n    return msg;    \n}\n\nif (flag && count) {\n    // Simulate an increase of temperature\n    flow.set('temperature', (temperature+1))\n    flow.set('count', (count-1));\n    (count!==1)\n        ? flag = flag\n        : flag = !flag\n    msg.payload ={\n        \"temperature\": temperature,\n        \"count\": count,\n        \"flag\": flag,\n    }\n    return msg;   \n}\n\n// Simulate a temperature sensor\nflow.set(\"temperature\", (+(temperature + getRandomValue(0.15, -0.15)).toFixed(2)))\n\n// Pass the data through the payload\nmsg.payload = {\n    \"temperature\": temperature,\n    \"count\": count,\n    \"flag\": flag\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 300,
+        "wires": [
+            [
+                "7b71137938fc402a"
+            ]
+        ]
+    },
+    {
+        "id": "7b71137938fc402a",
+        "type": "debug",
+        "z": "665342a0467113db",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "5e2e91784b31088a",
+        "type": "inject",
+        "z": "665342a0467113db",
+        "name": "Inject every 50 seconds after initial inject",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "50",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 220,
+        "y": 140,
+        "wires": [
+            [
+                "105969d48e19b5b5"
+            ]
+        ]
+    },
+    {
+        "id": "105969d48e19b5b5",
+        "type": "function",
+        "z": "665342a0467113db",
+        "name": "Random (chance)",
+        "func": "var lastTemperature = flow.get('temperature');\nvar flag = Math.random();\n\nflow.set('temperatute',lastTemperature);\nflow.set('flag', flag);\nflow.set('count', 10);\nflow.set('actCount', 10);\nflow.set('actuatorFlag', false)\n\n\nmsg.payload = {\n    'temp': lastTemperature,\n    'flag': flag\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 140,
+        "wires": [
+            [
+                "4b17c380a9b35694"
+            ]
+        ]
+    },
+    {
+        "id": "4b17c380a9b35694",
+        "type": "debug",
+        "z": "665342a0467113db",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "f0f487642c4a71f5",
+        "type": "inject",
+        "z": "665342a0467113db",
+        "name": "",
+        "props": [],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 110,
+        "y": 460,
+        "wires": [
+            [
+                "4b01491a58ea9455"
+            ]
+        ]
+    },
+    {
+        "id": "4b01491a58ea9455",
+        "type": "function",
+        "z": "665342a0467113db",
+        "name": "Create data based on the Smart-Data Models",
+        "func": "function createDay(value) {\n    switch (value) {\n        case 0:\n            return \"Monday\"\n        case 1:\n            return \"Tuesday\"\n        case 2:\n            return \"Wednesday\"\n        case 3:\n            return \"Thursday\"\n        case 4:\n            return \"Friday\"\n        case 5:\n            return \"Saturday\"\n        case 6:\n            return \"Sunday\"\n    }\n}\n\nfunction createMonth(value) {\n    switch (value) {\n        case 0:\n            return \"Jan\"\n        case 1:\n            return \"Feb\"\n        case 2:\n            return \"Mar\"\n        case 3:\n            return \"Apr\"\n        case 4:\n            return \"May\"\n        case 5:\n            return \"Jun\"\n        case 6:\n            return \"Jul\"\n        case 7:\n            return \"Aug\"\n        case 8:\n            return \"Sep\"\n        case 9:\n            return \"Oct\"\n        case 10:\n            return \"Nov\"\n        case 11:\n            return \"Dec\"\n    }\n}\n\nvar date = new Date();\n\nvar time = createDay(date.getDay()) + \" \" +\n    createMonth(date.getMonth()) + \" \" +\n    (date.getDate().toString()) + \" \" +\n    (date.getFullYear()).toString() + \" \" +\n    ((date.getHours() < 10) ? \"0\" : \"\") +\n    (date.getHours() + 2).toString() + \":\" +\n    ((date.getMinutes() < 10) ? \"0\" : \"\") +\n    (date.getMinutes()).toString() + \":\" +\n    ((date.getSeconds() < 10) ? \"0\" : \"\") +\n    (date.getSeconds()).toString()\n\nvar saveTemperature = flow.get('temperature');\nvar saveHumidity = flow.get('humidity');\n\nsaveHumidity = +(saveHumidity).toFixed(2)\n\nvar value = 'T' + saveTemperature.toString() + '%H'+saveHumidity.toString() \n\nvar payload = {\n    \"id\": \"tempdevice-1\",\n    \"type\": \"Device\",\n    \"deviceCategory\": [\n        \"sensor\"\n    ],\n    \"controlledProperty\":[\n        \"temperature\",\n        \"humidity\"\n    ],\n    \"batteryLevel\": 0.85,\n    \"rssi\": 0.86,\n    \"value\": value,\n    \"deviceState\": \"ok\",\n    \"dateLastValueReported\": time.toString(),\n    \"dateFirstUsed\": \"2014-09-11T11:00:00Z\"\n}\n\nmsg.payload = payload;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 460,
+        "wires": [
+            [
+                "8fc4d60a6a5ee287"
+            ]
+        ]
+    },
+    {
+        "id": "8fc4d60a6a5ee287",
+        "type": "http request",
+        "z": "665342a0467113db",
+        "name": "Send the data to the database",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "fly-monitoring.deno.dev/api/devices/temperature",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 770,
+        "y": 460,
+        "wires": [
+            [
+                "c9436eb3b1bd2570"
+            ]
+        ]
+    },
+    {
+        "id": "c9436eb3b1bd2570",
+        "type": "debug",
+        "z": "665342a0467113db",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "6655ab8fb51ab422",
+        "type": "inject",
+        "z": "665342a0467113db",
+        "name": "Inject every 50 seconds after initial inject",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "50",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 220,
+        "y": 200,
+        "wires": [
+            [
+                "3aed6d2d3f1e2a7c"
+            ]
+        ]
+    },
+    {
+        "id": "3aed6d2d3f1e2a7c",
+        "type": "function",
+        "z": "665342a0467113db",
+        "name": "Random (chance)",
+        "func": "var lastHumidity = flow.get('humidity');\nvar flag = Math.random();\n\nflow.set('temperatute', lastHumidity);\nflow.set('hum-flag', flag);\nflow.set('hum-count', 10);\n\n\nmsg.payload = {\n    'hum': lastHumidity,\n    'flag-humidty': flag\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 200,
+        "wires": [
+            [
+                "a59aea3a41dc92ea"
+            ]
+        ]
+    },
+    {
+        "id": "a59aea3a41dc92ea",
+        "type": "debug",
+        "z": "665342a0467113db",
+        "name": "debug 44",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "fa7702f126c1350e",
+        "type": "inject",
+        "z": "665342a0467113db",
+        "name": "Inject Every 10 Seconds",
+        "props": [],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "8f4e0ebca6e5e799"
+            ]
+        ]
+    },
+    {
+        "id": "8f4e0ebca6e5e799",
+        "type": "function",
+        "z": "665342a0467113db",
+        "name": "Humidity Function",
+        "func": "var humidity = flow.get('humidity'); // Get the data from the flow\nvar count = flow.get('hum-count'); // Get the count from the flow\nvar flag = flow.get('hum-flag');\n\nflag = (flag>0.95) ? true : false; // Set a flag with a chance of being true at 15%\n\nif (flag && count) {\n    // Simulate an increase of temperature\n    flow.set('humidity', (humidity+0.01))\n    flow.set('hum-count', (count-1));\n    (count!==1)\n        ? flag = flag\n        : flag = !flag\n    msg.payload ={\n        \"humidity\": humidity,\n        \"hum-count\": count,\n        \"hum-flag\": flag\n    }\n    return msg;   \n}\n\n// Simulate a temperature sensor\nflow.set(\"humidity\", humidity)\n\n// Pass the data through the payload\nmsg.payload = {\n    \"humidity\": humidity,\n    \"hum-count\": count,\n    \"hum-flag\": flag\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 360,
+        "wires": [
+            [
+                "dfdaab26384c7bb3"
+            ]
+        ]
+    },
+    {
+        "id": "dfdaab26384c7bb3",
+        "type": "debug",
+        "z": "665342a0467113db",
+        "name": "debug 45",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "112f281165949db6",
+        "type": "mqtt in",
+        "z": "665342a0467113db",
+        "name": "",
+        "topic": "temperature/actuator",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "6ab2f74b753c99bb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 600,
+        "wires": [
+            [
+                "a83a4d3e9cbd64b0"
+            ]
+        ]
+    },
+    {
+        "id": "a83a4d3e9cbd64b0",
+        "type": "function",
+        "z": "665342a0467113db",
+        "name": "function 13",
+        "func": "flow.set('actuatorFlag', msg.payload)\n\nmsg.payload = flow.get('actuatorFlag')\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 600,
+        "wires": [
+            [
+                "562a2094a2c8a630"
+            ]
+        ]
+    },
+    {
+        "id": "562a2094a2c8a630",
+        "type": "debug",
+        "z": "665342a0467113db",
+        "name": "debug 48",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "7653b45af15ef072",
+        "type": "comment",
+        "z": "6a2892f3a5238df2",
+        "name": "Publish",
+        "info": "",
+        "x": 130,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "80268456b5c5aae9",
+        "type": "inject",
+        "z": "6a2892f3a5238df2",
+        "name": "Device",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 180,
+        "wires": [
+            [
+                "76c17683818a87cf"
+            ]
+        ]
+    },
+    {
+        "id": "76c17683818a87cf",
+        "type": "function",
+        "z": "6a2892f3a5238df2",
+        "name": "payload",
+        "func": "function getRandomIntInclusive(min, max) {\n    min = Math.ceil(min);\n    max = Math.floor(max);\n    return Math.floor(Math.random() * (max - min + 1) + min);\n}\n\nfunction getDate() {\n    return new Date().toLocaleDateString('en-GB', { timeZone: 'Europe/Athens' });\n}\n\nfunction getTime() {\n    return new Date().toLocaleTimeString('en-GB', { timeZone: 'Europe/Athens' });\n}\n\nfunction getRandomCoords(center, radius) {\n    const radiusInDeg = (radius / 111320);\n\n    const r = radiusInDeg * Math.sqrt(Math.random());\n    const t = 2 * Math.PI * Math.random();\n\n    const lat = r * Math.sin(t);\n    const long = (r * Math.cos(t)) / Math.cos(center.lat * Math.PI / 180);\n\n    return { latitude: +(center.lat + lat).toFixed(6), longitude: +(center.long + long).toFixed(6) };\n}\n\nmsg.payload = {\n    \"name\": \"Device\",\n    \"id\": \"636d4da978963500800d0e5d\",\n    \"description\": \"Information about the device\",\n    \"data\": {\n        \"temperature\": getRandomIntInclusive(-10, 40),\n        \"humidity\": getRandomIntInclusive(30, 95),\n        \"location\": getRandomCoords({ lat: 38.241997, long: 21.742386 }, 2000),\n        \"date\": getDate(),\n        \"time\": getTime()\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 180,
+        "wires": [
+            [
+                "aedbcf90087c41ac",
+                "1985543ef0b510ca",
+                "8ad7964ea54890e4",
+                "0785ceebc4b05103"
+            ]
+        ]
+    },
+    {
+        "id": "3735e249f90d3e9a",
+        "type": "comment",
+        "z": "6a2892f3a5238df2",
+        "name": "Subscribe",
+        "info": "",
+        "x": 140,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "daa63583d3427099",
+        "type": "mqtt in",
+        "z": "6a2892f3a5238df2",
+        "name": "",
+        "topic": "device/1",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "63725a9c843a509a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 400,
+        "wires": [
+            [
+                "c16f684da86b5f8d"
+            ]
+        ]
+    },
+    {
+        "id": "3554e313f89b69dd",
+        "type": "mqtt in",
+        "z": "6a2892f3a5238df2",
+        "name": "",
+        "topic": "device/1/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "63725a9c843a509a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 460,
+        "wires": [
+            [
+                "8cba054426f8afae"
+            ]
+        ]
+    },
+    {
+        "id": "592c1c5f7d466245",
+        "type": "mqtt in",
+        "z": "6a2892f3a5238df2",
+        "name": "",
+        "topic": "device/1/location",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "63725a9c843a509a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 520,
+        "wires": [
+            [
+                "f4b4bef06ad77d7e"
+            ]
+        ]
+    },
+    {
+        "id": "cce2d5e56bd8fd2b",
+        "type": "mqtt in",
+        "z": "6a2892f3a5238df2",
+        "name": "",
+        "topic": "device/1/env/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "63725a9c843a509a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 580,
+        "wires": [
+            [
+                "ce5c42d8a8dd6405"
+            ]
+        ]
+    },
+    {
+        "id": "c2cffa09887c366e",
+        "type": "mqtt in",
+        "z": "6a2892f3a5238df2",
+        "name": "",
+        "topic": "device/1/env/temperature",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "63725a9c843a509a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 640,
+        "wires": [
+            [
+                "6d3d90d16cbe8429"
+            ]
+        ]
+    },
+    {
+        "id": "b3a24d4a3b491f4f",
+        "type": "mqtt in",
+        "z": "6a2892f3a5238df2",
+        "name": "",
+        "topic": "device/1/env/humidity",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "63725a9c843a509a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 700,
+        "wires": [
+            [
+                "49718c1f5a795601"
+            ]
+        ]
+    },
+    {
+        "id": "c16f684da86b5f8d",
+        "type": "debug",
+        "z": "6a2892f3a5238df2",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "8cba054426f8afae",
+        "type": "debug",
+        "z": "6a2892f3a5238df2",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "f4b4bef06ad77d7e",
+        "type": "debug",
+        "z": "6a2892f3a5238df2",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "ce5c42d8a8dd6405",
+        "type": "debug",
+        "z": "6a2892f3a5238df2",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "6d3d90d16cbe8429",
+        "type": "debug",
+        "z": "6a2892f3a5238df2",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "49718c1f5a795601",
+        "type": "debug",
+        "z": "6a2892f3a5238df2",
+        "name": "debug 7",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "aae0d7a16c2f7b55",
+        "type": "mqtt in",
+        "z": "6a2892f3a5238df2",
+        "name": "",
+        "topic": "device/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "63725a9c843a509a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 800,
+        "wires": [
+            [
+                "57e3946abf2a4df8"
+            ]
+        ]
+    },
+    {
+        "id": "57e3946abf2a4df8",
+        "type": "debug",
+        "z": "6a2892f3a5238df2",
+        "name": "debug 8",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "8ec40bb940d9140d",
+        "type": "mqtt in",
+        "z": "6a2892f3a5238df2",
+        "name": "",
+        "topic": "device/+/location",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "63725a9c843a509a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 860,
+        "wires": [
+            [
+                "016638af4e95f2c4"
+            ]
+        ]
+    },
+    {
+        "id": "016638af4e95f2c4",
+        "type": "debug",
+        "z": "6a2892f3a5238df2",
+        "name": "debug 9",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "aedbcf90087c41ac",
+        "type": "function",
+        "z": "6a2892f3a5238df2",
+        "name": "temperature",
+        "func": "msg.payload = msg.payload.data.temperature;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 120,
+        "wires": [
+            [
+                "29d0f2a3c9cbeeda"
+            ]
+        ]
+    },
+    {
+        "id": "1985543ef0b510ca",
+        "type": "function",
+        "z": "6a2892f3a5238df2",
+        "name": "humidity",
+        "func": "msg.payload = msg.payload.data.humidity;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 180,
+        "wires": [
+            [
+                "c25df1d7cb80461f"
+            ]
+        ]
+    },
+    {
+        "id": "8ad7964ea54890e4",
+        "type": "function",
+        "z": "6a2892f3a5238df2",
+        "name": "location",
+        "func": "msg.payload = msg.payload.data.location;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 240,
+        "wires": [
+            [
+                "2ec36d47619f03ec"
+            ]
+        ]
+    },
+    {
+        "id": "29d0f2a3c9cbeeda",
+        "type": "mqtt out",
+        "z": "6a2892f3a5238df2",
+        "name": "",
+        "topic": "device/1/env/temperature",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "63725a9c843a509a",
+        "x": 790,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "c25df1d7cb80461f",
+        "type": "mqtt out",
+        "z": "6a2892f3a5238df2",
+        "name": "",
+        "topic": "device/1/env/humidity",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "63725a9c843a509a",
+        "x": 780,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "2ec36d47619f03ec",
+        "type": "mqtt out",
+        "z": "6a2892f3a5238df2",
+        "name": "",
+        "topic": "device/1/location",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "63725a9c843a509a",
+        "x": 770,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "0785ceebc4b05103",
+        "type": "mqtt out",
+        "z": "6a2892f3a5238df2",
+        "name": "",
+        "topic": "device/1",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "63725a9c843a509a",
+        "x": 540,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "3bfc24a85d1b4b53",
+        "type": "comment",
+        "z": "35913bd898ddc0ce",
+        "name": "Publish",
+        "info": "",
+        "x": 130,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b48ea31def467d51",
+        "type": "inject",
+        "z": "35913bd898ddc0ce",
+        "name": "Device",
+        "props": [],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "68fa376daa8bf301"
+            ]
+        ]
+    },
+    {
+        "id": "68fa376daa8bf301",
+        "type": "function",
+        "z": "35913bd898ddc0ce",
+        "name": "payload",
+        "func": "function getRandomIntInclusive(min, max) {\n    min = Math.ceil(min);\n    max = Math.floor(max);\n    return Math.floor(Math.random() * (max - min + 1) + min);\n}\n\nfunction getDate() {\n    return new Date().toLocaleDateString('en-GB', { timeZone: 'Europe/Athens' });\n}\n\nfunction getTime() {\n    return new Date().toLocaleTimeString('en-GB', { timeZone: 'Europe/Athens' });\n}\n\nfunction getRandomCoords(center, radius) {\n    const radiusInDeg = (radius / 111320);\n\n    const r = radiusInDeg * Math.sqrt(Math.random());\n    const t = 2 * Math.PI * Math.random();\n\n    const lat = r * Math.sin(t);\n    const long = (r * Math.cos(t)) / Math.cos(center.lat * Math.PI / 180);\n\n    return { latitude: +(center.lat + lat).toFixed(6), longitude: +(center.long + long).toFixed(6) };\n}\n\nmsg.payload = {\n    \"name\": \"Device\",\n    \"id\": \"636d4da978963500800d0e5d\",\n    \"description\": \"Information about the device\",\n    \"data\": {\n        \"temperature\": getRandomIntInclusive(-10, 40),\n        \"humidity\": getRandomIntInclusive(30, 95),\n        \"location\": getRandomCoords({ lat: 38.241997, long: 21.742386 }, 2000),\n        \"date\": getDate(),\n        \"time\": getTime()\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 160,
+        "wires": [
+            [
+                "734a0d0d8c8ec9c8"
+            ]
+        ]
+    },
+    {
+        "id": "734a0d0d8c8ec9c8",
+        "type": "mqtt out",
+        "z": "35913bd898ddc0ce",
+        "name": "",
+        "topic": "device/636d63da1773e67e52d9ade7/location",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "63725a9c843a509a",
+        "x": 610,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "4f396157862c458a",
+        "type": "comment",
+        "z": "35913bd898ddc0ce",
+        "name": "Subscribe",
+        "info": "",
+        "x": 140,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "44f6ab9d1f58113a",
+        "type": "function",
+        "z": "35913bd898ddc0ce",
+        "name": "function 1",
+        "func": "msg.payload = {\n    \"name\": msg.payload.name,\n    \"lat\": msg.payload.data.location.latitude,\n    \"lon\": msg.payload.data.location.longitude\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 340,
+        "wires": [
+            [
+                "b9d24ef02d9a749d",
+                "126446d1c5c3b924"
+            ]
+        ]
+    },
+    {
+        "id": "f808e0f13520b595",
+        "type": "mqtt in",
+        "z": "35913bd898ddc0ce",
+        "name": "",
+        "topic": "device/636d63da1773e67e52d9ade7/location",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "63725a9c843a509a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 340,
+        "wires": [
+            [
+                "44f6ab9d1f58113a"
+            ]
+        ]
+    },
+    {
+        "id": "126446d1c5c3b924",
+        "type": "debug",
+        "z": "35913bd898ddc0ce",
+        "name": "debug 10",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "fc45ab1764f60e8f",
+        "type": "worldmap",
+        "z": "35913bd898ddc0ce",
+        "name": "",
+        "lat": "38.241997",
+        "lon": "21.742386",
+        "zoom": "14",
+        "layer": "OSMC",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "none",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "",
+        "maplist": "OSMC",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 880,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "b9d24ef02d9a749d",
+        "type": "worldmap-tracks",
+        "z": "35913bd898ddc0ce",
+        "name": "",
+        "depth": "36000",
+        "layer": "combined",
+        "smooth": false,
+        "x": 710,
+        "y": 340,
+        "wires": [
+            [
+                "fc45ab1764f60e8f"
+            ]
+        ]
+    },
+    {
+        "id": "c9061d2b03fe50a2",
+        "type": "change",
+        "z": "cfa03e4eb65ff21c",
+        "name": "Initialize Data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "movementActivity",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "flag",
+                "pt": "flow",
+                "to": "$random()\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25379f65da5cb1fe",
+        "type": "inject",
+        "z": "cfa03e4eb65ff21c",
+        "name": "Inject once at first",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 150,
+        "y": 60,
+        "wires": [
+            [
+                "c9061d2b03fe50a2"
+            ]
+        ]
+    },
+    {
+        "id": "64d8ee8f0f685f9b",
+        "type": "inject",
+        "z": "cfa03e4eb65ff21c",
+        "name": "Inject every 50 seconds after initial inject",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "50",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 220,
+        "y": 140,
+        "wires": [
+            [
+                "536eead7e6517c25"
+            ]
+        ]
+    },
+    {
+        "id": "536eead7e6517c25",
+        "type": "function",
+        "z": "cfa03e4eb65ff21c",
+        "name": "Random (chance)",
+        "func": "var lastMovementActivity = flow.get('movementActivity');\nvar flag = Math.random();\n\nflow.set('flag', flag);\n\nmsg.payload = {\n    'move': lastMovementActivity,\n    'flag': flag\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 140,
+        "wires": [
+            [
+                "82651c762387f9a4"
+            ]
+        ]
+    },
+    {
+        "id": "82651c762387f9a4",
+        "type": "debug",
+        "z": "cfa03e4eb65ff21c",
+        "name": "debug 15",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "a279fe28780750cf",
+        "type": "inject",
+        "z": "cfa03e4eb65ff21c",
+        "name": "Inject Every 10 Seconds",
+        "props": [],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 170,
+        "y": 220,
+        "wires": [
+            [
+                "5b1219e4f121550e"
+            ]
+        ]
+    },
+    {
+        "id": "5b1219e4f121550e",
+        "type": "function",
+        "z": "cfa03e4eb65ff21c",
+        "name": "Tag Function",
+        "func": "var flag = flow.get('flag')\n\n// In case of movement flag > 0.9\nflag = (flag > 0.9) ? true : false;\n\nif(flag){\n    flow.set('movementActivity', true)\n    // In case of movement\n    msg.payload = {\n        \"controlledProperty\": \"movementActivity\",\n        \"value\": flow.get('movementActivity')\n    }\n\n    return msg;\n}\n\nflow.set('movementActivity', false)\n// In case there is not movement\nmsg.payload = {\n    \"controlledProperty\": \"movementActivity\",\n    \"value\": flow.get('movementActivity')\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 220,
+        "wires": [
+            [
+                "c8d68f405609abe9"
+            ]
+        ]
+    },
+    {
+        "id": "c8d68f405609abe9",
+        "type": "debug",
+        "z": "cfa03e4eb65ff21c",
+        "name": "debug 16",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7640e4c8136fc49b",
+        "type": "inject",
+        "z": "cfa03e4eb65ff21c",
+        "name": "",
+        "props": [],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "8b8774451d42ac23"
+            ]
+        ]
+    },
+    {
+        "id": "8b8774451d42ac23",
+        "type": "function",
+        "z": "cfa03e4eb65ff21c",
+        "name": "Create data based on the Smart-Data Models",
+        "func": "function createDay(value) {\n    switch (value) {\n        case 0:\n            return \"Monday\"\n        case 1:\n            return \"Tuesday\"\n        case 2:\n            return \"Wednesday\"\n        case 3:\n            return \"Thursday\"\n        case 4:\n            return \"Friday\"\n        case 5:\n            return \"Saturday\"\n        case 6:\n            return \"Sunday\"\n    }\n}\n\nfunction createMonth(value) {\n    switch (value) {\n        case 0:\n            return \"Jan\"\n        case 1:\n            return \"Feb\"\n        case 2:\n            return \"Mar\"\n        case 3:\n            return \"Apr\"\n        case 4:\n            return \"May\"\n        case 5:\n            return \"Jun\"\n        case 6:\n            return \"Jul\"\n        case 7:\n            return \"Aug\"\n        case 8:\n            return \"Sep\"\n        case 9:\n            return \"Oct\"\n        case 10:\n            return \"Nov\"\n        case 11:\n            return \"Dec\"\n    }\n}\n\nvar date = new Date();\n\nvar time = createDay(date.getDay()) + \" \" +\n    createMonth(date.getMonth()) + \" \" +\n    (date.getDate().toString()) + \" \" +\n    (date.getFullYear()).toString() + \" \" +\n    ((date.getHours() < 10) ? \"0\" : \"\") +\n    (date.getHours() + 2).toString() + \":\" +\n    ((date.getMinutes() < 10) ? \"0\" : \"\") +\n    (date.getMinutes()).toString() + \":\" +\n    ((date.getSeconds() < 10) ? \"0\" : \"\") +\n    (date.getSeconds()).toString()\n\n\nvar saveMovement = flow.get('movementActivity');\n\nvar value = saveMovement? \"1\" :\"0\";\n\nvar payload = {\n    \"id\": \"loctag1\",\n    \"type\": \"Device\",\n    \"deviceCategory\": [\n        \"sensor\"\n    ],\n    \"controlledProperty\": [\n        \"movementActivity\"\n    ],\n    \"batteryLevel\": 0.90,\n    \"rssi\": 0.89,\n    \"value\": value,\n    \"deviceState\": \"ok\",\n    \"dateLastValueReported\": time.toString(),\n    \"dateFirstUsed\": \"2014-09-11T11:00:00Z\"\n}\n\nmsg.payload = payload\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [
+                "cf931f62bd339faa"
+            ]
+        ]
+    },
+    {
+        "id": "cf931f62bd339faa",
+        "type": "http request",
+        "z": "cfa03e4eb65ff21c",
+        "name": "Send the data to the database",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "fly-monitoring.deno.dev/api/devices/tag",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 770,
+        "y": 300,
+        "wires": [
+            [
+                "26908c7c8df7ce89"
+            ]
+        ]
+    },
+    {
+        "id": "26908c7c8df7ce89",
+        "type": "debug",
+        "z": "cfa03e4eb65ff21c",
+        "name": "debug 17",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "d330b887a5c6de4f",
+        "type": "change",
+        "z": "25d9bc93ea696645",
+        "name": "Initialize Data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "floodDetection",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "flag",
+                "pt": "flow",
+                "to": "$random()\t",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "count",
+                "pt": "flow",
+                "to": "10",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c184aab96279827",
+        "type": "inject",
+        "z": "25d9bc93ea696645",
+        "name": "Inject once at first",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 130,
+        "y": 40,
+        "wires": [
+            [
+                "d330b887a5c6de4f"
+            ]
+        ]
+    },
+    {
+        "id": "eaaf5b90bd979c18",
+        "type": "inject",
+        "z": "25d9bc93ea696645",
+        "name": "Inject every 50 seconds after initial inject",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 200,
+        "y": 120,
+        "wires": [
+            [
+                "cdbe94bd7707e633"
+            ]
+        ]
+    },
+    {
+        "id": "cdbe94bd7707e633",
+        "type": "function",
+        "z": "25d9bc93ea696645",
+        "name": "Random (chance)",
+        "func": "var lastFloodDetection = flow.get('floodDetection');\nvar flag = Math.random();\n\nflow.set('temperatute', lastFloodDetection);\nflow.set('flag', flag);\nflow.set('count', 10);\n\n\nmsg.payload = {\n    'temp': lastFloodDetection,\n    'flag': flag\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 120,
+        "wires": [
+            [
+                "3ee17118045f1fe1"
+            ]
+        ]
+    },
+    {
+        "id": "3ee17118045f1fe1",
+        "type": "debug",
+        "z": "25d9bc93ea696645",
+        "name": "debug 18",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "7bbe66e09030f570",
+        "type": "inject",
+        "z": "25d9bc93ea696645",
+        "name": "Inject Every 10 Seconds",
+        "props": [],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 150,
+        "y": 200,
+        "wires": [
+            [
+                "4b5105d69ae1ec58"
+            ]
+        ]
+    },
+    {
+        "id": "4b5105d69ae1ec58",
+        "type": "function",
+        "z": "25d9bc93ea696645",
+        "name": "Flood Function",
+        "func": "var count = flow.get('count'); // Get the count from the flow\nvar flag = flow.get('flag');\n\nflag = (flag > 0.9) ? true : false; // Set a flag with a chance of being true at 15%\n\nif (flag && count) {\n    // Simulate flood deteciton\n    flow.set('floodDetection', true)\n    flow.set('count', (count - 1));\n    var flood = flow.get('floodDetection'); // Get the data from the flow\n    \n    (count !== 1)\n        ? flag = flag\n        : flag = !flag\n    msg.payload = {\n        \"flood\": flood,\n        \"count\": count,\n        \"flag\": flag\n    }\n    return msg;\n}\n\n// Simulate a flood sensor\nflow.set('floodDetection', false)\nvar flood = flow.get('floodDetection'); // Get the data from the flow\n\n// Pass the data through the payload\nmsg.payload = {\n    \"flood\": flood,\n    \"count\": count,\n    \"flag\": flag\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "43310cef678db0e9"
+            ]
+        ]
+    },
+    {
+        "id": "43310cef678db0e9",
+        "type": "debug",
+        "z": "25d9bc93ea696645",
+        "name": "debug 19",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "82a78b9f21d664ce",
+        "type": "inject",
+        "z": "25d9bc93ea696645",
+        "name": "",
+        "props": [],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 90,
+        "y": 280,
+        "wires": [
+            [
+                "61fc50911501915b"
+            ]
+        ]
+    },
+    {
+        "id": "61fc50911501915b",
+        "type": "function",
+        "z": "25d9bc93ea696645",
+        "name": "Create data based on the Smart-Data Models",
+        "func": "function createDay(value) {\n    switch (value) {\n        case 0:\n            return \"Monday\"\n        case 1:\n            return \"Tuesday\"\n        case 2:\n            return \"Wednesday\"\n        case 3:\n            return \"Thursday\"\n        case 4:\n            return \"Friday\"\n        case 5:\n            return \"Saturday\"\n        case 6:\n            return \"Sunday\"\n    }\n}\n\nfunction createMonth(value) {\n    switch (value) {\n        case 0:\n            return \"Jan\"\n        case 1:\n            return \"Feb\"\n        case 2:\n            return \"Mar\"\n        case 3:\n            return \"Apr\"\n        case 4:\n            return \"May\"\n        case 5:\n            return \"Jun\"\n        case 6:\n            return \"Jul\"\n        case 7:\n            return \"Aug\"\n        case 8:\n            return \"Sep\"\n        case 9:\n            return \"Oct\"\n        case 10:\n            return \"Nov\"\n        case 11:\n            return \"Dec\"\n    }\n}\n\nvar date = new Date();\n\nvar time = createDay(date.getDay()) + \" \" +\n    createMonth(date.getMonth()) + \" \" +\n    (date.getDate().toString()) + \" \" +\n    (date.getFullYear()).toString() + \" \" +\n    ((date.getHours() < 10) ? \"0\" : \"\") +\n    (date.getHours() + 2).toString() + \":\" +\n    ((date.getMinutes() < 10) ? \"0\" : \"\") +\n    (date.getMinutes()).toString() + \":\" +\n    ((date.getSeconds() < 10) ? \"0\" : \"\") +\n    (date.getSeconds()).toString()\n\n\nvar saveFloodDetection = flow.get('floodDetection');\n\nvar value = (saveFloodDetection)? \"1\": \"0\";\n\n\nvar payload = {\n    \"id\": \"waterlevel-1\",\n    \"type\": \"Device\",\n    \"deviceCategory\": [\n        \"sensor\"\n    ],\n    \"controlledProperty\": [\n        \"waterLevel\",\n\n    ],\n    \"batteryLevel\": 0.85,\n    \"rssi\": 0.86,\n    \"value\": value,\n    \"deviceState\": \"ok\",\n    \"dateLastValueReported\": time.toString(),\n    \"dateFirstUsed\": \"2014-09-11T11:00:00Z\"\n}\n\nmsg.payload = payload\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 280,
+        "wires": [
+            [
+                "96b9a6e812565ba1"
+            ]
+        ]
+    },
+    {
+        "id": "96b9a6e812565ba1",
+        "type": "http request",
+        "z": "25d9bc93ea696645",
+        "name": "Send the data to the database",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "fly-monitoring.deno.dev/api/devices/fluid-level",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 750,
+        "y": 280,
+        "wires": [
+            [
+                "9780af4b0732e1cc"
+            ]
+        ]
+    },
+    {
+        "id": "9780af4b0732e1cc",
+        "type": "debug",
+        "z": "25d9bc93ea696645",
+        "name": "debug 20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "47235b5fbc3d7365",
+        "type": "change",
+        "z": "facba21687aa94e4",
+        "name": "Initialize Data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "smokeDetection",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "flag",
+                "pt": "flow",
+                "to": "$random()\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "494039b2540fcccc",
+        "type": "inject",
+        "z": "facba21687aa94e4",
+        "name": "Inject once at first",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 150,
+        "y": 40,
+        "wires": [
+            [
+                "47235b5fbc3d7365"
+            ]
+        ]
+    },
+    {
+        "id": "e4a2cc7879ddc3c5",
+        "type": "inject",
+        "z": "facba21687aa94e4",
+        "name": "Inject every 50 seconds after initial inject",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 220,
+        "y": 120,
+        "wires": [
+            [
+                "4e8da9a4abe1481f"
+            ]
+        ]
+    },
+    {
+        "id": "4e8da9a4abe1481f",
+        "type": "function",
+        "z": "facba21687aa94e4",
+        "name": "Random (chance)",
+        "func": "var lastSmokeDetection = flow.get('smokeDetection');\nvar flag = Math.random();\n\nflow.set('smokeDetection', lastSmokeDetection);\nflow.set('flag', flag);\nflow.set('count', 10);\n\n\nmsg.payload = {\n    'temp': lastSmokeDetection,\n    'flag': flag\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 120,
+        "wires": [
+            [
+                "f26337e32128596f"
+            ]
+        ]
+    },
+    {
+        "id": "f26337e32128596f",
+        "type": "debug",
+        "z": "facba21687aa94e4",
+        "name": "debug 21",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "84dceff25370fcf7",
+        "type": "inject",
+        "z": "facba21687aa94e4",
+        "name": "Inject Every 10 Seconds",
+        "props": [],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "c98a0c267cd53af1"
+            ]
+        ]
+    },
+    {
+        "id": "c98a0c267cd53af1",
+        "type": "function",
+        "z": "facba21687aa94e4",
+        "name": "Smoke Function",
+        "func": "var count = flow.get('count'); // Get the count from the flow\nvar flag = flow.get('flag');\n\nflag = (flag > 0.9) ? true : false; // Set a flag with a chance of being true at 15%\n\nif (flag && count) {\n    // Simulate smoke deteciton\n    flow.set('smokeDetection', true)\n    flow.set('count', (count - 1));\n    var smoke = flow.get('smokeDetection'); // Get the data from the flow\n\n    (count !== 1)\n        ? flag = flag\n        : flag = !flag\n    msg.payload = {\n        \"smoke\": smoke,\n        \"count\": count,\n        \"flag\": flag\n    }\n    return msg;\n}\n\n// Simulate a smoke sensor\nflow.set('smokeDetection', false)\nvar smoke = flow.get('smokeDetection'); // Get the data from the flow\n\n// Pass the data through the payload\nmsg.payload = {\n    \"flood\": smoke,\n    \"count\": count,\n    \"flag\": flag\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 200,
+        "wires": [
+            [
+                "954d6a1ceb72c291"
+            ]
+        ]
+    },
+    {
+        "id": "954d6a1ceb72c291",
+        "type": "debug",
+        "z": "facba21687aa94e4",
+        "name": "debug 22",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7bcba4b774d51437",
+        "type": "inject",
+        "z": "facba21687aa94e4",
+        "name": "",
+        "props": [],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 110,
+        "y": 280,
+        "wires": [
+            [
+                "2b2fdd46e8d6d677"
+            ]
+        ]
+    },
+    {
+        "id": "2b2fdd46e8d6d677",
+        "type": "function",
+        "z": "facba21687aa94e4",
+        "name": "Create data based on the Smart-Data Models",
+        "func": "var saveSmokeDetection = flow.get('smokeDetection');\n\nfunction createDay(value) {\n    switch (value) {\n        case 0:\n            return \"Monday\"\n        case 1:\n            return \"Tuesday\"\n        case 2:\n            return \"Wednesday\"\n        case 3:\n            return \"Thursday\"\n        case 4:\n            return \"Friday\"\n        case 5:\n            return \"Saturday\"\n        case 6:\n            return \"Sunday\"\n    }\n}\n\nfunction createMonth(value) {\n    switch (value) {\n        case 0:\n            return \"Jan\"\n        case 1:\n            return \"Feb\"\n        case 2:\n            return \"Mar\"\n        case 3:\n            return \"Apr\"\n        case 4:\n            return \"May\"\n        case 5:\n            return \"Jun\"\n        case 6:\n            return \"Jul\"\n        case 7:\n            return \"Aug\"\n        case 8:\n            return \"Sep\"\n        case 9:\n            return \"Oct\"\n        case 10:\n            return \"Nov\"\n        case 11:\n            return \"Dec\"\n    }\n}\n\nvar date = new Date();\n\nvar time = createDay(date.getDay()) + \" \" +\n    createMonth(date.getMonth()) + \" \" +\n    (date.getDate().toString()) + \" \" +\n    (date.getFullYear()).toString() + \" \" +\n    ((date.getHours() < 10) ? \"0\" : \"\") +\n    (date.getHours() + 2).toString() + \":\" +\n    ((date.getMinutes() < 10) ? \"0\" : \"\") +\n    (date.getMinutes()).toString() + \":\" +\n    ((date.getSeconds() < 10) ? \"0\" : \"\") +\n    (date.getSeconds()).toString()\n\n\nvar value = (saveSmokeDetection) ? \"1\" : \"0\";\n\n\nvar payload  = {\n    \"id\": \"smoke1\",\n    \"type\": \"Device\",\n    \"deviceCategory\": [\n        \"sensor\"\n    ],\n    \"controlledProperty\": [\n        \"smoke\",\n    ],\n    \"batteryLevel\": 0.85,\n    \"rssi\": 0.86,\n    \"value\": value,\n    \"deviceState\": \"ok\",\n    \"dateLastValueReported\": time.toString(),\n    \"dateFirstUsed\": \"2014-09-11T11:00:00Z\",\n\n}\n\nmsg.payload = payload\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 280,
+        "wires": [
+            [
+                "b135caf3282971d8"
+            ]
+        ]
+    },
+    {
+        "id": "b135caf3282971d8",
+        "type": "http request",
+        "z": "facba21687aa94e4",
+        "name": "Send the data to the database",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "fly-monitoring.deno.dev/api/devices/smoke",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 770,
+        "y": 280,
+        "wires": [
+            [
+                "ac1ec9d33fe45036"
+            ]
+        ]
+    },
+    {
+        "id": "ac1ec9d33fe45036",
+        "type": "debug",
+        "z": "facba21687aa94e4",
+        "name": "debug 23",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9228bb2f6c2047c3",
+        "type": "change",
+        "z": "aeee98e7c306a533",
+        "name": "Initialize Data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "dust",
+                "pt": "flow",
+                "to": "0.05",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "count",
+                "pt": "flow",
+                "to": "10",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "flag",
+                "pt": "flow",
+                "to": "$random()\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7325c9e0327ab6da",
+        "type": "inject",
+        "z": "aeee98e7c306a533",
+        "name": "Inject once at first",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 130,
+        "y": 40,
+        "wires": [
+            [
+                "9228bb2f6c2047c3"
+            ]
+        ]
+    },
+    {
+        "id": "aae9dc233de90186",
+        "type": "inject",
+        "z": "aeee98e7c306a533",
+        "name": "Inject Every 10 Second",
+        "props": [],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 150,
+        "y": 200,
+        "wires": [
+            [
+                "f0e9d68474b38c68"
+            ]
+        ]
+    },
+    {
+        "id": "f0e9d68474b38c68",
+        "type": "function",
+        "z": "aeee98e7c306a533",
+        "name": "Dust Function",
+        "func": "function getRandomValue(max, min) {\n    // Generate a random value between max and min\n    return Math.random() * (max - min) + min;\n}\n\nvar dust = flow.get('dust'); // Get the data from the flow\nvar count = flow.get('count'); // Get the count from the flow\nvar flag = flow.get('flag'); // Get the flag from the flow\n\nflag = (flag>0.9) ? true : false; // Set a flag with a chance of being true at 15%\n\nif (flag && count) {\n    // Simulate an increase of temperature\n    flow.set('dust', (+(dust+0.01).toFixed(2)))\n    flow.set('count', (count-1));\n    (count!==1)\n        ? flag = flag\n        : flag = !flag\n    msg.payload ={\n        \"dust\": dust,\n        \"count\": count,\n        \"flag\": flag\n    }\n    return msg;   \n}\n\n// Simulate a temperature sensor\n// flow.set(\"dust\", (+(dust + getRandomValue(0.01, -0.01)).toFixed(3)))\nflow.set('dust', dust)\n\n// Pass the data through the payload\nmsg.payload = {\n    \"temperature\": dust,\n    \"count\": count,\n    \"flag\": flag\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "74c912b27a58e538"
+            ]
+        ]
+    },
+    {
+        "id": "74c912b27a58e538",
+        "type": "debug",
+        "z": "aeee98e7c306a533",
+        "name": "debug 24",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "10fb6b6fa26ce6bf",
+        "type": "inject",
+        "z": "aeee98e7c306a533",
+        "name": "Inject every 50 seconds after initial inject",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "50",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 200,
+        "y": 120,
+        "wires": [
+            [
+                "294f0d90eaa8aa63"
+            ]
+        ]
+    },
+    {
+        "id": "294f0d90eaa8aa63",
+        "type": "function",
+        "z": "aeee98e7c306a533",
+        "name": "Random (chance)",
+        "func": "var lastDust = flow.get('dust');\nvar flag = Math.random();\n\nflow.set('dust', lastDust);\nflow.set('flag', flag);\nflow.set('count', 10);\n\n\nmsg.payload = {\n    'dust': lastDust,\n    'flag': flag\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 120,
+        "wires": [
+            [
+                "63daf6d553ae1115"
+            ]
+        ]
+    },
+    {
+        "id": "63daf6d553ae1115",
+        "type": "debug",
+        "z": "aeee98e7c306a533",
+        "name": "debug 25",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "1c5d312c41346a1b",
+        "type": "inject",
+        "z": "aeee98e7c306a533",
+        "name": "",
+        "props": [],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 90,
+        "y": 280,
+        "wires": [
+            [
+                "7f4d9ff1bbbe3c9b"
+            ]
+        ]
+    },
+    {
+        "id": "7f4d9ff1bbbe3c9b",
+        "type": "function",
+        "z": "aeee98e7c306a533",
+        "name": "Create data based on the Smart-Data Models",
+        "func": "function createDay(value) {\n    switch (value) {\n        case 0:\n            return \"Monday\"\n        case 1:\n            return \"Tuesday\"\n        case 2:\n            return \"Wednesday\"\n        case 3:\n            return \"Thursday\"\n        case 4:\n            return \"Friday\"\n        case 5:\n            return \"Saturday\"\n        case 6:\n            return \"Sunday\"\n    }\n}\n\nfunction createMonth(value) {\n    switch (value) {\n        case 0:\n            return \"Jan\"\n        case 1:\n            return \"Feb\"\n        case 2:\n            return \"Mar\"\n        case 3:\n            return \"Apr\"\n        case 4:\n            return \"May\"\n        case 5:\n            return \"Jun\"\n        case 6:\n            return \"Jul\"\n        case 7:\n            return \"Aug\"\n        case 8:\n            return \"Sep\"\n        case 9:\n            return \"Oct\"\n        case 10:\n            return \"Nov\"\n        case 11:\n            return \"Dec\"\n    }\n}\n\nvar date = new Date();\n\nvar time = createDay(date.getDay()) + \" \" +\n    createMonth(date.getMonth()) + \" \" +\n    (date.getDate().toString()) + \" \" +\n    (date.getFullYear()).toString() + \" \" +\n    ((date.getHours() < 10) ? \"0\" : \"\") +\n    (date.getHours() + 2).toString() + \":\" +\n    ((date.getMinutes() < 10) ? \"0\" : \"\") +\n    (date.getMinutes()).toString() + \":\" +\n    ((date.getSeconds() < 10) ? \"0\" : \"\") +\n    (date.getSeconds()).toString()\n\n\nvar saveDust = flow.get('dust');\n\nvar value = \"D\" + saveDust.toString();\n\nvar payload = {\n    \"id\": \"dust1\",\n    \"type\": \"Device\",\n    \"deviceCategory\": [\n        \"sensor\"\n    ],\n    \"controlledProperty\": [\n        \"airPollution\",\n    ],\n    \"batteryLevel\": 0.90,\n    \"rssi\": 0.74,\n    \"value\": value,\n    \"deviceState\": \"ok\",\n    \"dateLastValueReported\": time.toString(),\n    \"dateFirstUsed\": \"2014-09-11T11:00:00Z\"\n}\n\nmsg.payload = payload\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 280,
+        "wires": [
+            [
+                "79b9fbc40a4260f8"
+            ]
+        ]
+    },
+    {
+        "id": "79b9fbc40a4260f8",
+        "type": "http request",
+        "z": "aeee98e7c306a533",
+        "name": "Send the data to the database",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "https://fly-monitoring.deno.dev/api/devices/dust",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 750,
+        "y": 280,
+        "wires": [
+            [
+                "597161fdd82e846c"
+            ]
+        ]
+    },
+    {
+        "id": "597161fdd82e846c",
+        "type": "debug",
+        "z": "aeee98e7c306a533",
+        "name": "debug 26",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "fb54729355b33d97",
+        "type": "change",
+        "z": "e607d33a7688c759",
+        "name": "Initialize Data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "flag1",
+                "pt": "flow",
+                "to": "$random()\t",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "flag2",
+                "pt": "flow",
+                "to": "$random()\t",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "flag3",
+                "pt": "flow",
+                "to": "$random()",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "flag4",
+                "pt": "flow",
+                "to": "$random()",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "flag5",
+                "pt": "flow",
+                "to": "$random()",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "flag6",
+                "pt": "flow",
+                "to": "$random()",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "counts",
+                "pt": "flow",
+                "to": "{\"count1\":10,\"count2\":10,\"count3\":10,\"count4\":10,\"count5\":10,\"count6\":10}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "temperatures",
+                "pt": "flow",
+                "to": "{\"temp1\":50,\"temp2\":50,\"temp3\":50,\"temp4\":50,\"temp5\":50,\"temp6\":50}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 40,
+        "wires": [
+            [
+                "39bceb1e7b4fbf6a"
+            ]
+        ]
+    },
+    {
+        "id": "f82a4ce379917da8",
+        "type": "inject",
+        "z": "e607d33a7688c759",
+        "name": "Inject once at first",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 150,
+        "y": 40,
+        "wires": [
+            [
+                "fb54729355b33d97"
+            ]
+        ]
+    },
+    {
+        "id": "ed7a2c4a52224fc0",
+        "type": "inject",
+        "z": "e607d33a7688c759",
+        "name": "Inject Every 10 Second",
+        "props": [],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 1150,
+        "y": 120,
+        "wires": [
+            [
+                "faefaa111a33dd19"
+            ]
+        ]
+    },
+    {
+        "id": "faefaa111a33dd19",
+        "type": "function",
+        "z": "e607d33a7688c759",
+        "name": "Temperature Function",
+        "func": "function getRandomValue(max, min) {\n    // Generate a random value between max and min\n    return Math.random() * (max - min) + min;\n}\n\nvar temperatures = flow.get('temperatures'); // Get the data from the flow\nvar counts = flow.get('counts'); // Get the count from the flow\nvar flag = flow.get('flag1');\n\nflag = (flag>0.95) ? true : false; // Set a flag with a chance of being true at 5%\n\nif (flag && counts.count1) {\n    // Simulate an increase of temperature\n    temperatures.temp1 = temperatures.temp1 + 1\n    counts.count1 = counts.count1 - 1\n\n    flow.set('temperature', temperatures)\n    flow.set('counts', counts);\n    (counts.count1!==1)\n        ? flag = flag\n        : flag = !flag\n    msg.payload ={\n        \"temperature1\": temperatures.temp1,\n        \"count1\": counts.count1,\n        \"flag1\": flag\n    }\n    return msg;   \n}\ntemperatures.temp1 = +(temperatures.temp1 + getRandomValue(0.15, -0.15)).toFixed(2)\n\n// Simulate a temperature sensor\nflow.set(\"temperatures\", temperatures)\n\n// Pass the data through the payload\nmsg.payload = {\n    \"temperature1\": temperatures.temp1,\n    \"count1\": counts.count1,\n    \"flag1\": flag\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1460,
+        "y": 120,
+        "wires": [
+            [
+                "5c4e46e9b929c02b"
+            ]
+        ]
+    },
+    {
+        "id": "5c4e46e9b929c02b",
+        "type": "debug",
+        "z": "e607d33a7688c759",
+        "name": "debug 27",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1700,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "230c39774145bb5e",
+        "type": "inject",
+        "z": "e607d33a7688c759",
+        "name": "Inject every 50 seconds after initial inject",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "50",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 220,
+        "y": 120,
+        "wires": [
+            [
+                "89692b9399ac73bf"
+            ]
+        ]
+    },
+    {
+        "id": "89692b9399ac73bf",
+        "type": "function",
+        "z": "e607d33a7688c759",
+        "name": "Random (chance)",
+        "func": "var temperatures = flow.get('temperatures');\nvar counts = flow.get('counts');\nvar flag = Math.random();\n\ncounts.count1 = 10\n\nflow.set('temperatute', temperatures);\nflow.set('flag1', flag);\nflow.set('count', counts);\n\n// var temperatures = flow.get('temperatures');\n// var counts = flow.get('counts');\nmsg.payload = {\n    'temp1': temperatures.temp1,\n    'flag1': flag,\n    'count1': counts.count1\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 120,
+        "wires": [
+            [
+                "1a0fcee27dee350a"
+            ]
+        ]
+    },
+    {
+        "id": "1a0fcee27dee350a",
+        "type": "debug",
+        "z": "e607d33a7688c759",
+        "name": "debug 28",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "bcf13fa1acdc1065",
+        "type": "inject",
+        "z": "e607d33a7688c759",
+        "name": "",
+        "props": [],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 110,
+        "y": 600,
+        "wires": [
+            [
+                "a10ee459833b2bf0"
+            ]
+        ]
+    },
+    {
+        "id": "a10ee459833b2bf0",
+        "type": "function",
+        "z": "e607d33a7688c759",
+        "name": "Create data based on the Smart-Data Models",
+        "func": "function createDay(value) {\n    switch (value) {\n        case 0:\n            return \"Monday\"\n        case 1:\n            return \"Tuesday\"\n        case 2:\n            return \"Wednesday\"\n        case 3:\n            return \"Thursday\"\n        case 4:\n            return \"Friday\"\n        case 5:\n            return \"Saturday\"\n        case 6:\n            return \"Sunday\"\n    }\n}\n\nfunction createMonth(value) {\n    switch (value) {\n        case 0:\n            return \"Jan\"\n        case 1:\n            return \"Feb\"\n        case 2:\n            return \"Mar\"\n        case 3:\n            return \"Apr\"\n        case 4:\n            return \"May\"\n        case 5:\n            return \"Jun\"\n        case 6:\n            return \"Jul\"\n        case 7:\n            return \"Aug\"\n        case 8:\n            return \"Sep\"\n        case 9:\n            return \"Oct\"\n        case 10:\n            return \"Nov\"\n        case 11:\n            return \"Dec\"\n    }\n}\n\nvar date = new Date();\n\nvar time = createDay(date.getDay()) + \" \" +\n    createMonth(date.getMonth()) + \" \" +\n    (date.getDate().toString()) + \" \" +\n    (date.getFullYear()).toString() + \" \" +\n    ((date.getHours() < 10) ? \"0\" : \"\") +\n    (date.getHours() + 2).toString() + \":\" +\n    ((date.getMinutes() < 10) ? \"0\" : \"\") +\n    (date.getMinutes()).toString() + \":\" +\n    ((date.getSeconds() < 10) ? \"0\" : \"\") +\n    (date.getSeconds()).toString()\n\n\n\nvar saveTemperature = flow.get('temperatures');\n\nvar value = \"T1R\" + saveTemperature.temp1.toString() + \"%\" +\n            \"T2R\" + saveTemperature.temp2.toString() + \"%\" +\n            \"T3R\" + saveTemperature.temp3.toString() + \"%\" +\n            \"T4R\" + saveTemperature.temp4.toString() + \"%\" +\n            \"T5R\" + saveTemperature.temp5.toString() + \"%\" +\n            \"T6R\" + saveTemperature.temp6.toString();\n\nvar paylaod = {\n    \"id\": \"racktemp-1\",\n    \"type\": \"Device\",\n    \"deviceCategory\": [\n        \"sensor\"\n    ],\n    \"controlledProperty\": [\n        \"temperature\",\n    ],\n    \"batteryLevel\": 0.85,\n    \"rssi\": 0.86,\n    \"value\": value,\n    \"deviceState\": \"ok\",\n    \"dateLastValueReported\": time.toString(),\n    \"dateFirstUsed\": \"2014-09-11T11:00:00Z\"\n}\n\nmsg.payload = paylaod\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 600,
+        "wires": [
+            [
+                "547261e427a9fd2a"
+            ]
+        ]
+    },
+    {
+        "id": "547261e427a9fd2a",
+        "type": "http request",
+        "z": "e607d33a7688c759",
+        "name": "Send the data to the database",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "fly-monitoring.deno.dev/api/devices/rack-temperature",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 770,
+        "y": 600,
+        "wires": [
+            [
+                "6d533b77c5a99a88"
+            ]
+        ]
+    },
+    {
+        "id": "6d533b77c5a99a88",
+        "type": "debug",
+        "z": "e607d33a7688c759",
+        "name": "debug 29",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "904d097570511750",
+        "type": "inject",
+        "z": "e607d33a7688c759",
+        "name": "Inject Every 10 Second",
+        "props": [],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 1150,
+        "y": 180,
+        "wires": [
+            [
+                "d5cbdfd8a82e2c41"
+            ]
+        ]
+    },
+    {
+        "id": "d5cbdfd8a82e2c41",
+        "type": "function",
+        "z": "e607d33a7688c759",
+        "name": "Temperature Function",
+        "func": "function getRandomValue(max, min) {\n    // Generate a random value between max and min\n    return Math.random() * (max - min) + min;\n}\n\nvar temperatures = flow.get('temperatures'); // Get the data from the flow\nvar counts = flow.get('counts'); // Get the count from the flow\nvar flag = flow.get('flag2');\n\nflag = (flag > 0.95) ? true : false; // Set a flag with a chance of being true at 5%\n\nif (flag && counts.count2) {\n    // Simulate an increase of temperature\n    temperatures.temp2 = temperatures.temp2 + 1\n    counts.count2 = counts.count2 - 1\n\n    flow.set('temperature', temperatures)\n    flow.set('counts', counts);\n    (counts.count2 !== 1)\n        ? flag = flag\n        : flag = !flag\n    msg.payload = {\n        \"temperature2\": temperatures.temp2,\n        \"count2\": counts.count2,\n        \"flag2\": flag\n    }\n    return msg;\n}\ntemperatures.temp2 = +(temperatures.temp2 + getRandomValue(0.15, -0.15)).toFixed(2)\n\n// Simulate a temperature sensor\nflow.set(\"temperatures\", temperatures)\n\n// Pass the data through the payload\nmsg.payload = {\n    \"temperature2\": temperatures.temp2,\n    \"count2\": counts.count2,\n    \"flag2\": flag\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1460,
+        "y": 180,
+        "wires": [
+            [
+                "718875d839099796"
+            ]
+        ]
+    },
+    {
+        "id": "718875d839099796",
+        "type": "debug",
+        "z": "e607d33a7688c759",
+        "name": "debug 30",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1700,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "eb4953fd16ab6848",
+        "type": "inject",
+        "z": "e607d33a7688c759",
+        "name": "Inject Every 10 Second",
+        "props": [],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 1150,
+        "y": 240,
+        "wires": [
+            [
+                "480ff4cebae52a5a"
+            ]
+        ]
+    },
+    {
+        "id": "480ff4cebae52a5a",
+        "type": "function",
+        "z": "e607d33a7688c759",
+        "name": "Temperature Function",
+        "func": "function getRandomValue(max, min) {\n    // Generate a random value between max and min\n    return Math.random() * (max - min) + min;\n}\n\nvar temperatures = flow.get('temperatures'); // Get the data from the flow\nvar counts = flow.get('counts'); // Get the count from the flow\nvar flag = flow.get('flag3');\n\nflag = (flag > 0.95) ? true : false; // Set a flag with a chance of being true at 5%\n\nif (flag && counts.count3) {\n    // Simulate an increase of temperature\n    temperatures.temp3 = temperatures.temp3 + 1\n    counts.count3 = counts.count3 - 1\n\n    flow.set('temperature', temperatures)\n    flow.set('counts', counts);\n    (counts.count3 !== 1)\n        ? flag = flag\n        : flag = !flag\n    msg.payload = {\n        \"temperature3\": temperatures.temp3,\n        \"count3\": counts.count3,\n        \"flag3\": flag\n    }\n    return msg;\n}\ntemperatures.temp3 = +(temperatures.temp3 + getRandomValue(0.15, -0.15)).toFixed(2)\n\n// Simulate a temperature sensor\nflow.set(\"temperatures\", temperatures)\n\n// Pass the data through the payload\nmsg.payload = {\n    \"temperature3\": temperatures.temp3,\n    \"count3\": counts.count3,\n    \"flag3\": flag\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1460,
+        "y": 240,
+        "wires": [
+            [
+                "10418c1b2f584848"
+            ]
+        ]
+    },
+    {
+        "id": "10418c1b2f584848",
+        "type": "debug",
+        "z": "e607d33a7688c759",
+        "name": "debug 31",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1700,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "a5a08a5fe2d4c4d8",
+        "type": "inject",
+        "z": "e607d33a7688c759",
+        "name": "Inject Every 10 Second",
+        "props": [],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 1150,
+        "y": 300,
+        "wires": [
+            [
+                "d2db825cfcf3b3c4"
+            ]
+        ]
+    },
+    {
+        "id": "d2db825cfcf3b3c4",
+        "type": "function",
+        "z": "e607d33a7688c759",
+        "name": "Temperature Function",
+        "func": "function getRandomValue(max, min) {\n    // Generate a random value between max and min\n    return Math.random() * (max - min) + min;\n}\n\nvar temperatures = flow.get('temperatures'); // Get the data from the flow\nvar counts = flow.get('counts'); // Get the count from the flow\nvar flag = flow.get('flag4');\n\nflag = (flag > 0.95) ? true : false; // Set a flag with a chance of being true at 5%\n\nif (flag && counts.count4) {\n    // Simulate an increase of temperature\n    temperatures.temp4 = temperatures.temp4 + 1\n    counts.count4 = counts.count4 - 1\n\n    flow.set('temperature', temperatures)\n    flow.set('counts', counts);\n    (counts.count4 !== 1)\n        ? flag = flag\n        : flag = !flag\n    msg.payload = {\n        \"temperature4\": temperatures.temp4,\n        \"count4\": counts.count4,\n        \"flag4\": flag\n    }\n    return msg;\n}\ntemperatures.temp4 = +(temperatures.temp4 + getRandomValue(0.15, -0.15)).toFixed(2)\n\n// Simulate a temperature sensor\nflow.set(\"temperatures\", temperatures)\n\n// Pass the data through the payload\nmsg.payload = {\n    \"temperature4\": temperatures.temp4,\n    \"count4\": counts.count4,\n    \"flag4\": flag\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1460,
+        "y": 300,
+        "wires": [
+            [
+                "a19b4763c704fc1f"
+            ]
+        ]
+    },
+    {
+        "id": "a19b4763c704fc1f",
+        "type": "debug",
+        "z": "e607d33a7688c759",
+        "name": "debug 32",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1700,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c6938d26dd8a1b4d",
+        "type": "inject",
+        "z": "e607d33a7688c759",
+        "name": "Inject Every 10 Second",
+        "props": [],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 1150,
+        "y": 360,
+        "wires": [
+            [
+                "71c5146376785072"
+            ]
+        ]
+    },
+    {
+        "id": "71c5146376785072",
+        "type": "function",
+        "z": "e607d33a7688c759",
+        "name": "Temperature Function",
+        "func": "function getRandomValue(max, min) {\n    // Generate a random value between max and min\n    return Math.random() * (max - min) + min;\n}\n\nvar temperatures = flow.get('temperatures'); // Get the data from the flow\nvar counts = flow.get('counts'); // Get the count from the flow\nvar flag = flow.get('flag5');\n\nflag = (flag > 0.95) ? true : false; // Set a flag with a chance of being true at 5%\n\nif (flag && counts.count5) {\n    // Simulate an increase of temperature\n    temperatures.temp5 = temperatures.temp5 + 1\n    counts.count5 = counts.count5 - 1\n\n    flow.set('temperature', temperatures)\n    flow.set('counts', counts);\n    (counts.count5 !== 1)\n        ? flag = flag\n        : flag = !flag\n    msg.payload = {\n        \"temperature5\": temperatures.temp5,\n        \"count5\": counts.count5,\n        \"flag5\": flag\n    }\n    return msg;\n}\ntemperatures.temp5 = +(temperatures.temp5 + getRandomValue(0.15, -0.15)).toFixed(2)\n\n// Simulate a temperature sensor\nflow.set(\"temperatures\", temperatures)\n\n// Pass the data through the payload\nmsg.payload = {\n    \"temperature5\": temperatures.temp5,\n    \"count5\": counts.count5,\n    \"flag5\": flag\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1460,
+        "y": 360,
+        "wires": [
+            [
+                "61012febcc237a66"
+            ]
+        ]
+    },
+    {
+        "id": "61012febcc237a66",
+        "type": "debug",
+        "z": "e607d33a7688c759",
+        "name": "debug 33",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1700,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "62f3c7a7ffd03165",
+        "type": "inject",
+        "z": "e607d33a7688c759",
+        "name": "Inject Every 10 Second",
+        "props": [],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 1150,
+        "y": 420,
+        "wires": [
+            [
+                "1d1e93b0646b6c20"
+            ]
+        ]
+    },
+    {
+        "id": "1d1e93b0646b6c20",
+        "type": "function",
+        "z": "e607d33a7688c759",
+        "name": "Temperature Function",
+        "func": "function getRandomValue(max, min) {\n    // Generate a random value between max and min\n    return Math.random() * (max - min) + min;\n}\n\nvar temperatures = flow.get('temperatures'); // Get the data from the flow\nvar counts = flow.get('counts'); // Get the count from the flow\nvar flag = flow.get('flag6');\n\nflag = (flag > 0.95) ? true : false; // Set a flag with a chance of being true at 5%\n\nif (flag && counts.count6) {\n    // Simulate an increase of temperature\n    temperatures.temp6 = temperatures.temp6 + 1\n    counts.count6 = counts.count6 - 1\n\n    flow.set('temperature', temperatures)\n    flow.set('counts', counts);\n    (counts.count6 !== 1)\n        ? flag = flag\n        : flag = !flag\n    msg.payload = {\n        \"temperature6\": temperatures.temp6,\n        \"count6\": counts.count6,\n        \"flag6\": flag\n    }\n    return msg;\n}\ntemperatures.temp6 = +(temperatures.temp6 + getRandomValue(0.15, -0.15)).toFixed(2)\n\n// Simulate a temperature sensor\nflow.set(\"temperatures\", temperatures)\n\n// Pass the data through the payload\nmsg.payload = {\n    \"temperature6\": temperatures.temp6,\n    \"count6\": counts.count6,\n    \"flag6\": flag\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1460,
+        "y": 420,
+        "wires": [
+            [
+                "a7b0421168e35dca"
+            ]
+        ]
+    },
+    {
+        "id": "a7b0421168e35dca",
+        "type": "debug",
+        "z": "e607d33a7688c759",
+        "name": "debug 34",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1700,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "dded026adb5cc4a0",
+        "type": "inject",
+        "z": "e607d33a7688c759",
+        "name": "Inject every 50 seconds after initial inject",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "50",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 220,
+        "y": 180,
+        "wires": [
+            [
+                "d9919c0d495d45a2"
+            ]
+        ]
+    },
+    {
+        "id": "d9919c0d495d45a2",
+        "type": "function",
+        "z": "e607d33a7688c759",
+        "name": "Random (chance)",
+        "func": "var temperatures = flow.get('temperatures');\nvar counts = flow.get('counts');\nvar flag = Math.random();\n\ncounts.count2 = 10\n\nflow.set('temperatute', temperatures);\nflow.set('flag2', flag);\nflow.set('count', counts);\n\n// var temperatures = flow.get('temperatures');\n// var counts = flow.get('counts');\nmsg.payload = {\n    'temp2': temperatures.temp2,\n    'flag2': flag,\n    'count2': counts.count2\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 180,
+        "wires": [
+            [
+                "8494708b1a66475b"
+            ]
+        ]
+    },
+    {
+        "id": "8494708b1a66475b",
+        "type": "debug",
+        "z": "e607d33a7688c759",
+        "name": "debug 35",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "c5ceeead861bef2b",
+        "type": "inject",
+        "z": "e607d33a7688c759",
+        "name": "Inject every 50 seconds after initial inject",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "50",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 220,
+        "y": 240,
+        "wires": [
+            [
+                "23c8c8deea69652c"
+            ]
+        ]
+    },
+    {
+        "id": "23c8c8deea69652c",
+        "type": "function",
+        "z": "e607d33a7688c759",
+        "name": "Random (chance)",
+        "func": "var temperatures = flow.get('temperatures');\nvar counts = flow.get('counts');\nvar flag = Math.random();\n\ncounts.count3 = 10\n\nflow.set('temperatute', temperatures);\nflow.set('flag3', flag);\nflow.set('count', counts);\n\n// var temperatures = flow.get('temperatures');\n// var counts = flow.get('counts');\nmsg.payload = {\n    'temp3': temperatures.temp3,\n    'flag3': flag,\n    'count3': counts.count3\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 240,
+        "wires": [
+            [
+                "305afdcee9c5261d"
+            ]
+        ]
+    },
+    {
+        "id": "305afdcee9c5261d",
+        "type": "debug",
+        "z": "e607d33a7688c759",
+        "name": "debug 36",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "7faedd469f37e865",
+        "type": "inject",
+        "z": "e607d33a7688c759",
+        "name": "Inject every 50 seconds after initial inject",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "50",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 220,
+        "y": 300,
+        "wires": [
+            [
+                "083a1fbd7e906186"
+            ]
+        ]
+    },
+    {
+        "id": "083a1fbd7e906186",
+        "type": "function",
+        "z": "e607d33a7688c759",
+        "name": "Random (chance)",
+        "func": "var temperatures = flow.get('temperatures');\nvar counts = flow.get('counts');\nvar flag = Math.random();\n\ncounts.count4 = 10\n\nflow.set('temperatute', temperatures);\nflow.set('flag4', flag);\nflow.set('count', counts);\n\n// var temperatures = flow.get('temperatures');\n// var counts = flow.get('counts');\nmsg.payload = {\n    'temp4': temperatures.temp4,\n    'flag4': flag,\n    'count4': counts.count4\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 300,
+        "wires": [
+            [
+                "0741ddb9411e6482"
+            ]
+        ]
+    },
+    {
+        "id": "0741ddb9411e6482",
+        "type": "debug",
+        "z": "e607d33a7688c759",
+        "name": "debug 37",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "92ef772ff4f14158",
+        "type": "inject",
+        "z": "e607d33a7688c759",
+        "name": "Inject every 50 seconds after initial inject",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "50",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 220,
+        "y": 360,
+        "wires": [
+            [
+                "5d6d7929938cf0b5"
+            ]
+        ]
+    },
+    {
+        "id": "5d6d7929938cf0b5",
+        "type": "function",
+        "z": "e607d33a7688c759",
+        "name": "Random (chance)",
+        "func": "var temperatures = flow.get('temperatures');\nvar counts = flow.get('counts');\nvar flag = Math.random();\n\ncounts.count5 = 10\n\nflow.set('temperatute', temperatures);\nflow.set('flag5', flag);\nflow.set('count', counts);\n\n// var temperatures = flow.get('temperatures');\n// var counts = flow.get('counts');\nmsg.payload = {\n    'temp5': temperatures.temp5,\n    'flag5': flag,\n    'count5': counts.count5\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 360,
+        "wires": [
+            [
+                "32890f903dc2f4ea"
+            ]
+        ]
+    },
+    {
+        "id": "32890f903dc2f4ea",
+        "type": "debug",
+        "z": "e607d33a7688c759",
+        "name": "debug 38",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "5c0c29e8607565b2",
+        "type": "inject",
+        "z": "e607d33a7688c759",
+        "name": "Inject every 50 seconds after initial inject",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "50",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 220,
+        "y": 420,
+        "wires": [
+            [
+                "d998531134785d3f"
+            ]
+        ]
+    },
+    {
+        "id": "d998531134785d3f",
+        "type": "function",
+        "z": "e607d33a7688c759",
+        "name": "Random (chance)",
+        "func": "var temperatures = flow.get('temperatures');\nvar counts = flow.get('counts');\nvar flag = Math.random();\n\ncounts.count6 = 10\n\nflow.set('temperatute', temperatures);\nflow.set('flag6', flag);\nflow.set('count', counts);\n\n// var temperatures = flow.get('temperatures');\n// var counts = flow.get('counts');\nmsg.payload = {\n    'temp6': temperatures.temp6,\n    'flag6': flag,\n    'count6': counts.count6\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 420,
+        "wires": [
+            [
+                "cdc7741420773221"
+            ]
+        ]
+    },
+    {
+        "id": "cdc7741420773221",
+        "type": "debug",
+        "z": "e607d33a7688c759",
+        "name": "debug 39",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "1793744c8af121d2",
+        "type": "debug",
+        "z": "e607d33a7688c759",
+        "name": "debug 40",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "39bceb1e7b4fbf6a",
+        "type": "function",
+        "z": "e607d33a7688c759",
+        "name": "function 11",
+        "func": "var flag1 = flow.get('flag1');\nvar flag2 = flow.get('flag2');\nvar flag3 = flow.get('flag3');\nvar flag4 = flow.get('flag4');\nvar flag5 = flow.get('flag5');\nvar flag6 = flow.get('flag6');\n\nvar counts = flow.get('counts');\nvar temps = flow.get('temperatures');\n\nvar flags = {\n    \"flag1\": flag1,\n    \"flag2\": flag2,\n    \"flag3\": flag3,\n    \"flag4\": flag4,\n    \"flag5\": flag5,\n    \"flag6\": flag6\n}\n\n\n\nmsg.payload ={\n    \"counts\": counts,\n    \"temps\": temps,\n    flags\n\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 40,
+        "wires": [
+            [
+                "1793744c8af121d2"
+            ]
+        ]
+    },
+    {
+        "id": "5317973881a7a318",
+        "type": "change",
+        "z": "8e7998afd46d10da",
+        "name": "Initialize Data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "doorOpened",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "flag",
+                "pt": "flow",
+                "to": "$random()\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8cadfad2d225ea52",
+        "type": "inject",
+        "z": "8e7998afd46d10da",
+        "name": "Inject once at first",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "data",
+        "payloadType": "flow",
+        "x": 130,
+        "y": 40,
+        "wires": [
+            [
+                "5317973881a7a318"
+            ]
+        ]
+    },
+    {
+        "id": "4ce650546be378ff",
+        "type": "inject",
+        "z": "8e7998afd46d10da",
+        "name": "Inject Every 1 Minute",
+        "props": [],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "b9db187590b044a1"
+            ]
+        ]
+    },
+    {
+        "id": "b9db187590b044a1",
+        "type": "function",
+        "z": "8e7998afd46d10da",
+        "name": "Door Function",
+        "func": "var door = flow.get('doorOpened');\n// var flag = flow.get('flag')\nvar flag = Math.random();\n\nflag = (flag > 0.8) ? true : false;\n\nif(flag){\n    // In case the door opens\n    flow.set('doorOpened', true)\n    var door = flow.get('doorOpened');\n\n    msg.payload = {\n        \"controlledProperty\": \"doorOpened\",\n        \"value\": door\n    }\n\n    return msg;\n}\n\nflow.set('doorOpened', false)\nvar door = flow.get('doorOpened');\n\n// In case there is not flood\nmsg.payload = {\n    \"controlledProperty\": \"doorOpened\",\n    \"value\": door\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 120,
+        "wires": [
+            [
+                "289899ab695b4276"
+            ]
+        ]
+    },
+    {
+        "id": "289899ab695b4276",
+        "type": "debug",
+        "z": "8e7998afd46d10da",
+        "name": "debug 42",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "1a94ee96798b2f97",
+        "type": "inject",
+        "z": "8e7998afd46d10da",
+        "name": "",
+        "props": [],
+        "repeat": "75",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "ebc7723e3ab35f17"
+            ]
+        ]
+    },
+    {
+        "id": "ebc7723e3ab35f17",
+        "type": "function",
+        "z": "8e7998afd46d10da",
+        "name": "Create data based on the Smart-Data Models",
+        "func": "function createDay(value) {\n    switch(value){\n        case 0:\n            return \"Monday\"\n        case 1:\n            return \"Tuesday\"\n        case 2:\n            return \"Wednesday\"\n        case 3:\n            return \"Thursday\"\n        case 4:\n            return \"Friday\"\n        case 5:\n            return \"Saturday\"\n        case 6:\n            return \"Sunday\"\n    }\n}\n\nfunction createMonth(value) {\n    switch (value) {\n        case 0:\n            return \"Jan\"\n        case 1:\n            return \"Feb\"\n        case 2:\n            return \"Mar\"\n        case 3:\n            return \"Apr\"\n        case 4:\n            return \"May\"\n        case 5:\n            return \"Jun\"\n        case 6:\n            return \"Jul\"\n        case 7:\n            return \"Aug\"\n        case 8:\n            return \"Sep\"\n        case 9:\n            return \"Oct\"\n        case 10:\n            return \"Nov\"\n        case 11:\n            return \"Dec\"\n    }\n}\n\nvar saveDoorOpened = flow.get('doorOpened');\n\nvar date = new Date();\n\nvar time = createDay(date.getDay()) + \" \" +\n           createMonth(date.getMonth()) + \" \" +\n           (date.getDate().toString())+ \" \" +\n           (date.getFullYear()).toString() + \" \" + \n           ((date.getHours() <10 )? \"0\": \"\") +\n           (date.getHours()+2).toString() + \":\" +\n           ((date.getMinutes() < 10)? \"0\" : \"\") +\n           (date.getMinutes()).toString() + \":\" +\n           ((date.getSeconds() < 10) ? \"0\" : \"\") +\n           (date.getSeconds()).toString()\n\nvar value = (saveDoorOpened) ? \"1\": \"0\";\n\nvar payload = {\n    \"id\": \"gate1\",\n    \"type\": \"Device\",\n    \"deviceCategory\": [\n        \"sensor\"\n    ],\n    \"controlledProperty\": [\n        \"gateOpening\",\n\n    ],\n    \"batteryLevel\": 0.84,\n    \"rssi\": 0.95,\n    \"value\": value,\n    \"deviceState\": \"ok\",\n    \"dateLastValueReported\": time.toString(),\n    \"dateFirstUsed\": \"2014-09-11T11:00:00Z\",\n\n}\n\nmsg.payload = payload\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 200,
+        "wires": [
+            [
+                "f257485bcc4f5c2a"
+            ]
+        ]
+    },
+    {
+        "id": "f257485bcc4f5c2a",
+        "type": "http request",
+        "z": "8e7998afd46d10da",
+        "name": "Send the data to the database",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "fly-monitoring.deno.dev/api/devices/door",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 750,
+        "y": 200,
+        "wires": [
+            [
+                "1c26e6675f136613"
+            ]
+        ]
+    },
+    {
+        "id": "1c26e6675f136613",
+        "type": "debug",
+        "z": "8e7998afd46d10da",
+        "name": "debug 43",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "6c8999f00d33e861",
+        "type": "inject",
+        "z": "5ddd33ad734898a1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "180",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "d237819ba623b33a"
+            ]
+        ]
+    },
+    {
+        "id": "d237819ba623b33a",
+        "type": "http request",
+        "z": "5ddd33ad734898a1",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://fly-monitoring.deno.dev/api/alert-email",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 390,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    }
+]
