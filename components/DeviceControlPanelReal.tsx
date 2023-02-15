@@ -41,7 +41,7 @@ export default function DeviceControlPanelReal({lastPayload}: data){
     const month = getMonthFromNumber(+dateInfo[1])
 
     const dotIndex: number = lastDate.split('T')[1].indexOf('.')
-    const time: string = lastDate.split('T')[1].slice(1,dotIndex)
+    const time: string = lastDate.split('T')[1].slice(0,dotIndex)
     const timeInfo = time.split(':')
     const hour = +timeInfo[0]+2
 
