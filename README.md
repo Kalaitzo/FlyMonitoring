@@ -146,12 +146,11 @@ because afterwards you won't be able to access it, and you'll have to create ano
 <h4>Mailgun Variables</h4>
 <br>
 ```
-EMAIL="SENDER_EMAIL"
-RECV_EMAIL="RECIPIENT_EMAIL"
-API_KEY_MAILGUN="MAILGUN_API_KEY"
-MAILGUN_DOMAIN="MAILGUN_DOMAIN_NAME"
+EMAIL=<SENDER_EMAIL>
+RECV_EMAIL=<RECIPIENT_EMAIL>
+API_KEY_MAILGUN=<MAILGUN_API_KEY>
+MAILGUN_DOMAIN=<MAILGUN_DOMAIN_NAME>
 ```
-
 **_NOTE:_**  The MAILGUN_API_KEY is not the one that is sent to you after you created the account. You must access it 
 form the API keys tab on the Overview page of your domain (Private API key).
 **_NOTE_** The RECIPIENT_EMAIL must be saved as an Authorized Recipient and also be verified.
