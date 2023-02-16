@@ -134,6 +134,7 @@ At this point you have your database deployed on MongoDB Atlas, you have success
 you have your domain ready on the mailgun service. In order to
 run the source code locally you need to create a .env file with the following variables
 <h4>MongoDB Atlas Variables</h4>
+The environmental variables needed for MongoDB Atlas are:
 ```
 DB=<DATABASE_NAME>
 API_KEY=<ATLAS_API_KEY>
@@ -144,6 +145,7 @@ DATA_SOURCE=<CLUSTER_NAME>
 because afterwards you won't be able to access it, and you'll have to create another one
 
 <h4>Mailgun Variables</h4>
+The environmental variables needed for mailgun are the following:
 <br>
 ```
 EMAIL=<SENDER_EMAIL>
