@@ -66,8 +66,10 @@ The flows used for the application are:
 
 ## Access the application online (Recommended)
 After Node-RED has been deployed you can use the application as stated above by visiting the 
-online deployed version at <a href=https://fly-monitoring.deno.dev/>fly-monitoring.deno.dev</a>
-<br>
+online deployed version at:
+
+### <a href=https://fly-monitoring.deno.dev/>fly-monitoring.deno.dev</a>
+
 To log in to the app you can use the following credentials:
 <ul>
     <li>Username: admin</li>
@@ -160,6 +162,7 @@ MAILGUN_DOMAIN=<MAILGUN_DOMAIN_NAME>
 **_NOTE:_**  The MAILGUN_API_KEY is not the one that is sent to you after you created the account. You must access it 
 form the API keys tab on the Overview page of your domain (Private API key).
 **_NOTE_** The RECIPIENT_EMAIL must be saved as an Authorized Recipient and also be verified.
+
 ### Run the source code
 For this part a code editor is needed (e.g. Visual Studio Code)
 #### Install Visual Studio Code
@@ -194,5 +197,5 @@ terminal:
 ```
 deno task start
 ```
-<br>
-Again you can log in to the app by using the credentials mention above
+**_NOTE:_**  You can log in to the application by using a set of credentials you have inserted as a document (username, 
+password) to the users collection as stated above
