@@ -191,6 +191,8 @@ environmental variables mentioned above found in the .env file provided by us
 Finally after those changes have been completed you can run the source code by typing the following command to a 
 terminal:
 <br>
-```deno task start```
+```
+deno task start
+```
 <br>
 Again you can log in to the app by using the credentials mention above
