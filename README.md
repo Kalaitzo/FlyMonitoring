@@ -5,8 +5,10 @@
 This project is an IOT web application developed with <a href=https://deno.land/>Deno</a> and the framework 
 <a href=https://fresh.deno.dev/>Fresh</a> that provides monitoring for high security rooms. In order to simulate
 some real life scenarios, some virtual sensors have been implemented using 
-<a href=https://nodered.org/>Node-RED</a>. Also some real sensor data are shown on the website. The application is
-deployed online using <a href=https://deno.com/deploy>Deno Deploy</a>
+<a href=https://nodered.org/>Node-RED</a>. Also some real sensor data are shown on the website. Furthermore, in order
+to store the data from the virtual and the real sensors a MongoDB database was deployed on the cloud with the 
+<a href=https://www.mongodb.com/atlas>MongoDB Atlas</a> service.
+Finally, the application is deployed online using <a href=https://deno.com/deploy>Deno Deploy</a>
 
 ## Prerequisites
 
