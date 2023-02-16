@@ -198,7 +198,7 @@ environmental variables mentioned above found in the .env file provided by us
     </ol>
     <li>alert-email.ts</li>
     <ol>
-        <li>Open the "alert-email.ts" file found at the <strong>routes/api/</strong></li>
+        <li>Open the "alert-email.ts" file found at <strong>routes/api/</strong></li>
         <li>Uncomment the commented lines of code (line 8 and line 61 ot line 65) by removing the '//' from their beginning</li>
         <li>Comment the lines from line 57 to line 60 by adding '//' at their beginning</li>
     </ol>
