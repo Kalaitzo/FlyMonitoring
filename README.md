@@ -144,6 +144,7 @@ DATA_SOURCE=<CLUSTER_NAME>
 because afterwards you won't be able to access it, and you'll have to create another one
 
 <h4>Mailgun Variables</h4>
+
 <br>
 ```EMAIL="SENDER_EMAIL"``` 
 <br>
