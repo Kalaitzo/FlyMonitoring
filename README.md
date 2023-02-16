@@ -1,4 +1,12 @@
-# High security room monitoring application
+# FlyMonitoring - High Security Room Monitoring Application (Project 12.1)
+
+## Overview - Architecture
+
+This project is an IOT web application developed with <a href=https://deno.land/>Deno</a> and the framework 
+<a href=https://fresh.deno.dev/>Fresh</a> that provides monitoring for high security rooms. In order to simulate
+some real life scenarios, some virtual sensors have been implemented using 
+<a href=https://nodered.org/>Node-RED</a>. Also some real sensor data are shown on the website. The application is
+deployed online using <a href=https://deno.com/deploy>Deno Deploy</a>
 
 ## Prerequisites
 
@@ -8,7 +16,7 @@ and accessing the website at the link presented below or locally by also install
 downloading the source code,
 creating an account on the <strong>mailgun</strong> service
 and creating
-your own <strong>MongoDB</strong> database using <strong>Atlas</strong>
+your own <strong>MongoDB</strong> database using <strong>Atlas</strong>.
 
 <ul>
     <li>
@@ -31,6 +39,7 @@ your own <strong>MongoDB</strong> database using <strong>Atlas</strong>
 </ul>
 
 ## Deploy Node-RED
+
 After Node-RED has been installed you can run it locally by typing the following command on a terminal:
 <br>
 
@@ -51,7 +60,9 @@ Then import the flows found at this repository (flows.json) by following the ste
     <li>Click the "Import" button</li>
 </ol>
 Finally click the red "Deploy" button at the top right to deploy the flows
+
 <br>
+
 The flows used for the application are:
 <ul>
     <li>Temperature-Humidity Sensor Flow</li>
@@ -65,6 +76,7 @@ The flows used for the application are:
 </ul>
 
 ## Access the application online (Recommended)
+
 After Node-RED has been deployed you can use the application as stated above by visiting the 
 online deployed version at:
 
@@ -75,6 +87,7 @@ To log in to the app you can use the following credentials:
     <li>Username: admin</li>
     <li>Password: pass</li>
 </ul>
+
 <hr>
 
 **_NOTE:_**  !! The following further instructions are needed only if you want to <u>run the application locally</u> !!
@@ -82,7 +95,7 @@ To log in to the app you can use the following credentials:
 <hr>
 
 ## MongoDB Atlas Database
-After the cluster has been deployed by following the instructions stated before create a database, with any name,
+After the cluster has been deployed by following the instructions linked before create a database, with any name,
 containing the following collections:
 <ul>
     <li>DoorSensor</li>
@@ -103,6 +116,7 @@ by Node-RED which at this point should be installed and deployed
 **_NOTE:_**  Insert any user credentials (username, password) you want to test in the "users" collection.
 
 ## Mailgun Authorized Recipient
+
 After the mailgun account has been created you must add the Authorized Recipient you want to receive the alerts from the 
 application to your mailgun domain. To do so follow the 
 <a href=https://help.mailgun.com/hc/en-us/articles/217531258-Authorized-Recipients>Authorized Recipients</a> 
@@ -197,5 +211,5 @@ terminal:
 ```
 deno task start
 ```
-**_NOTE:_**  You can log in to the application by using a set of credentials you have inserted as a document (username, 
-password) to the users collection as stated above
+**_NOTE:_**  You can log in to the application by using a set of credentials you have inserted as a document
+(e.g. {username:"test", password:"1234"} ) to the users collection as stated above
