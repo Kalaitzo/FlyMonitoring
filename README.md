@@ -144,6 +144,7 @@ DATA_SOURCE=<CLUSTER_NAME>
 because afterwards you won't be able to access it, and you'll have to create another one
 
 <h4>Mailgun Variables</h4>
+<br>
 ```EMAIL="SENDER_EMAIL"``` 
 <br>
 ```RECV_EMAIL="RECIPIENT_EMAIL"```
@@ -151,6 +152,7 @@ because afterwards you won't be able to access it, and you'll have to create ano
 ```API_KEY_MAILGUN="MAILGUN_API_KEY"```
 <br>
 ```MAILGUN_DOMAIN="MAILGUN_DOMAIN_NAME"```
+<br>
 
 
 **_NOTE:_**  The MAILGUN_API_KEY is not the one that is sent to you after you created the account. You must access it 
