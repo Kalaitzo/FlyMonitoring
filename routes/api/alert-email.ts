@@ -5,6 +5,7 @@ import db from "../../model/mongodb.ts"
 import TemperatureSensor from "../../model/schemas/TemperatureSensor.ts";
 import FluidLevelSensor from "../../model/schemas/FluidLevelSensor.ts";
 import SmokeSensor from "../../model/schemas/SmokeSensor.ts";
+// import {config} from "https://deno.land/std@0.167.0/dotenv/mod.ts";
 
 async function getDataFromSensor(collectionName: string): Promise<Array<TemperatureSensor | FluidLevelSensor | SmokeSensor>> {
     // Open the collection that contains te requested data
@@ -57,6 +58,11 @@ export const handler: Handlers = {
         const emailSend = Deno.env.get("EMAIL")
         const emailRecv = Deno.env.get('RECV_EMAIL')
         const domain = Deno.env.get('MAILGUN_DOMAIN')
+        // const configData = await config();
+        // const apiKey = configData["API_KEY_MAILGUN"]
+        // const emailSend = configData["EMAIL"]
+        // const emailRecv = configData["RECV_EMAIL"]
+        // const domain = configData["MAILGUN_DOMAIN"]
 
         // Create a instance using your Mailgun API key and domain
         const mailgun = new Mailgun({
