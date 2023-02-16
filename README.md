@@ -1,10 +1,14 @@
 <h1>High security room monitoring application </h1>
 
-<h2>Requirements</h2>
+<h2>Prerequisites</h2>
 
-You can either use this application by installing Node-RED 
-and accessing the website at the link presented below or by also installing Deno, downloading the source code and
-running the code locally
+You can either use this application by installing <strong>Node-RED</strong> 
+and accessing the website at the link presented below or locally by also installing 
+<strong>Deno</strong>, 
+downloading the source code,
+creating an account on the <strong>mailgun</strong> service
+and creating
+your own <strong>MongoDB</strong> database using <strong>Atlas</strong>
 
 <ul>
     <li>
@@ -15,10 +19,14 @@ running the code locally
     </li>
     <br>
     <li>
-        If you want to run the web application locally you have to also install <b>Deno</b> by 
+        If you want to run the application locally you have to also install <b>Deno</b> by 
         following the instructions for your system specifications found on the 
         <a href="https://deno.land/manual@v1.30.3/getting_started/installation">Deno Installation</a> 
-        page on the Deno website
+        page,
+        create an account on the <a href="https://www.mailgun.com/">mailgun</a> service
+        and follow the 
+        <a href="https://www.mongodb.com/docs/atlas/getting-started/">Get Started with Atlas</a>
+        instructions in order to deploy your cluster with your database
     </li>
 </ul>
 
@@ -26,7 +34,9 @@ running the code locally
 After Node-RED has been installed you can run it locally by typing the following command on a terminal:
 <br>
 
-```node-red```
+```
+node-red
+```
 
 Access the Node-RED editor by pointing your browser at <a>http://localhost:1880</a> 
 <br>
@@ -63,10 +73,41 @@ To log in to the app you can use the following credentials:
     <li>Username: admin</li>
     <li>Password: pass</li>
 </ul>
+<hr>
 
-<h2>Run the web application locally</h2>
-In order to run the code locally access to some environmental variables is needed. In case those variables are provided
-to you by us follow the steps bellow
+**_NOTE:_**  !! The following further instructions are needed only if you want to <u>run the application locally</u> !!
+
+<hr>
+
+<h2>MongoDB Atlas Database</h2>
+After the cluster has been deployed by following the instructions stated before create a database, with any name,
+containing the following collections:
+<ul>
+    <li>DoorSensor</li>
+    <li>DustSensor</li>
+    <li>FluidLevelSensor</li>
+    <li>RackTemperatureSensors</li>
+    <li>RealMove</li>
+    <li>RealTempHum</li>
+    <li>SmokeSensor</li>
+    <li>TagSensor</li>
+    <li>TemperatureSensor</li>
+    <li>users</li>
+</ul>
+
+**_NOTE:_**  You shouldn't insert any documents on the Sensor collections. The documents will be created and inserted
+by Node-RED which at this point should be installed and deployed
+<br>
+**_NOTE:_**  Insert any user credentials (username, password) you want to test in the "users" collection.
+
+<h2>Mailgun Authorized Recipient</h2>
+After the mailgun account has been created you must add the Authorized Recipient you want to receive the alerts from the 
+application to your mailgun domain. To do so follow the 
+<a href=https://help.mailgun.com/hc/en-us/articles/217531258-Authorized-Recipients>Authorized Recipients</a> 
+instructions from the mailgun help center
+
+<h2>Run the application locally</h2>
+
 <h3>Install the source code</h3>
 Some options to install the source code are:
 <ul>
@@ -88,6 +129,32 @@ Some options to install the source code are:
     <li>Select the path where the zip will be downloaded and then extract it</li>
 </ol>
 
+<h3>Create your .env file </h3>
+At this point you have your database deployed on MongoDB Atlas, you have successfully deployed Node-RED and 
+you have your domain ready on the mailgun service. In order to
+run the source code locally you need to create a .env file with the following variables
+<h4>MongoDB Atlas Variables</h4>
+```
+DB=<DATABASE_NAME>
+API_KEY=<ATLAS_API_KEY>
+ENDPOINT=<DATABASE_URL_ENDPOINT>
+DATA_SOURCE=<CLUSTER_NAME>
+```
+**_NOTE:_**  Be careful to instantly copy and paste ATLAS_API_KEY when you create it on the Data API tab on MongoDB Atlas
+because afterwards you won't be able to access it, and you'll have to create another one
+
+<h4>Mailgun Variables</h4>
+```
+EMAIL=<SENDER_EMAIL>
+RECV_EMAIL=<RECIPIENT_EMAIL>
+API_KEY_MAILGUN=<MAILGUN_API_KEY>
+MAILGUN_DOMAIN=<MAILGUN_DOMAIN_NAME>
+```
+**_NOTE:_**  The MAILGUN_API_KEY is not the one that is sent to you after you created the account. You must access it 
+form the API keys tab on the Overview page of your domain (Private API key).
+**_NOTE_** The RECIPIENT_EMAIL must be saved as an Authorized Recipient and also be verified. 
+
+
 <h3>Run the source code</h3>
 For this part a code editor is needed (e.g. Visual Studio Code)
 <h4>Install Visual Studio Code</h4>
@@ -100,11 +167,21 @@ After you have Visual Studio Code installed some changes must be done to the sou
 environmental variables mentioned above found in the .env file provided by us
 
 <h4>Modify the source code</h4>
-<ol>
-    <li>Open the "mongodb.ts" file found at the directory: model/</li>
-    <li>Uncomment the commented lines of code (line 2 to line 8) by removing the '//' added at their beginning</li>
-    <li>Comment the lines from line 9 to line 12 by adding '//' at their beginning</li>
-</ol>
+<ul>
+    <li>mongodb.ts</li>
+    <ol>
+        <li>Open the "mongodb.ts" file found at <strong>model/</strong></li>
+        <li>Uncomment the commented lines of code (line 2 to line 8) by removing the '//' from their beginning</li>
+        <li>Comment the lines from line 9 to line 12 by adding '//' at their beginning</li>
+    </ol>
+    <li>alert-email.ts</li>
+    <ol>
+        <li>Open the "alert-email.ts" file found at the <strong>routes/api/</strong></li>
+        <li>Uncomment the commented lines of code (line 8 and line 61 ot line 65) by removing the '//' from their beginning</li>
+        <li>Comment the lines from line 57 to line 60 by adding '//' at their beginning</li>
+    </ol>
+</ul>
+
 
 Finally after those changes have been completed you can run the source code by typing the following command to a 
 terminal:
