@@ -205,11 +205,16 @@ environmental variables mentioned above found in the .env file provided by us
 </ul>
 
 
-Finally after those changes have been completed you can run the source code by typing the following command to a 
+Finally, after those changes have been completed you can run the source code by typing the following command to a 
 terminal:
 <br>
 ```
 deno task start
 ```
+
+The message ```Listening on http://localhost:8000``` should be printed on your terminal. Navigate to localhost and log 
+in to the application
+<br>
+
 **_NOTE:_**  You can log in to the application by using a set of credentials you have inserted as a document
 (e.g. {username:"test", password:"1234"} ) to the users collection as stated above
