@@ -144,7 +144,10 @@ DATA_SOURCE=<CLUSTER_NAME>
 because afterwards you won't be able to access it, and you'll have to create another one
 
 <h4>Mailgun Variables</h4>
-```deno task start```
+<br>
+```EMAIL="SENDER_EMAIL"```
+<br>
+
 
 **_NOTE:_**  The MAILGUN_API_KEY is not the one that is sent to you after you created the account. You must access it 
 form the API keys tab on the Overview page of your domain (Private API key).
