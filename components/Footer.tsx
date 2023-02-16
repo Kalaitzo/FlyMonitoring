@@ -18,8 +18,8 @@ export default function Footer() {
         {
             title: "Information",
             children: [
-                { name: "Email", value: "name123@gmail.com" },
-                { name: "Phone", value: "6969696969" },
+                { name: "Email", value: "name@example.com" },
+                { name: "Phone", value: "69XXXXXXXX" },
                 { name: "Discord", value: "Discord Server" }
             ],
         },
