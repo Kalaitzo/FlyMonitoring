@@ -1,6 +1,6 @@
-<h1>High security room monitoring application </h1>
+# High security room monitoring application
 
-<h2>Prerequisites</h2>
+## Prerequisites
 
 You can either use this application by installing <strong>Node-RED</strong> 
 and accessing the website at the link presented below or locally by also installing 
@@ -30,7 +30,7 @@ your own <strong>MongoDB</strong> database using <strong>Atlas</strong>
     </li>
 </ul>
 
-<h2>Deploy Node-RED</h2>
+## Deploy Node-RED
 After Node-RED has been installed you can run it locally by typing the following command on a terminal:
 <br>
 
@@ -64,7 +64,7 @@ The flows used for the application are:
     <li>Alert-Check</li>
 </ul>
 
-<h2>Access the application online (Recommended)</h2>
+## Access the application online (Recommended)
 After Node-RED has been deployed you can use the application as stated above by visiting the 
 online deployed version at <a href=https://fly-monitoring.deno.dev/>fly-monitoring.deno.dev</a>
 <br>
@@ -79,7 +79,7 @@ To log in to the app you can use the following credentials:
 
 <hr>
 
-<h2>MongoDB Atlas Database</h2>
+## MongoDB Atlas Database
 After the cluster has been deployed by following the instructions stated before create a database, with any name,
 containing the following collections:
 <ul>
@@ -100,15 +100,15 @@ by Node-RED which at this point should be installed and deployed
 <br>
 **_NOTE:_**  Insert any user credentials (username, password) you want to test in the "users" collection.
 
-<h2>Mailgun Authorized Recipient</h2>
+## Mailgun Authorized Recipient
 After the mailgun account has been created you must add the Authorized Recipient you want to receive the alerts from the 
 application to your mailgun domain. To do so follow the 
 <a href=https://help.mailgun.com/hc/en-us/articles/217531258-Authorized-Recipients>Authorized Recipients</a> 
 instructions from the mailgun help center
 
-<h2>Run the application locally</h2>
+## Run the application locally 
 
-<h3>Install the source code</h3>
+### Install the source code
 Some options to install the source code are:
 <ul>
     <li>
@@ -122,43 +122,47 @@ Some options to install the source code are:
     </li>
 </ul>
 
-<h4>Download ZIP</h4>
+#### Download ZIP
 <ol>
     <li>Click on the green "Code" button</li>
     <li>Click on the "Download ZIP" button</li>
     <li>Select the path where the zip will be downloaded and then extract it</li>
 </ol>
 
-<h3>Create your .env file </h3>
+### Create your .env file 
 At this point you have your database deployed on MongoDB Atlas, you have successfully deployed Node-RED and 
 you have your domain ready on the mailgun service. In order to
 run the source code locally you need to create a .env file with the following variables
-<h4>MongoDB Atlas Variables</h4>
+#### MongoDB Atlas Variables
 The environmental variables needed for MongoDB Atlas are:
+
 ```
 DB=<DATABASE_NAME>
 API_KEY=<ATLAS_API_KEY>
 ENDPOINT=<DATABASE_URL_ENDPOINT>
 DATA_SOURCE=<CLUSTER_NAME>
 ```
+
 **_NOTE:_**  Be careful to instantly copy and paste ATLAS_API_KEY when you create it on the Data API tab on MongoDB Atlas
 because afterwards you won't be able to access it, and you'll have to create another one
 
-<h4>Mailgun Variables</h4>
+#### Mailgun Variables
 The environmental variables needed for mailgun are the following:
 <br>
+
 ```
 EMAIL=<SENDER_EMAIL>
 RECV_EMAIL=<RECIPIENT_EMAIL>
 API_KEY_MAILGUN=<MAILGUN_API_KEY>
 MAILGUN_DOMAIN=<MAILGUN_DOMAIN_NAME>
 ```
+
 **_NOTE:_**  The MAILGUN_API_KEY is not the one that is sent to you after you created the account. You must access it 
 form the API keys tab on the Overview page of your domain (Private API key).
 **_NOTE_** The RECIPIENT_EMAIL must be saved as an Authorized Recipient and also be verified.
-<h3>Run the source code</h3>
+### Run the source code
 For this part a code editor is needed (e.g. Visual Studio Code)
-<h4>Install Visual Studio Code</h4>
+#### Install Visual Studio Code
 <ul>
     <li>To install Visual Studio Code choose the correct version for your system specifications on the 
     <a href=https://code.visualstudio.com/Download>Visual Studio Code Download</a> page</li>
@@ -167,7 +171,7 @@ For this part a code editor is needed (e.g. Visual Studio Code)
 After you have Visual Studio Code installed some changes must be done to the source code in order to access the 
 environmental variables mentioned above found in the .env file provided by us
 
-<h4>Modify the source code</h4>
+#### Modify the source code
 <ul>
     <li>mongodb.ts</li>
     <ol>
